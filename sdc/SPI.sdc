@@ -1,8 +1,8 @@
 ###############################################################################
 # Created by write_sdc
-# Fri Mar 18 11:51:51 2022
+# Fri Mar 18 12:01:14 2022
 ###############################################################################
-current_design UART
+current_design SPI
 ###############################################################################
 # Timing Constraints
 ###############################################################################
@@ -10,8 +10,8 @@ create_clock -name clock -period 20.0000 [get_ports {clock}]
 set_clock_transition 0.1500 [get_clocks {clock}]
 set_clock_uncertainty 0.2500 clock
 set_propagated_clock [get_clocks {clock}]
-set_input_delay 4.0000 -clock [get_clocks {clock}] -add_delay [get_ports {io_rxd}]
-set_input_delay 4.0000 -clock [get_clocks {clock}] -add_delay [get_ports {io_uart_select}]
+set_input_delay 4.0000 -clock [get_clocks {clock}] -add_delay [get_ports {io_spi_miso}]
+set_input_delay 4.0000 -clock [get_clocks {clock}] -add_delay [get_ports {io_spi_select}]
 set_input_delay 4.0000 -clock [get_clocks {clock}] -add_delay [get_ports {io_wbs_m2s_addr[0]}]
 set_input_delay 4.0000 -clock [get_clocks {clock}] -add_delay [get_ports {io_wbs_m2s_addr[10]}]
 set_input_delay 4.0000 -clock [get_clocks {clock}] -add_delay [get_ports {io_wbs_m2s_addr[11]}]
@@ -63,8 +63,10 @@ set_input_delay 4.0000 -clock [get_clocks {clock}] -add_delay [get_ports {io_wbs
 set_input_delay 4.0000 -clock [get_clocks {clock}] -add_delay [get_ports {io_wbs_m2s_stb}]
 set_input_delay 4.0000 -clock [get_clocks {clock}] -add_delay [get_ports {io_wbs_m2s_we}]
 set_input_delay 4.0000 -clock [get_clocks {clock}] -add_delay [get_ports {reset}]
-set_output_delay 4.0000 -clock [get_clocks {clock}] -add_delay [get_ports {io_txd}]
-set_output_delay 4.0000 -clock [get_clocks {clock}] -add_delay [get_ports {io_uartInt}]
+set_output_delay 4.0000 -clock [get_clocks {clock}] -add_delay [get_ports {io_spi_clk}]
+set_output_delay 4.0000 -clock [get_clocks {clock}] -add_delay [get_ports {io_spi_cs}]
+set_output_delay 4.0000 -clock [get_clocks {clock}] -add_delay [get_ports {io_spi_intr}]
+set_output_delay 4.0000 -clock [get_clocks {clock}] -add_delay [get_ports {io_spi_mosi}]
 set_output_delay 4.0000 -clock [get_clocks {clock}] -add_delay [get_ports {io_wbs_ack_o}]
 set_output_delay 4.0000 -clock [get_clocks {clock}] -add_delay [get_ports {io_wbs_data_o[0]}]
 set_output_delay 4.0000 -clock [get_clocks {clock}] -add_delay [get_ports {io_wbs_data_o[10]}]
@@ -101,8 +103,10 @@ set_output_delay 4.0000 -clock [get_clocks {clock}] -add_delay [get_ports {io_wb
 ###############################################################################
 # Environment
 ###############################################################################
-set_load -pin_load 0.0334 [get_ports {io_txd}]
-set_load -pin_load 0.0334 [get_ports {io_uartInt}]
+set_load -pin_load 0.0334 [get_ports {io_spi_clk}]
+set_load -pin_load 0.0334 [get_ports {io_spi_cs}]
+set_load -pin_load 0.0334 [get_ports {io_spi_intr}]
+set_load -pin_load 0.0334 [get_ports {io_spi_mosi}]
 set_load -pin_load 0.0334 [get_ports {io_wbs_ack_o}]
 set_load -pin_load 0.0334 [get_ports {io_wbs_data_o[31]}]
 set_load -pin_load 0.0334 [get_ports {io_wbs_data_o[30]}]
@@ -137,8 +141,8 @@ set_load -pin_load 0.0334 [get_ports {io_wbs_data_o[2]}]
 set_load -pin_load 0.0334 [get_ports {io_wbs_data_o[1]}]
 set_load -pin_load 0.0334 [get_ports {io_wbs_data_o[0]}]
 set_driving_cell -lib_cell sky130_fd_sc_hd__inv_2 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {clock}]
-set_driving_cell -lib_cell sky130_fd_sc_hd__inv_2 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {io_rxd}]
-set_driving_cell -lib_cell sky130_fd_sc_hd__inv_2 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {io_uart_select}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_2 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {io_spi_miso}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_2 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {io_spi_select}]
 set_driving_cell -lib_cell sky130_fd_sc_hd__inv_2 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {io_wbs_m2s_stb}]
 set_driving_cell -lib_cell sky130_fd_sc_hd__inv_2 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {io_wbs_m2s_we}]
 set_driving_cell -lib_cell sky130_fd_sc_hd__inv_2 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {reset}]
