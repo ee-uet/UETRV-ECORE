@@ -18,7 +18,7 @@ set ::env(STD_CELL_LIBRARY) "sky130_fd_sc_hd"
 
 set script_dir [file dirname [file normalize [info script]]]
 
-set ::env(DESIGN_NAME) Core
+set ::env(DESIGN_NAME) UART
 
 set ::env(VERILOG_FILES) "\
 	$::env(CARAVEL_ROOT)/verilog/rtl/defines.v \
@@ -31,12 +31,12 @@ set ::env(CLOCK_NET) ""
 set ::env(CLOCK_PERIOD) "20"
 
 set ::env(FP_SIZING) absolute
-set ::env(DIE_AREA) "0 0 500 500"
+set ::env(DIE_AREA) "0 0 150 150"
 
 # set ::env(FP_PIN_ORDER_CFG) $script_dir/pin_order.cfg
 
 set ::env(PL_BASIC_PLACEMENT) 0
-set ::env(PL_TARGET_DENSITY) 0.5
+set ::env(PL_TARGET_DENSITY) 0.65
 set ::env(CELL_PAD) 2
 
 # Maximum layer used for routing is metal 4.
