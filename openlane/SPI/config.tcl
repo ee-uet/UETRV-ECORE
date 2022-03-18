@@ -18,11 +18,11 @@ set ::env(STD_CELL_LIBRARY) "sky130_fd_sc_hd"
 
 set script_dir [file dirname [file normalize [info script]]]
 
-set ::env(DESIGN_NAME) UART
+set ::env(DESIGN_NAME) SPI
 
 set ::env(VERILOG_FILES) "\
 	$::env(CARAVEL_ROOT)/verilog/rtl/defines.v \
-	$script_dir/../../verilog/rtl/UART.v"
+	$script_dir/../../verilog/rtl/SPI.v"
 
 set ::env(DESIGN_IS_CORE) 0
 
@@ -31,7 +31,7 @@ set ::env(CLOCK_NET) ""
 set ::env(CLOCK_PERIOD) "20"
 
 set ::env(FP_SIZING) absolute
-set ::env(DIE_AREA) "0 0 150 150"
+set ::env(DIE_AREA) "0 0 100 100"
 
 # set ::env(FP_PIN_ORDER_CFG) $script_dir/pin_order.cfg
 
