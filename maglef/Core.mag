@@ -1,11 +1,11 @@
 magic
 tech sky130A
 magscale 1 2
-timestamp 1647270528
+timestamp 1647599386
 << obsli1 >>
 rect 1104 2159 98808 97393
 << obsm1 >>
-rect 14 1708 99898 97640
+rect 14 1640 99898 97708
 << metal2 >>
 rect 1306 99200 1362 100000
 rect 3882 99200 3938 100000
@@ -437,16 +437,14 @@ rect 65648 2128 65968 97424
 rect 81008 2128 81328 97424
 rect 96368 2128 96688 97424
 << obsm4 >>
-rect 2083 97504 97829 97885
-rect 2083 2048 4128 97504
-rect 4608 2048 19488 97504
-rect 19968 2048 34848 97504
-rect 35328 2048 50208 97504
-rect 50688 2048 65568 97504
-rect 66048 2048 80928 97504
-rect 81408 2048 96288 97504
-rect 96768 2048 97829 97504
-rect 2083 1939 97829 2048
+rect 1715 2048 4128 97477
+rect 4608 2048 19488 97477
+rect 19968 2048 34848 97477
+rect 35328 2048 50208 97477
+rect 50688 2048 65568 97477
+rect 66048 2048 80928 97477
+rect 81408 2048 91021 97477
+rect 1715 1939 91021 2048
 << labels >>
 rlabel metal2 s 19338 99200 19394 100000 6 clock
 port 1 nsew signal input
@@ -814,8 +812,8 @@ port 176 nsew ground input
 string FIXED_BBOX 0 0 100000 100000
 string LEFclass BLOCK
 string LEFview TRUE
-string GDS_END 35465308
-string GDS_FILE /home/ali112000/Desktop/mpw/UETRV-ECORE/openlane/Core/runs/Core/results/finishing/Core.magic.gds
-string GDS_START 1410816
+string GDS_END 34942808
+string GDS_FILE /home/ali11-2000/FYP/mpw/UETRV-ECORE/openlane/Core/runs/Core/results/finishing/Core.magic.gds
+string GDS_START 1458362
 << end >>
 

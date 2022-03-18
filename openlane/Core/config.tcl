@@ -22,7 +22,7 @@ set ::env(DESIGN_NAME) Core
 
 set ::env(VERILOG_FILES) "\
 	$::env(CARAVEL_ROOT)/verilog/rtl/defines.v \
-	$script_dir/../../verilog/rtl/Processor_Tile.v"
+	$script_dir/../../verilog/rtl/Core.v"
 
 set ::env(DESIGN_IS_CORE) 0
 
