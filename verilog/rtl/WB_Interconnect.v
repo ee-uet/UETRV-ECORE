@@ -127,48 +127,7 @@ module WB_InterConnect( // @[:@12568.2]
   wire  _T_71; // @[wb_interconnect.scala 117:39:@12660.4]
   wire  _T_72; // @[wb_interconnect.scala 116:37:@12661.4]
   wire  _T_73; // @[wb_interconnect.scala 115:35:@12662.4]
-  DMem_Interface dmem ( // @[wb_interconnect.scala 61:24:@12573.4]
-    .clock(dmem_clock),
-    .reset(dmem_reset),
-    .io_wbs_m2s_addr(dmem_io_wbs_m2s_addr),
-    .io_wbs_m2s_data(dmem_io_wbs_m2s_data),
-    .io_wbs_m2s_we(dmem_io_wbs_m2s_we),
-    .io_wbs_m2s_sel(dmem_io_wbs_m2s_sel),
-    .io_wbs_m2s_stb(dmem_io_wbs_m2s_stb),
-    .io_wbs_ack_o(dmem_io_wbs_ack_o),
-    .io_wbs_data_o(dmem_io_wbs_data_o)
-  );
-  IMem_Interface imem ( // @[wb_interconnect.scala 62:24:@12576.4]
-    .clock(imem_clock),
-    .reset(imem_reset),
-    .io_ibus_addr(imem_io_ibus_addr),
-    .io_ibus_inst(imem_io_ibus_inst),
-    .io_ibus_valid(imem_io_ibus_valid),
-    .io_wbs_m2s_addr(imem_io_wbs_m2s_addr),
-    .io_wbs_m2s_data(imem_io_wbs_m2s_data),
-    .io_wbs_m2s_we(imem_io_wbs_m2s_we),
-    .io_wbs_m2s_sel(imem_io_wbs_m2s_sel),
-    .io_wbs_m2s_stb(imem_io_wbs_m2s_stb),
-    .io_wbs_ack_o(imem_io_wbs_ack_o),
-    .io_wbs_data_o(imem_io_wbs_data_o)
-  );
-  WBM_DBus wbm_dbus ( // @[wb_interconnect.scala 63:24:@12579.4]
-    .io_dbus_addr(wbm_dbus_io_dbus_addr),
-    .io_dbus_wdata(wbm_dbus_io_dbus_wdata),
-    .io_dbus_rdata(wbm_dbus_io_dbus_rdata),
-    .io_dbus_rd_en(wbm_dbus_io_dbus_rd_en),
-    .io_dbus_wr_en(wbm_dbus_io_dbus_wr_en),
-    .io_dbus_st_type(wbm_dbus_io_dbus_st_type),
-    .io_dbus_ld_type(wbm_dbus_io_dbus_ld_type),
-    .io_dbus_valid(wbm_dbus_io_dbus_valid),
-    .io_wbm_m2s_addr(wbm_dbus_io_wbm_m2s_addr),
-    .io_wbm_m2s_data(wbm_dbus_io_wbm_m2s_data),
-    .io_wbm_m2s_we(wbm_dbus_io_wbm_m2s_we),
-    .io_wbm_m2s_sel(wbm_dbus_io_wbm_m2s_sel),
-    .io_wbm_m2s_stb(wbm_dbus_io_wbm_m2s_stb),
-    .io_wbm_ack_i(wbm_dbus_io_wbm_ack_i),
-    .io_wbm_data_i(wbm_dbus_io_wbm_data_i)
-  );
+
   UART uart ( // @[wb_interconnect.scala 64:24:@12582.4]
     .clock(uart_clock),
     .reset(uart_reset),
@@ -183,39 +142,8 @@ module WB_InterConnect( // @[:@12568.2]
     .io_wbs_ack_o(uart_io_wbs_ack_o),
     .io_wbs_data_o(uart_io_wbs_data_o)
   );
-  SPI spi ( // @[wb_interconnect.scala 65:24:@12585.4]
-    .clock(spi_clock),
-    .reset(spi_reset),
-    .io_spi_select(spi_io_spi_select),
-    .io_spi_cs(spi_io_spi_cs),
-    .io_spi_clk(spi_io_spi_clk),
-    .io_spi_mosi(spi_io_spi_mosi),
-    .io_spi_miso(spi_io_spi_miso),
-    .io_spi_intr(spi_io_spi_intr),
-    .io_wbs_m2s_addr(spi_io_wbs_m2s_addr),
-    .io_wbs_m2s_data(spi_io_wbs_m2s_data),
-    .io_wbs_m2s_we(spi_io_wbs_m2s_we),
-    .io_wbs_m2s_stb(spi_io_wbs_m2s_stb),
-    .io_wbs_ack_o(spi_io_wbs_ack_o),
-    .io_wbs_data_o(spi_io_wbs_data_o)
-  );
-  Motor_Top motor ( // @[wb_interconnect.scala 66:24:@12588.4]
-    .clock(motor_clock),
-    .reset(motor_reset),
-    .io_wbs_m2s_addr(motor_io_wbs_m2s_addr),
-    .io_wbs_m2s_data(motor_io_wbs_m2s_data),
-    .io_wbs_m2s_we(motor_io_wbs_m2s_we),
-    .io_wbs_m2s_sel(motor_io_wbs_m2s_sel),
-    .io_wbs_m2s_stb(motor_io_wbs_m2s_stb),
-    .io_wbs_ack_o(motor_io_wbs_ack_o),
-    .io_wbs_data_o(motor_io_wbs_data_o),
-    .io_ba_match(motor_io_ba_match),
-    .io_motor_irq(motor_io_motor_irq),
-    .io_qei_ch_a(motor_io_qei_ch_a),
-    .io_qei_ch_b(motor_io_qei_ch_b),
-    .io_pwm_high(motor_io_pwm_high),
-    .io_pwm_low(motor_io_pwm_low)
-  );
+  
+
   assign address = wbm_dbus_io_wbm_m2s_addr[15:12]; // @[wb_interconnect.scala 73:50:@12602.4]
   assign imem_addr_match = address == 4'h0; // @[wb_interconnect.scala 74:35:@12603.4]
   assign dmem_addr_match = address == 4'h1; // @[wb_interconnect.scala 75:35:@12604.4]
