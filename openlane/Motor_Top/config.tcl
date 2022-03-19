@@ -27,7 +27,7 @@ set ::env(VERILOG_FILES) "\
 set ::env(DESIGN_IS_CORE) 0
 set ::env(CLOCK_PORT) "clock"
 set ::env(CLOCK_NET) ""
-set ::env(CLOCK_PERIOD) "80"
+set ::env(CLOCK_PERIOD) "40"
 
 set ::env(FP_SIZING) absolute
 set ::env(DIE_AREA) "0 0 400 400"
