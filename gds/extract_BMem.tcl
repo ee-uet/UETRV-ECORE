@@ -1,1 +1,0 @@
-	gds flatglob "*_example_*";	gds flatten true;	gds read ./BMem.gds;	load BMem -dereference;	select top cell;	extract no all;	extract do local;	extract;	ext2spice lvs;	ext2spice BMem.ext;	feedback save extract_BMem.log;	exit;
