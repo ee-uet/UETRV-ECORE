@@ -1,1 +1,0 @@
-lvs {/home/ali11-2000/FYP/mpw/UETRV-ECORE/openlane/Core/runs/Core/results/finishing/Core.spice Core} {/home/ali11-2000/FYP/mpw/UETRV-ECORE/openlane/Core/runs/Core/tmp/finishing/31-powered_netlist.v Core} /home/ali11-2000/FYP/mpw/pdks/sky130A/libs.tech/netgen/sky130A_setup.tcl /home/ali11-2000/FYP/mpw/UETRV-ECORE/openlane/Core/runs/Core/logs/finishing/34-Core.lef.log -json
