@@ -117,7 +117,24 @@ user_proj_example mprj (
     // IRQ
     .irq(user_irq)
 );
+  wire clock, reset, io_uart_tx, io_uart_rx, io_spi_clk, io_spi_cs;
+  wire io_spi_mosi, io_spi_miso, io_qei_ch_a, io_qei_ch_b, io_pwm_high, io_pwm_low;
 
+  
+
+
+  assign  clock = wb_clk_i; 
+  assign  reset = wb_rst_i;
+  assign  io_out[0] =  io_uart_tx;
+  assign  io_uart_rx = io_in[0];
+  assign  io_out[1] = io_spi_cs; 
+  assign  io_out[2] = io_spi_clk;
+  assign  io_out[3] = io_spi_mosi;
+  assign  io_spi_miso = io_in[1];
+  assign  io_qei_ch_a = io_in[2];
+  assign  io_qei_ch_b = io_in[3];
+  assign  io_out[4] = io_pwm_high;
+  assign  io_out[5] = io_pwm_low;
 endmodule	// user_project_wrapper
 
 `default_nettype wire
