@@ -1,0 +1,19 @@
+Design Name: Core
+Run Directory: /home/ali11-2000/FYP/mpw/UETRV-ECORE/openlane/Core/runs/Core
+----------------------------------------
+
+Magic DRC Summary:
+Source: /home/ali11-2000/FYP/mpw/UETRV-ECORE/openlane/Core/runs/Core/reports/finishing/drc.rpt
+Total Magic DRC violations is 0
+----------------------------------------
+
+LVS Summary:
+Source: /home/ali11-2000/FYP/mpw/UETRV-ECORE/openlane/Core/runs/Core/logs/finishing/34-Core.lvs.lef.log
+LVS reports no net, device, pin, or property mismatches.
+Total errors = 0
+----------------------------------------
+
+Antenna Summary:
+Source: /home/ali11-2000/FYP/mpw/UETRV-ECORE/openlane/Core/runs/Core/reports/finishing/antenna.rpt
+Number of pins violated: 5
+Number of nets violated: 5

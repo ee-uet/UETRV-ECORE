@@ -27,7 +27,7 @@ source $::env(CARAVEL_ROOT)/openlane/user_project_wrapper/default_wrapper_cfgs.t
 
 set script_dir [file dirname [file normalize [info script]]]
 
-set ::env(DESIGN_NAME) WB_InterConnect
+set ::env(DESIGN_NAME) user_project_wrapper
 #section end
 
 # User Configurations
@@ -35,14 +35,18 @@ set ::env(DESIGN_NAME) WB_InterConnect
 ## Source Verilog Files
 set ::env(VERILOG_FILES) "\
 	$::env(CARAVEL_ROOT)/verilog/rtl/defines.v \
-	$script_dir/../../verilog/rtl/WB_Interconnect.v"
+	$script_dir/../../verilog/rtl/user_project_wrapper.v"
 
 ## Clock configurations
-set ::env(CLOCK_PORT) "clock"
+set ::env(CLOCK_PORT) "user_clock2"
+set ::env(CLOCK_NET) "mprj.clk"
 
-set ::env(CLOCK_PERIOD) "20"
+set ::env(CLOCK_PERIOD) "10"
 
 ## Internal Macros
+### Macro PDN Connections
+set ::env(FP_PDN_MACRO_HOOKS) "\
+	mprj vccd1 vssd1"
 
 ### Macro Placement
 set ::env(MACRO_PLACEMENT_CFG) $script_dir/macro.cfg
@@ -50,16 +54,48 @@ set ::env(MACRO_PLACEMENT_CFG) $script_dir/macro.cfg
 ### Black-box verilog and views
 set ::env(VERILOG_FILES_BLACKBOX) "\
 	$::env(CARAVEL_ROOT)/verilog/rtl/defines.v \
-	$script_dir/../../verilog/rtl/UART.v"
+	$script_dir/../../verilog/rtl/Core.v \
+	$script_dir/../../verilog/rtl/WB_InterConnect.v \
+	$script_dir/../../verilog/rtl/Motor_Top.v \
+	$::env(PDK_ROOT)/sky130A/libs.ref/sky130_sram_macros/verilog/sky130_sram_1kbyte_1rw1r_32x256_8.v \
+	$::env(PDK_ROOT)/sky130A/libs.ref/sky130_sram_macros/verilog/sky130_sram_2kbyte_1rw1r_32x512_8.v"
 
 set ::env(EXTRA_LEFS) "\
-	$script_dir/../../lef/UART.lef"
+	$script_dir/../../lef/Core.lef \
+	$script_dir/../../lef/WB_InterConnect.lef \
+	$script_dir/../../lef/Motor_Top.lef \ 
+	$::env(PDK_ROOT)/sky130A/libs.ref/sky130_sram_macros/lef/sky130_sram_1kbyte_1rw1r_32x256_8.lef \
+	$::env(PDK_ROOT)/sky130A/libs.ref/sky130_sram_macros/lef/sky130_sram_2kbyte_1rw1r_32x512_8.lef"
 
 set ::env(EXTRA_GDS_FILES) "\
-	$script_dir/../../gds/UART.gds"
+	$script_dir/../../gds/Core.gds \
+	$script_dir/../../gds/WB_InterConnect.gds \
+	$script_dir/../../gds/Motor_Top.gds \
+	$::env(PDK_ROOT)/sky130A/libs.ref/sky130_sram_macros/gds/sky130_sram_1kbyte_1rw1r_32x256_8.gds \
+	$::env(PDK_ROOT)/sky130A/libs.ref/sky130_sram_macros/gds/sky130_sram_2kbyte_1rw1r_32x512_8.gds "
 
 # set ::env(GLB_RT_MAXLAYER) 5
 set ::env(RT_MAX_LAYER) {met4}
 
 # disable pdn check nodes becuase it hangs with multiple power domains.
 # any issue with pdn connections will be flagged with LVS so it is not a critical check.
+set ::env(FP_PDN_CHECK_NODES) 0
+
+# The following is because there are no std cells in the example wrapper project.
+set ::env(SYNTH_TOP_LEVEL) 1
+set ::env(PL_RANDOM_GLB_PLACEMENT) 1
+
+set ::env(PL_RESIZER_DESIGN_OPTIMIZATIONS) 0
+set ::env(PL_RESIZER_TIMING_OPTIMIZATIONS) 0
+set ::env(PL_RESIZER_BUFFER_INPUT_PORTS) 0
+set ::env(PL_RESIZER_BUFFER_OUTPUT_PORTS) 0
+
+set ::env(FP_PDN_ENABLE_RAILS) 0
+
+set ::env(DIODE_INSERTION_STRATEGY) 0
+set ::env(FILL_INSERTION) 0
+set ::env(TAP_DECAP_INSERTION) 0
+set ::env(CLOCK_TREE_SYNTH) 0
+
+# 16 GB of RAM aren't enough for magic DRC. KLayout DRC only works with some changes to scripts
+set ::env(RUN_MAGIC_DRC) 0

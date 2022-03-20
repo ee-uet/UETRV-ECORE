@@ -1,0 +1,20 @@
+OpenROAD 8d53e9b018dec98fa63e907ddeb6c5406f035361 
+This program is licensed under the BSD-3 license. See the LICENSE file for details.
+Components of this program may be licensed under more restrictive licenses which must be honored.
+[INFO ODB-0222] Reading LEF file: /home/ali11-2000/FYP/mpw/UETRV-ECORE/openlane/Motor_Top/runs/Motor_Top/tmp/merged.lef
+[INFO ODB-0223]     Created 13 technology layers
+[INFO ODB-0224]     Created 25 technology vias
+[INFO ODB-0225]     Created 441 library cells
+[INFO ODB-0226] Finished LEF file:  /home/ali11-2000/FYP/mpw/UETRV-ECORE/openlane/Motor_Top/runs/Motor_Top/tmp/merged.lef
+[INFO ODB-0127] Reading DEF file: /home/ali11-2000/FYP/mpw/UETRV-ECORE/openlane/Motor_Top/runs/Motor_Top/tmp/floorplan/3-initial_fp.def
+[INFO ODB-0128] Design: Motor_Top
+[INFO ODB-0130]     Created 95 pins.
+[INFO ODB-0131]     Created 5719 components and 42202 component-terminals.
+[INFO ODB-0133]     Created 5778 nets and 19326 connections.
+[INFO ODB-0134] Finished DEF file: /home/ali11-2000/FYP/mpw/UETRV-ECORE/openlane/Motor_Top/runs/Motor_Top/tmp/floorplan/3-initial_fp.def
+Top-level design name: Motor_Top
+Warning: Some pins weren't matched by the config file
+Those are: ['io_ba_match', 'io_motor_irq', 'io_qei_ch_a', 'io_qei_ch_b', 'io_wbs_ack_o', 'io_wbs_m2s_stb', 'io_wbs_m2s_we', 'io_wbs_data_o[0]', 'io_wbs_m2s_addr[0]', 'io_wbs_m2s_data[0]', 'io_wbs_m2s_sel[0]', 'io_wbs_data_o[1]', 'io_wbs_m2s_addr[1]', 'io_wbs_m2s_data[1]', 'io_wbs_m2s_sel[1]', 'io_wbs_data_o[2]', 'io_wbs_m2s_addr[2]', 'io_wbs_m2s_data[2]', 'io_wbs_m2s_sel[2]', 'io_wbs_data_o[3]', 'io_wbs_m2s_addr[3]', 'io_wbs_m2s_data[3]', 'io_wbs_m2s_sel[3]', 'io_wbs_data_o[4]', 'io_wbs_m2s_addr[4]', 'io_wbs_m2s_data[4]', 'io_wbs_data_o[5]', 'io_wbs_m2s_addr[5]', 'io_wbs_m2s_data[5]', 'io_wbs_data_o[6]', 'io_wbs_m2s_addr[6]', 'io_wbs_m2s_data[6]', 'io_wbs_data_o[7]', 'io_wbs_m2s_addr[7]', 'io_wbs_m2s_data[7]', 'io_wbs_data_o[8]', 'io_wbs_m2s_addr[8]', 'io_wbs_m2s_data[8]', 'io_wbs_data_o[9]', 'io_wbs_m2s_addr[9]', 'io_wbs_m2s_data[9]', 'io_wbs_data_o[10]', 'io_wbs_m2s_addr[10]', 'io_wbs_m2s_data[10]', 'io_wbs_data_o[11]', 'io_wbs_m2s_addr[11]', 'io_wbs_m2s_data[11]', 'io_wbs_data_o[12]', 'io_wbs_m2s_addr[12]', 'io_wbs_m2s_data[12]', 'io_wbs_data_o[13]', 'io_wbs_m2s_addr[13]', 'io_wbs_m2s_data[13]', 'io_wbs_data_o[14]', 'io_wbs_m2s_addr[14]', 'io_wbs_m2s_data[14]', 'io_wbs_data_o[15]', 'io_wbs_m2s_addr[15]', 'io_wbs_m2s_data[15]', 'io_wbs_data_o[16]', 'io_wbs_m2s_data[16]', 'io_wbs_data_o[17]', 'io_wbs_m2s_data[17]', 'io_wbs_data_o[18]', 'io_wbs_m2s_data[18]', 'io_wbs_data_o[19]', 'io_wbs_m2s_data[19]', 'io_wbs_data_o[20]', 'io_wbs_m2s_data[20]', 'io_wbs_data_o[21]', 'io_wbs_m2s_data[21]', 'io_wbs_data_o[22]', 'io_wbs_m2s_data[22]', 'io_wbs_data_o[23]', 'io_wbs_m2s_data[23]', 'io_wbs_data_o[24]', 'io_wbs_m2s_data[24]', 'io_wbs_data_o[25]', 'io_wbs_m2s_data[25]', 'io_wbs_data_o[26]', 'io_wbs_m2s_data[26]', 'io_wbs_data_o[27]', 'io_wbs_m2s_data[27]', 'io_wbs_data_o[28]', 'io_wbs_m2s_data[28]', 'io_wbs_data_o[29]', 'io_wbs_m2s_data[29]', 'io_wbs_data_o[30]', 'io_wbs_m2s_data[30]', 'io_wbs_data_o[31]', 'io_wbs_m2s_data[31]']
+Assigning random sides to the above pins
+Block boundaries: 0 0 500000 500000
+Writing /home/ali11-2000/FYP/mpw/UETRV-ECORE/openlane/Motor_Top/runs/Motor_Top/tmp/floorplan/4-io.def...

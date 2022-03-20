@@ -1,0 +1,17 @@
+
+Input: /home/ali11-2000/FYP/mpw/UETRV-ECORE/openlane/Core/runs/Core/results/routing/Core.def
+Output: /home/ali11-2000/FYP/mpw/UETRV-ECORE/openlane/Core/runs/Core/results/finishing/Core.klayout.gds
+Design: Core
+Technology File: /home/ali11-2000/FYP/mpw/pdks/sky130A/libs.tech/klayout/sky130A.lyt
+GDS File List: ['/home/ali11-2000/FYP/mpw/pdks/sky130A/libs.ref/sky130_fd_sc_hd/gds/sky130_fd_sc_hd.gds']
+LEF File: /home/ali11-2000/FYP/mpw/UETRV-ECORE/openlane/Core/runs/Core/tmp/merged.lef
+
+[INFO] Clearing cells...
+[INFO] Merging GDS files...
+	/home/ali11-2000/FYP/mpw/pdks/sky130A/libs.ref/sky130_fd_sc_hd/gds/sky130_fd_sc_hd.gds
+[INFO] Copying toplevel cell 'Core'
+WARNING: no fill config file specified
+[INFO] Checking for missing GDS...
+[INFO] All LEF cells have matching GDS cells
+[INFO] Writing out GDS '/home/ali11-2000/FYP/mpw/UETRV-ECORE/openlane/Core/runs/Core/results/finishing/Core.klayout.gds'
+[INFO] Done.

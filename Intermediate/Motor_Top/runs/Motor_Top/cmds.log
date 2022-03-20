@@ -1,0 +1,102 @@
+Sun Mar 20 08:53:53 UTC 2022 - Executing "/openlane/scripts/mergeLef.py -i /home/ali11-2000/FYP/mpw/pdks/sky130A/libs.ref/sky130_fd_sc_hd/techlef/sky130_fd_sc_hd.tlef /home/ali11-2000/FYP/mpw/pdks/sky130A/libs.ref/sky130_fd_sc_hd/lef/sky130_fd_sc_hd.lef -o /home/ali11-2000/FYP/mpw/UETRV-ECORE/openlane/Motor_Top/runs/Motor_Top/tmp/merged_unpadded.lef |& tee >&@stdout"
+
+Sun Mar 20 08:53:53 UTC 2022 - Executing "openroad -python /openlane/scripts/mergeLib.py --output /home/ali11-2000/FYP/mpw/UETRV-ECORE/openlane/Motor_Top/runs/Motor_Top/tmp/synthesis/merged.lib --name sky130A_merged /home/ali11-2000/FYP/mpw/pdks/sky130A/libs.ref/sky130_fd_sc_hd/lib/sky130_fd_sc_hd__tt_025C_1v80.lib"
+
+Sun Mar 20 08:53:54 UTC 2022 - Executing "openroad -python /openlane/scripts/libtrim.py --cell-file /home/ali11-2000/FYP/mpw/UETRV-ECORE/openlane/Motor_Top/runs/Motor_Top/tmp/synthesis/trimmed.lib.exclude.list --output /home/ali11-2000/FYP/mpw/UETRV-ECORE/openlane/Motor_Top/runs/Motor_Top/tmp/synthesis/trimmed.lib /home/ali11-2000/FYP/mpw/UETRV-ECORE/openlane/Motor_Top/runs/Motor_Top/tmp/synthesis/merged.lib"
+
+Sun Mar 20 08:53:54 UTC 2022 - Executing "echo {openlane 2022.02.23_02.50.41} > /home/ali11-2000/FYP/mpw/UETRV-ECORE/openlane/Motor_Top/runs/Motor_Top/OPENLANE_VERSION"
+
+Sun Mar 20 08:53:54 UTC 2022 - Executing "openroad -python /openlane/scripts/new_tracks.py -i /home/ali11-2000/FYP/mpw/pdks/sky130A/libs.tech/openlane/sky130_fd_sc_hd/tracks.info -o /home/ali11-2000/FYP/mpw/UETRV-ECORE/openlane/Motor_Top/runs/Motor_Top/tmp/routing/config.tracks"
+
+Sun Mar 20 08:53:55 UTC 2022 - Executing "sed -E {s/^([[:space:]]+)pg_pin(.*)/\1pin\2\n\1    direction : "inout";/g} /home/ali11-2000/FYP/mpw/pdks/sky130A/libs.ref/sky130_fd_sc_hd/lib/sky130_fd_sc_hd__tt_025C_1v80.lib > /home/ali11-2000/FYP/mpw/UETRV-ECORE/openlane/Motor_Top/runs/Motor_Top/tmp/synthesis/1-sky130_fd_sc_hd__tt_025C_1v80.no_pg.lib"
+
+Sun Mar 20 08:53:55 UTC 2022 - Executing "yosys -c /openlane/scripts/yosys/synth.tcl -l /home/ali11-2000/FYP/mpw/UETRV-ECORE/openlane/Motor_Top/runs/Motor_Top/logs/synthesis/1-synthesis.log |& tee >&@stdout"
+
+Sun Mar 20 08:54:23 UTC 2022 - Executing "sed -i -e {s/\(set ::env(CURRENT_NETLIST)\).*/\1 \/home\/ali11-2000\/FYP\/mpw\/UETRV-ECORE\/openlane\/Motor_Top\/runs\/Motor_Top\/results\/synthesis\/Motor_Top.v/} /home/ali11-2000/FYP/mpw/UETRV-ECORE/openlane/Motor_Top/runs/Motor_Top/config.tcl"
+
+Sun Mar 20 08:54:23 UTC 2022 - Executing "sed -i -e {s/\(set ::env(PREV_NETLIST)\).*/\1 0/} /home/ali11-2000/FYP/mpw/UETRV-ECORE/openlane/Motor_Top/runs/Motor_Top/config.tcl"
+
+Sun Mar 20 08:54:23 UTC 2022 - Executing "sed -i /defparam/d /home/ali11-2000/FYP/mpw/UETRV-ECORE/openlane/Motor_Top/runs/Motor_Top/results/synthesis/Motor_Top.v"
+
+Sun Mar 20 08:54:23 UTC 2022 - Executing "openroad -exit /openlane/scripts/openroad/sta.tcl"
+
+Sun Mar 20 08:54:25 UTC 2022 - Executing "openroad -exit /openlane/scripts/openroad/floorplan.tcl"
+
+Sun Mar 20 08:54:25 UTC 2022 - Executing "openroad -python /openlane/scripts/defutil.py extract_core_dims --output-data /home/ali11-2000/FYP/mpw/UETRV-ECORE/openlane/Motor_Top/runs/Motor_Top/tmp/dimensions.txt --input-lef /home/ali11-2000/FYP/mpw/UETRV-ECORE/openlane/Motor_Top/runs/Motor_Top/tmp/merged.lef /home/ali11-2000/FYP/mpw/UETRV-ECORE/openlane/Motor_Top/runs/Motor_Top/tmp/floorplan/3-initial_fp.def"
+
+Sun Mar 20 08:54:26 UTC 2022 - Executing "openroad -python /openlane/scripts/io_place.py --input-lef /home/ali11-2000/FYP/mpw/UETRV-ECORE/openlane/Motor_Top/runs/Motor_Top/tmp/merged.lef --config /home/ali11-2000/FYP/mpw/UETRV-ECORE/openlane/Motor_Top/pin_order.cfg --hor-layer met3 --ver-layer met2 --ver-width-mult 2 --hor-width-mult 2 --hor-extension -1 --ver-extension -1 --length 4 -o /home/ali11-2000/FYP/mpw/UETRV-ECORE/openlane/Motor_Top/runs/Motor_Top/tmp/floorplan/4-io.def /home/ali11-2000/FYP/mpw/UETRV-ECORE/openlane/Motor_Top/runs/Motor_Top/tmp/floorplan/3-initial_fp.def |& tee /home/ali11-2000/FYP/mpw/UETRV-ECORE/openlane/Motor_Top/runs/Motor_Top/logs/floorplan/4-place_io_ol.log >&@stdout"
+
+Sun Mar 20 08:54:26 UTC 2022 - Executing "openroad -exit /openlane/scripts/openroad/tapcell.tcl"
+
+Sun Mar 20 08:54:27 UTC 2022 - Executing "openroad -exit /openlane/scripts/openroad/pdn.tcl"
+
+Sun Mar 20 08:54:29 UTC 2022 - Executing "openroad -exit /openlane/scripts/openroad/replace.tcl"
+
+Sun Mar 20 08:54:34 UTC 2022 - Executing "openroad -exit /openlane/scripts/openroad/resizer.tcl"
+
+Sun Mar 20 08:54:40 UTC 2022 - Executing "openroad -exit /openlane/scripts/openroad/write_verilog.tcl"
+
+Sun Mar 20 08:54:40 UTC 2022 - Executing "sed -i -e {s/\(set ::env(CURRENT_NETLIST)\).*/\1 \/home\/ali11-2000\/FYP\/mpw\/UETRV-ECORE\/openlane\/Motor_Top\/runs\/Motor_Top\/results\/placement\/Motor_Top.resized.v/} /home/ali11-2000/FYP/mpw/UETRV-ECORE/openlane/Motor_Top/runs/Motor_Top/config.tcl"
+
+Sun Mar 20 08:54:40 UTC 2022 - Executing "sed -i -e {s/\(set ::env(PREV_NETLIST)\).*/\1 \/home\/ali11-2000\/FYP\/mpw\/UETRV-ECORE\/openlane\/Motor_Top\/runs\/Motor_Top\/results\/synthesis\/Motor_Top.v/} /home/ali11-2000/FYP/mpw/UETRV-ECORE/openlane/Motor_Top/runs/Motor_Top/config.tcl"
+
+Sun Mar 20 08:54:40 UTC 2022 - Executing "openroad -exit /openlane/scripts/openroad/opendp.tcl"
+
+Sun Mar 20 08:54:41 UTC 2022 - Executing "openroad -python /openlane/scripts/libtrim.py --cell-file /home/ali11-2000/FYP/mpw/UETRV-ECORE/openlane/Motor_Top/runs/Motor_Top/tmp/cts/cts.lib.exclude.list --output /home/ali11-2000/FYP/mpw/UETRV-ECORE/openlane/Motor_Top/runs/Motor_Top/tmp/cts/cts.lib /home/ali11-2000/FYP/mpw/pdks/sky130A/libs.ref/sky130_fd_sc_hd/lib/sky130_fd_sc_hd__tt_025C_1v80.lib"
+
+Sun Mar 20 08:54:41 UTC 2022 - Executing "openroad -exit /openlane/scripts/openroad/cts.tcl"
+
+Sun Mar 20 08:55:26 UTC 2022 - Executing "openroad -exit /openlane/scripts/openroad/write_verilog.tcl"
+
+Sun Mar 20 08:55:27 UTC 2022 - Executing "sed -i -e {s/\(set ::env(CURRENT_NETLIST)\).*/\1 \/home\/ali11-2000\/FYP\/mpw\/UETRV-ECORE\/openlane\/Motor_Top\/runs\/Motor_Top\/results\/cts\/Motor_Top.v/} /home/ali11-2000/FYP/mpw/UETRV-ECORE/openlane/Motor_Top/runs/Motor_Top/config.tcl"
+
+Sun Mar 20 08:55:27 UTC 2022 - Executing "sed -i -e {s/\(set ::env(PREV_NETLIST)\).*/\1 \/home\/ali11-2000\/FYP\/mpw\/UETRV-ECORE\/openlane\/Motor_Top\/runs\/Motor_Top\/results\/placement\/Motor_Top.resized.v/} /home/ali11-2000/FYP/mpw/UETRV-ECORE/openlane/Motor_Top/runs/Motor_Top/config.tcl"
+
+Sun Mar 20 08:55:27 UTC 2022 - Executing "openroad -exit /openlane/scripts/openroad/resizer_timing.tcl"
+
+Sun Mar 20 08:55:31 UTC 2022 - Executing "openroad -exit /openlane/scripts/openroad/write_verilog.tcl"
+
+Sun Mar 20 08:55:31 UTC 2022 - Executing "sed -i -e {s/\(set ::env(CURRENT_NETLIST)\).*/\1 \/home\/ali11-2000\/FYP\/mpw\/UETRV-ECORE\/openlane\/Motor_Top\/runs\/Motor_Top\/results\/cts\/Motor_Top.resized.v/} /home/ali11-2000/FYP/mpw/UETRV-ECORE/openlane/Motor_Top/runs/Motor_Top/config.tcl"
+
+Sun Mar 20 08:55:31 UTC 2022 - Executing "sed -i -e {s/\(set ::env(PREV_NETLIST)\).*/\1 \/home\/ali11-2000\/FYP\/mpw\/UETRV-ECORE\/openlane\/Motor_Top\/runs\/Motor_Top\/results\/cts\/Motor_Top.v/} /home/ali11-2000/FYP/mpw/UETRV-ECORE/openlane/Motor_Top/runs/Motor_Top/config.tcl"
+
+Sun Mar 20 08:55:31 UTC 2022 - Executing "openroad -python /openlane/scripts/place_diodes.py -l /home/ali11-2000/FYP/mpw/UETRV-ECORE/openlane/Motor_Top/runs/Motor_Top/tmp/merged.lef -id /home/ali11-2000/FYP/mpw/UETRV-ECORE/openlane/Motor_Top/runs/Motor_Top/tmp/cts/13-resizer_timing.def -o /home/ali11-2000/FYP/mpw/UETRV-ECORE/openlane/Motor_Top/runs/Motor_Top/tmp/routing/15-diodes.def --diode-cell sky130_fd_sc_hd__diode_2 --diode-pin DIODE --fake-diode-cell sky130_fd_sc_hd__diode_2 |& tee >&@stdout /home/ali11-2000/FYP/mpw/UETRV-ECORE/openlane/Motor_Top/runs/Motor_Top/logs/routing/15-diodes.log"
+
+Sun Mar 20 08:55:32 UTC 2022 - Executing "openroad -exit /openlane/scripts/openroad/opendp.tcl"
+
+Sun Mar 20 08:55:32 UTC 2022 - Executing "openroad -exit /openlane/scripts/openroad/write_verilog.tcl"
+
+Sun Mar 20 08:55:33 UTC 2022 - Executing "sed -i -e {s/\(set ::env(CURRENT_NETLIST)\).*/\1 \/home\/ali11-2000\/FYP\/mpw\/UETRV-ECORE\/openlane\/Motor_Top\/runs\/Motor_Top\/results\/synthesis\/Motor_Top_diodes.v/} /home/ali11-2000/FYP/mpw/UETRV-ECORE/openlane/Motor_Top/runs/Motor_Top/config.tcl"
+
+Sun Mar 20 08:55:33 UTC 2022 - Executing "sed -i -e {s/\(set ::env(PREV_NETLIST)\).*/\1 \/home\/ali11-2000\/FYP\/mpw\/UETRV-ECORE\/openlane\/Motor_Top\/runs\/Motor_Top\/results\/cts\/Motor_Top.resized.v/} /home/ali11-2000/FYP/mpw/UETRV-ECORE/openlane/Motor_Top/runs/Motor_Top/config.tcl"
+
+Sun Mar 20 08:55:33 UTC 2022 - Executing "openroad -exit /openlane/scripts/openroad/fill.tcl"
+
+Sun Mar 20 08:55:34 UTC 2022 - Executing "openroad -exit /openlane/scripts/openroad/groute.tcl"
+
+Sun Mar 20 08:55:37 UTC 2022 - Executing "openroad -exit /openlane/scripts/openroad/write_verilog.tcl"
+
+Sun Mar 20 08:55:38 UTC 2022 - Executing "sed -i -e {s/\(set ::env(CURRENT_NETLIST)\).*/\1 \/home\/ali11-2000\/FYP\/mpw\/UETRV-ECORE\/openlane\/Motor_Top\/runs\/Motor_Top\/tmp\/routing\/19-global.v/} /home/ali11-2000/FYP/mpw/UETRV-ECORE/openlane/Motor_Top/runs/Motor_Top/config.tcl"
+
+Sun Mar 20 08:55:38 UTC 2022 - Executing "sed -i -e {s/\(set ::env(PREV_NETLIST)\).*/\1 \/home\/ali11-2000\/FYP\/mpw\/UETRV-ECORE\/openlane\/Motor_Top\/runs\/Motor_Top\/results\/synthesis\/Motor_Top_diodes.v/} /home/ali11-2000/FYP/mpw/UETRV-ECORE/openlane/Motor_Top/runs/Motor_Top/config.tcl"
+
+Sun Mar 20 08:55:38 UTC 2022 - Executing "openroad -exit /openlane/scripts/openroad/droute.tcl"
+
+Sun Mar 20 09:00:02 UTC 2022 - Executing "openroad -python /openlane/scripts/tr_drc_to_klayout_drc.py -i /home/ali11-2000/FYP/mpw/UETRV-ECORE/openlane/Motor_Top/runs/Motor_Top/reports/routing/detailed.drc -o /home/ali11-2000/FYP/mpw/UETRV-ECORE/openlane/Motor_Top/runs/Motor_Top/reports/routing/detailed.klayout.xml --design-name Motor_Top"
+
+Sun Mar 20 09:00:02 UTC 2022 - Executing "openroad -exit /openlane/scripts/openroad/write_verilog.tcl"
+
+Sun Mar 20 09:00:03 UTC 2022 - Executing "sed -i -e {s/\(set ::env(CURRENT_NETLIST)\).*/\1 \/home\/ali11-2000\/FYP\/mpw\/UETRV-ECORE\/openlane\/Motor_Top\/runs\/Motor_Top\/tmp\/routing\/21-detailed.v/} /home/ali11-2000/FYP/mpw/UETRV-ECORE/openlane/Motor_Top/runs/Motor_Top/config.tcl"
+
+Sun Mar 20 09:00:03 UTC 2022 - Executing "sed -i -e {s/\(set ::env(PREV_NETLIST)\).*/\1 \/home\/ali11-2000\/FYP\/mpw\/UETRV-ECORE\/openlane\/Motor_Top\/runs\/Motor_Top\/tmp\/routing\/19-global.v/} /home/ali11-2000/FYP/mpw/UETRV-ECORE/openlane/Motor_Top/runs/Motor_Top/config.tcl"
+
+Sun Mar 20 09:00:03 UTC 2022 - Executing "openroad -exit /openlane/scripts/openroad/rcx.tcl"
+
+Sun Mar 20 09:00:07 UTC 2022 - Executing "openroad -exit /openlane/scripts/openroad/rcx.tcl"
+
+Sun Mar 20 09:00:10 UTC 2022 - Executing "openroad -exit /openlane/scripts/openroad/rcx.tcl"
+
+Sun Mar 20 09:00:14 UTC 2022 - Executing "openroad -exit /openlane/scripts/openroad/sta.tcl"
+
+Sun Mar 20 09:00:19 UTC 2022 - Executing "openroad -exit /openlane/scripts/openroad/sta_multi_corner.tcl"
+
