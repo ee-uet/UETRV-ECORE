@@ -256,45 +256,45 @@ module user_project_wrapper #(
 //     .io_cs(imem_io_cs)
 //   );
 
-  //  sky130_sram_2kbyte_1rw1r_32x512_8 imem (
-  //   `ifdef USE_POWER_PINS
-  //       .vccd1(vccd1),
-  //       .vssd1(vssd1),
-  //   `endif
-  //   // Port 0: RW
-  //   .clk0(imem_clock),
-  //   .csb0(imem_io_cs),
-  //   .web0(imem_io_wr_en),
-  //   .wmask0(dmem_io_st_type),
-  //   .addr0(imem_io_addr),
-  //   .din0(imem_io_wdata),
-  //   .dout0(imem_io_rdata)
-  //   ); 
+   sky130_sram_1kbyte_1rw1r_32x256_8 imem (
+    `ifdef USE_POWER_PINS
+        .vccd1(vccd1),
+        .vssd1(vssd1),
+    `endif
+    // Port 0: RW
+    .clk0(imem_clock),
+    .csb0(imem_io_cs),
+    .web0(imem_io_wr_en),
+    .wmask0(dmem_io_st_type),
+    .addr0(imem_io_addr),
+    .din0(imem_io_wdata),
+    .dout0(imem_io_rdata)
+    ); 
 
-//   DMem dmem ( // @[processor_tile.scala 57:32:@12759.4]
-//     .clock(dmem_clock),
-//     .io_addr(dmem_io_addr),
-//     .io_wdata(dmem_io_wdata),
-//     .io_rdata(dmem_io_rdata),
-//     .io_cs(dmem_io_cs),
-//     .io_wr_en(dmem_io_wr_en),
-//     .io_st_type(dmem_io_st_type)
-//   );
+  // DMem dmem ( // @[processor_tile.scala 57:32:@12759.4]
+  //   .clock(dmem_clock),
+  //   .io_addr(dmem_io_addr),
+  //   .io_wdata(dmem_io_wdata),
+  //   .io_rdata(dmem_io_rdata),
+  //   .io_cs(dmem_io_cs),
+  //   .io_wr_en(dmem_io_wr_en),
+  //   .io_st_type(dmem_io_st_type)
+  // );
 
-    // sky130_sram_1kbyte_1rw1r_32x256_8 dmem (
-    // `ifdef USE_POWER_PINS
-    //     .vccd1(vccd1),
-    //     .vssd1(vssd1),
-    // `endif
-    // // Port 0: RW
-    // .clk0(dmem_clock),
-    // .csb0(dmem_io_cs),
-    // .web0(dmem_io_wr_en),
-    // .wmask0(dmem_io_st_type),
-    // .addr0(dmem_io_addr),
-    // .din0(dmem_io_wdata),
-    // .dout0(dmem_io_rdata)
-    // ); 
+    sky130_sram_1kbyte_1rw1r_32x256_8 dmem (
+    `ifdef USE_POWER_PINS
+        .vccd1(vccd1),
+        .vssd1(vssd1),
+    `endif
+    // Port 0: RW
+    .clk0(dmem_clock),
+    .csb0(dmem_io_cs),
+    .web0(dmem_io_wr_en),
+    .wmask0(dmem_io_st_type),
+    .addr0(dmem_io_addr),
+    .din0(dmem_io_wdata),
+    .dout0(dmem_io_rdata)
+    ); 
 
   assign io_uart_tx = wb_inter_connect_io_uart_tx; // @[processor_tile.scala 69:32:@12791.4]
   assign io_spi_cs = wb_inter_connect_io_spi_cs; // @[processor_tile.scala 74:32:@12794.4]
