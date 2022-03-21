@@ -198,8 +198,3 @@ check-pdk:
 help:
 	cd $(CARAVEL_ROOT) && $(MAKE) help
 	@$(MAKE) -pRrq -f $(lastword $(MAKEFILE_LIST)) : 2>/dev/null | awk -v RS= -F: '/^# File/,/^# Finished Make data base/ {if ($$1 !~ "^[#.]") {print $$1}}' | sort | egrep -v -e '^[^[:alnum:]]' -e '^$@$$'
-<<<<<<< HEAD
-=======
-
-
->>>>>>> c8bbbebb7f2e4756c91a6f5fbcd8071567f8f62b
