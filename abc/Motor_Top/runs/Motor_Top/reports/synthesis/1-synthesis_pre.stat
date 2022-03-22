@@ -1,0 +1,28 @@
+
+11. Printing statistics.
+
+=== Motor_Top ===
+
+   Number of wires:               5986
+   Number of wire bits:           6481
+   Number of public wires:          95
+   Number of public wire bits:     590
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:               6387
+     $_ANDNOT_                    2057
+     $_AND_                        146
+     $_DFF_P_                       35
+     $_MUX_                        552
+     $_NAND_                       238
+     $_NOR_                        348
+     $_NOT_                        370
+     $_ORNOT_                      195
+     $_OR_                         510
+     $_SDFFE_PP0P_                 331
+     $_SDFFE_PP1P_                  27
+     $_SDFF_PP0_                    55
+     $_XNOR_                       426
+     $_XOR_                       1097
+

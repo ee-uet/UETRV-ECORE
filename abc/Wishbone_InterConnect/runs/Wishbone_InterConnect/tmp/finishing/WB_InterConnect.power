@@ -1,0 +1,18 @@
+vccd1 power 1.8
+vssd1 power 0.0
+#define std_input min@vssd1 max@vccd1
+clock input std_input
+io_dbus_rd_en input std_input
+io_dbus_wr_en input std_input
+io_motor_ack_i input std_input
+io_spi_miso input std_input
+io_uart_rx input std_input
+reset input std_input
+io_dbus_addr[31:0] input std_input
+io_dbus_ld_type[2:0] input std_input
+io_dbus_st_type[1:0] input std_input
+io_dbus_wdata[31:0] input std_input
+io_dmem_io_rdata[31:0] input std_input
+io_ibus_addr[31:0] input std_input
+io_imem_io_rdata[31:0] input std_input
+io_motor_data_i[31:0] input std_input

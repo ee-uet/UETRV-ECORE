@@ -1,0 +1,19 @@
+OpenROAD 8d53e9b018dec98fa63e907ddeb6c5406f035361 
+This program is licensed under the BSD-3 license. See the LICENSE file for details.
+Components of this program may be licensed under more restrictive licenses which must be honored.
+[INFO ODB-0222] Reading LEF file: /home/ali112000/mpw5/UETRV-ECORE/openlane/Motor_Top/runs/Motor_Top/tmp/merged_unpadded.lef
+[INFO ODB-0223]     Created 13 technology layers
+[INFO ODB-0224]     Created 25 technology vias
+[INFO ODB-0225]     Created 441 library cells
+[INFO ODB-0226] Finished LEF file:  /home/ali112000/mpw5/UETRV-ECORE/openlane/Motor_Top/runs/Motor_Top/tmp/merged_unpadded.lef
+[WARNING ORD-0033] -order_wires is deprecated.
+[INFO ODB-0127] Reading DEF file: /home/ali112000/mpw5/UETRV-ECORE/openlane/Motor_Top/runs/Motor_Top/results/routing/Motor_Top.def
+[INFO ODB-0128] Design: Motor_Top
+[INFO ODB-0130]     Created 99 pins.
+[INFO ODB-0131]     Created 32703 components and 146175 component-terminals.
+[INFO ODB-0132]     Created 2 special nets and 124264 connections.
+[INFO ODB-0133]     Created 6002 nets and 21911 connections.
+[INFO ODB-0134] Finished DEF file: /home/ali112000/mpw5/UETRV-ECORE/openlane/Motor_Top/runs/Motor_Top/results/routing/Motor_Top.def
+Notice 0: Split top of 1913 T shapes.
+[INFO ANT-0001] Found 3 pin violations.
+[INFO ANT-0002] Found 3 net violations in 6002 nets.

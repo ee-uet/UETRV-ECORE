@@ -1,0 +1,154 @@
+Mon Mar 21 23:55:11 UTC 2022 - Executing "/openlane/scripts/mergeLef.py -i /home/ali112000/Desktop/mpw/pdk/sky130A/libs.ref/sky130_fd_sc_hd/techlef/sky130_fd_sc_hd.tlef /home/ali112000/Desktop/mpw/pdk/sky130A/libs.ref/sky130_fd_sc_hd/lef/sky130_fd_sc_hd.lef -o /home/ali112000/mpw5/UETRV-ECORE/openlane/Wishbone_InterConnect/runs/Wishbone_InterConnect/tmp/merged_unpadded.lef |& tee >&@stdout"
+
+Mon Mar 21 23:55:11 UTC 2022 - Executing "openroad -python /openlane/scripts/mergeLib.py --output /home/ali112000/mpw5/UETRV-ECORE/openlane/Wishbone_InterConnect/runs/Wishbone_InterConnect/tmp/synthesis/merged.lib --name sky130A_merged /home/ali112000/Desktop/mpw/pdk/sky130A/libs.ref/sky130_fd_sc_hd/lib/sky130_fd_sc_hd__tt_025C_1v80.lib"
+
+Mon Mar 21 23:55:12 UTC 2022 - Executing "openroad -python /openlane/scripts/libtrim.py --cell-file /home/ali112000/mpw5/UETRV-ECORE/openlane/Wishbone_InterConnect/runs/Wishbone_InterConnect/tmp/synthesis/trimmed.lib.exclude.list --output /home/ali112000/mpw5/UETRV-ECORE/openlane/Wishbone_InterConnect/runs/Wishbone_InterConnect/tmp/synthesis/trimmed.lib /home/ali112000/mpw5/UETRV-ECORE/openlane/Wishbone_InterConnect/runs/Wishbone_InterConnect/tmp/synthesis/merged.lib"
+
+Mon Mar 21 23:55:12 UTC 2022 - Executing "echo {openlane 2022.02.23_02.50.41} > /home/ali112000/mpw5/UETRV-ECORE/openlane/Wishbone_InterConnect/runs/Wishbone_InterConnect/OPENLANE_VERSION"
+
+Mon Mar 21 23:55:12 UTC 2022 - Executing "openroad -python /openlane/scripts/new_tracks.py -i /home/ali112000/Desktop/mpw/pdk/sky130A/libs.tech/openlane/sky130_fd_sc_hd/tracks.info -o /home/ali112000/mpw5/UETRV-ECORE/openlane/Wishbone_InterConnect/runs/Wishbone_InterConnect/tmp/routing/config.tracks"
+
+Mon Mar 21 23:55:12 UTC 2022 - Executing "sed -E {s/^([[:space:]]+)pg_pin(.*)/\1pin\2\n\1    direction : "inout";/g} /home/ali112000/Desktop/mpw/pdk/sky130A/libs.ref/sky130_fd_sc_hd/lib/sky130_fd_sc_hd__tt_025C_1v80.lib > /home/ali112000/mpw5/UETRV-ECORE/openlane/Wishbone_InterConnect/runs/Wishbone_InterConnect/tmp/synthesis/1-sky130_fd_sc_hd__tt_025C_1v80.no_pg.lib"
+
+Mon Mar 21 23:55:13 UTC 2022 - Executing "yosys -c /openlane/scripts/yosys/synth.tcl -l /home/ali112000/mpw5/UETRV-ECORE/openlane/Wishbone_InterConnect/runs/Wishbone_InterConnect/logs/synthesis/1-synthesis.log |& tee >&@stdout"
+
+Mon Mar 21 23:55:41 UTC 2022 - Executing "sed -i -e {s/\(set ::env(CURRENT_NETLIST)\).*/\1 \/home\/ali112000\/mpw5\/UETRV-ECORE\/openlane\/Wishbone_InterConnect\/runs\/Wishbone_InterConnect\/results\/synthesis\/WB_InterConnect.v/} /home/ali112000/mpw5/UETRV-ECORE/openlane/Wishbone_InterConnect/runs/Wishbone_InterConnect/config.tcl"
+
+Mon Mar 21 23:55:41 UTC 2022 - Executing "sed -i -e {s/\(set ::env(PREV_NETLIST)\).*/\1 0/} /home/ali112000/mpw5/UETRV-ECORE/openlane/Wishbone_InterConnect/runs/Wishbone_InterConnect/config.tcl"
+
+Mon Mar 21 23:55:41 UTC 2022 - Executing "sed -i /defparam/d /home/ali112000/mpw5/UETRV-ECORE/openlane/Wishbone_InterConnect/runs/Wishbone_InterConnect/results/synthesis/WB_InterConnect.v"
+
+Mon Mar 21 23:55:41 UTC 2022 - Executing "openroad -exit /openlane/scripts/openroad/sta.tcl"
+
+Mon Mar 21 23:55:42 UTC 2022 - Executing "openroad -exit /openlane/scripts/openroad/floorplan.tcl"
+
+Mon Mar 21 23:55:43 UTC 2022 - Executing "openroad -python /openlane/scripts/defutil.py extract_core_dims --output-data /home/ali112000/mpw5/UETRV-ECORE/openlane/Wishbone_InterConnect/runs/Wishbone_InterConnect/tmp/dimensions.txt --input-lef /home/ali112000/mpw5/UETRV-ECORE/openlane/Wishbone_InterConnect/runs/Wishbone_InterConnect/tmp/merged.lef /home/ali112000/mpw5/UETRV-ECORE/openlane/Wishbone_InterConnect/runs/Wishbone_InterConnect/tmp/floorplan/3-initial_fp.def"
+
+Mon Mar 21 23:55:43 UTC 2022 - Executing "openroad -python /openlane/scripts/io_place.py --input-lef /home/ali112000/mpw5/UETRV-ECORE/openlane/Wishbone_InterConnect/runs/Wishbone_InterConnect/tmp/merged.lef --config /home/ali112000/mpw5/UETRV-ECORE/openlane/Wishbone_InterConnect/pin_order.cfg --hor-layer met3 --ver-layer met2 --ver-width-mult 2 --hor-width-mult 2 --hor-extension -1 --ver-extension -1 --length 4 -o /home/ali112000/mpw5/UETRV-ECORE/openlane/Wishbone_InterConnect/runs/Wishbone_InterConnect/tmp/floorplan/4-io.def /home/ali112000/mpw5/UETRV-ECORE/openlane/Wishbone_InterConnect/runs/Wishbone_InterConnect/tmp/floorplan/3-initial_fp.def |& tee /home/ali112000/mpw5/UETRV-ECORE/openlane/Wishbone_InterConnect/runs/Wishbone_InterConnect/logs/floorplan/4-place_io_ol.log >&@stdout"
+
+Mon Mar 21 23:55:44 UTC 2022 - Executing "openroad -exit /openlane/scripts/openroad/tapcell.tcl"
+
+Mon Mar 21 23:55:44 UTC 2022 - Executing "openroad -exit /openlane/scripts/openroad/pdn.tcl"
+
+Mon Mar 21 23:55:47 UTC 2022 - Executing "openroad -exit /openlane/scripts/openroad/replace.tcl"
+
+Mon Mar 21 23:56:00 UTC 2022 - Executing "openroad -exit /openlane/scripts/openroad/resizer.tcl"
+
+Mon Mar 21 23:56:04 UTC 2022 - Executing "openroad -exit /openlane/scripts/openroad/write_verilog.tcl"
+
+Mon Mar 21 23:56:05 UTC 2022 - Executing "sed -i -e {s/\(set ::env(CURRENT_NETLIST)\).*/\1 \/home\/ali112000\/mpw5\/UETRV-ECORE\/openlane\/Wishbone_InterConnect\/runs\/Wishbone_InterConnect\/results\/placement\/WB_InterConnect.resized.v/} /home/ali112000/mpw5/UETRV-ECORE/openlane/Wishbone_InterConnect/runs/Wishbone_InterConnect/config.tcl"
+
+Mon Mar 21 23:56:05 UTC 2022 - Executing "sed -i -e {s/\(set ::env(PREV_NETLIST)\).*/\1 \/home\/ali112000\/mpw5\/UETRV-ECORE\/openlane\/Wishbone_InterConnect\/runs\/Wishbone_InterConnect\/results\/synthesis\/WB_InterConnect.v/} /home/ali112000/mpw5/UETRV-ECORE/openlane/Wishbone_InterConnect/runs/Wishbone_InterConnect/config.tcl"
+
+Mon Mar 21 23:56:05 UTC 2022 - Executing "openroad -exit /openlane/scripts/openroad/opendp.tcl"
+
+Mon Mar 21 23:56:06 UTC 2022 - Executing "openroad -python /openlane/scripts/libtrim.py --cell-file /home/ali112000/mpw5/UETRV-ECORE/openlane/Wishbone_InterConnect/runs/Wishbone_InterConnect/tmp/cts/cts.lib.exclude.list --output /home/ali112000/mpw5/UETRV-ECORE/openlane/Wishbone_InterConnect/runs/Wishbone_InterConnect/tmp/cts/cts.lib /home/ali112000/Desktop/mpw/pdk/sky130A/libs.ref/sky130_fd_sc_hd/lib/sky130_fd_sc_hd__tt_025C_1v80.lib"
+
+Mon Mar 21 23:56:06 UTC 2022 - Executing "openroad -exit /openlane/scripts/openroad/cts.tcl"
+
+Mon Mar 21 23:56:45 UTC 2022 - Executing "openroad -exit /openlane/scripts/openroad/write_verilog.tcl"
+
+Mon Mar 21 23:56:46 UTC 2022 - Executing "sed -i -e {s/\(set ::env(CURRENT_NETLIST)\).*/\1 \/home\/ali112000\/mpw5\/UETRV-ECORE\/openlane\/Wishbone_InterConnect\/runs\/Wishbone_InterConnect\/results\/cts\/WB_InterConnect.v/} /home/ali112000/mpw5/UETRV-ECORE/openlane/Wishbone_InterConnect/runs/Wishbone_InterConnect/config.tcl"
+
+Mon Mar 21 23:56:46 UTC 2022 - Executing "sed -i -e {s/\(set ::env(PREV_NETLIST)\).*/\1 \/home\/ali112000\/mpw5\/UETRV-ECORE\/openlane\/Wishbone_InterConnect\/runs\/Wishbone_InterConnect\/results\/placement\/WB_InterConnect.resized.v/} /home/ali112000/mpw5/UETRV-ECORE/openlane/Wishbone_InterConnect/runs/Wishbone_InterConnect/config.tcl"
+
+Mon Mar 21 23:56:46 UTC 2022 - Executing "openroad -exit /openlane/scripts/openroad/resizer_timing.tcl"
+
+Mon Mar 21 23:56:49 UTC 2022 - Executing "openroad -exit /openlane/scripts/openroad/write_verilog.tcl"
+
+Mon Mar 21 23:56:49 UTC 2022 - Executing "sed -i -e {s/\(set ::env(CURRENT_NETLIST)\).*/\1 \/home\/ali112000\/mpw5\/UETRV-ECORE\/openlane\/Wishbone_InterConnect\/runs\/Wishbone_InterConnect\/results\/cts\/WB_InterConnect.resized.v/} /home/ali112000/mpw5/UETRV-ECORE/openlane/Wishbone_InterConnect/runs/Wishbone_InterConnect/config.tcl"
+
+Mon Mar 21 23:56:49 UTC 2022 - Executing "sed -i -e {s/\(set ::env(PREV_NETLIST)\).*/\1 \/home\/ali112000\/mpw5\/UETRV-ECORE\/openlane\/Wishbone_InterConnect\/runs\/Wishbone_InterConnect\/results\/cts\/WB_InterConnect.v/} /home/ali112000/mpw5/UETRV-ECORE/openlane/Wishbone_InterConnect/runs/Wishbone_InterConnect/config.tcl"
+
+Mon Mar 21 23:56:49 UTC 2022 - Executing "openroad -python /openlane/scripts/place_diodes.py -l /home/ali112000/mpw5/UETRV-ECORE/openlane/Wishbone_InterConnect/runs/Wishbone_InterConnect/tmp/merged.lef -id /home/ali112000/mpw5/UETRV-ECORE/openlane/Wishbone_InterConnect/runs/Wishbone_InterConnect/tmp/cts/13-resizer_timing.def -o /home/ali112000/mpw5/UETRV-ECORE/openlane/Wishbone_InterConnect/runs/Wishbone_InterConnect/tmp/routing/15-diodes.def --diode-cell sky130_fd_sc_hd__diode_2 --diode-pin DIODE --fake-diode-cell sky130_fd_sc_hd__diode_2 |& tee >&@stdout /home/ali112000/mpw5/UETRV-ECORE/openlane/Wishbone_InterConnect/runs/Wishbone_InterConnect/logs/routing/15-diodes.log"
+
+Mon Mar 21 23:56:50 UTC 2022 - Executing "openroad -exit /openlane/scripts/openroad/opendp.tcl"
+
+Mon Mar 21 23:56:51 UTC 2022 - Executing "openroad -exit /openlane/scripts/openroad/write_verilog.tcl"
+
+Mon Mar 21 23:56:52 UTC 2022 - Executing "sed -i -e {s/\(set ::env(CURRENT_NETLIST)\).*/\1 \/home\/ali112000\/mpw5\/UETRV-ECORE\/openlane\/Wishbone_InterConnect\/runs\/Wishbone_InterConnect\/results\/synthesis\/WB_InterConnect_diodes.v/} /home/ali112000/mpw5/UETRV-ECORE/openlane/Wishbone_InterConnect/runs/Wishbone_InterConnect/config.tcl"
+
+Mon Mar 21 23:56:52 UTC 2022 - Executing "sed -i -e {s/\(set ::env(PREV_NETLIST)\).*/\1 \/home\/ali112000\/mpw5\/UETRV-ECORE\/openlane\/Wishbone_InterConnect\/runs\/Wishbone_InterConnect\/results\/cts\/WB_InterConnect.resized.v/} /home/ali112000/mpw5/UETRV-ECORE/openlane/Wishbone_InterConnect/runs/Wishbone_InterConnect/config.tcl"
+
+Mon Mar 21 23:56:52 UTC 2022 - Executing "openroad -exit /openlane/scripts/openroad/fill.tcl"
+
+Mon Mar 21 23:56:53 UTC 2022 - Executing "openroad -exit /openlane/scripts/openroad/groute.tcl"
+
+Mon Mar 21 23:56:58 UTC 2022 - Executing "openroad -exit /openlane/scripts/openroad/write_verilog.tcl"
+
+Mon Mar 21 23:56:59 UTC 2022 - Executing "sed -i -e {s/\(set ::env(CURRENT_NETLIST)\).*/\1 \/home\/ali112000\/mpw5\/UETRV-ECORE\/openlane\/Wishbone_InterConnect\/runs\/Wishbone_InterConnect\/tmp\/routing\/19-global.v/} /home/ali112000/mpw5/UETRV-ECORE/openlane/Wishbone_InterConnect/runs/Wishbone_InterConnect/config.tcl"
+
+Mon Mar 21 23:56:59 UTC 2022 - Executing "sed -i -e {s/\(set ::env(PREV_NETLIST)\).*/\1 \/home\/ali112000\/mpw5\/UETRV-ECORE\/openlane\/Wishbone_InterConnect\/runs\/Wishbone_InterConnect\/results\/synthesis\/WB_InterConnect_diodes.v/} /home/ali112000/mpw5/UETRV-ECORE/openlane/Wishbone_InterConnect/runs/Wishbone_InterConnect/config.tcl"
+
+Mon Mar 21 23:56:59 UTC 2022 - Executing "openroad -exit /openlane/scripts/openroad/droute.tcl"
+
+Tue Mar 22 00:08:03 UTC 2022 - Executing "openroad -python /openlane/scripts/tr_drc_to_klayout_drc.py -i /home/ali112000/mpw5/UETRV-ECORE/openlane/Wishbone_InterConnect/runs/Wishbone_InterConnect/reports/routing/detailed.drc -o /home/ali112000/mpw5/UETRV-ECORE/openlane/Wishbone_InterConnect/runs/Wishbone_InterConnect/reports/routing/detailed.klayout.xml --design-name WB_InterConnect"
+
+Tue Mar 22 00:08:04 UTC 2022 - Executing "openroad -exit /openlane/scripts/openroad/write_verilog.tcl"
+
+Tue Mar 22 00:08:05 UTC 2022 - Executing "sed -i -e {s/\(set ::env(CURRENT_NETLIST)\).*/\1 \/home\/ali112000\/mpw5\/UETRV-ECORE\/openlane\/Wishbone_InterConnect\/runs\/Wishbone_InterConnect\/tmp\/routing\/21-detailed.v/} /home/ali112000/mpw5/UETRV-ECORE/openlane/Wishbone_InterConnect/runs/Wishbone_InterConnect/config.tcl"
+
+Tue Mar 22 00:08:05 UTC 2022 - Executing "sed -i -e {s/\(set ::env(PREV_NETLIST)\).*/\1 \/home\/ali112000\/mpw5\/UETRV-ECORE\/openlane\/Wishbone_InterConnect\/runs\/Wishbone_InterConnect\/tmp\/routing\/19-global.v/} /home/ali112000/mpw5/UETRV-ECORE/openlane/Wishbone_InterConnect/runs/Wishbone_InterConnect/config.tcl"
+
+Tue Mar 22 00:08:05 UTC 2022 - Executing "openroad -exit /openlane/scripts/openroad/rcx.tcl"
+
+Tue Mar 22 00:08:09 UTC 2022 - Executing "openroad -exit /openlane/scripts/openroad/rcx.tcl"
+
+Tue Mar 22 00:08:13 UTC 2022 - Executing "openroad -exit /openlane/scripts/openroad/rcx.tcl"
+
+Tue Mar 22 00:08:17 UTC 2022 - Executing "openroad -exit /openlane/scripts/openroad/sta.tcl"
+
+Tue Mar 22 00:08:21 UTC 2022 - Executing "openroad -exit /openlane/scripts/openroad/sta_multi_corner.tcl"
+
+Tue Mar 22 00:08:36 UTC 2022 - Executing "magic -noconsole -dnull -rcfile /home/ali112000/Desktop/mpw/pdk/sky130A/libs.tech/magic/sky130A.magicrc /openlane/scripts/magic/mag_gds.tcl </dev/null |& tee >&@stdout /home/ali112000/mpw5/UETRV-ECORE/openlane/Wishbone_InterConnect/runs/Wishbone_InterConnect/logs/finishing/28-gdsii.log"
+
+Tue Mar 22 00:08:42 UTC 2022 - Executing "magic -noconsole -dnull -rcfile /home/ali112000/Desktop/mpw/pdk/sky130A/libs.tech/magic/sky130A.magicrc /openlane/scripts/magic/gds_pointers.tcl </dev/null |& tee >&@stdout /home/ali112000/mpw5/UETRV-ECORE/openlane/Wishbone_InterConnect/runs/Wishbone_InterConnect/logs/finishing/28-gds_ptrs.log"
+
+Tue Mar 22 00:08:47 UTC 2022 - Executing "sed -i -n {/^<< properties >>/,/^<< end >>/p} /home/ali112000/mpw5/UETRV-ECORE/openlane/Wishbone_InterConnect/runs/Wishbone_InterConnect/tmp/finishing/gds_ptrs.mag"
+
+Tue Mar 22 00:08:48 UTC 2022 - Executing "magic -noconsole -dnull -rcfile /home/ali112000/Desktop/mpw/pdk/sky130A/libs.tech/magic/sky130A.magicrc /openlane/scripts/magic/lef.tcl </dev/null |& tee >&@stdout /home/ali112000/mpw5/UETRV-ECORE/openlane/Wishbone_InterConnect/runs/Wishbone_InterConnect/logs/finishing/28-lef.log"
+
+Tue Mar 22 00:09:23 UTC 2022 - Executing "magic -noconsole -dnull -rcfile /home/ali112000/Desktop/mpw/pdk/sky130A/libs.tech/magic/sky130A.magicrc /openlane/scripts/magic/maglef.tcl </dev/null |& tee >&@stdout /home/ali112000/mpw5/UETRV-ECORE/openlane/Wishbone_InterConnect/runs/Wishbone_InterConnect/logs/finishing/28-maglef.log"
+
+Tue Mar 22 00:09:23 UTC 2022 - Executing "klayout -b -rm /openlane/scripts/klayout/def2gds.py -rd out_gds=/home/ali112000/mpw5/UETRV-ECORE/openlane/Wishbone_InterConnect/runs/Wishbone_InterConnect/results/finishing/WB_InterConnect.klayout.gds -rd tech_file=/home/ali112000/Desktop/mpw/pdk/sky130A/libs.tech/klayout/sky130A.lyt -rd design_name=WB_InterConnect -rd in_def=/home/ali112000/mpw5/UETRV-ECORE/openlane/Wishbone_InterConnect/runs/Wishbone_InterConnect/results/routing/WB_InterConnect.def -rd {in_gds=/home/ali112000/Desktop/mpw/pdk/sky130A/libs.ref/sky130_fd_sc_hd/gds/sky130_fd_sc_hd.gds } -rd config_file= -rd seal_gds= -rd lef_file=/home/ali112000/mpw5/UETRV-ECORE/openlane/Wishbone_InterConnect/runs/Wishbone_InterConnect/tmp/merged.lef |& tee >&@stdout /home/ali112000/mpw5/UETRV-ECORE/openlane/Wishbone_InterConnect/runs/Wishbone_InterConnect/logs/finishing/29-gdsii-klayout.log"
+
+Tue Mar 22 00:09:26 UTC 2022 - Executing "bash /openlane/scripts/klayout/xor.sh /home/ali112000/mpw5/UETRV-ECORE/openlane/Wishbone_InterConnect/runs/Wishbone_InterConnect/results/finishing/WB_InterConnect.gds /home/ali112000/mpw5/UETRV-ECORE/openlane/Wishbone_InterConnect/runs/Wishbone_InterConnect/results/finishing/WB_InterConnect.klayout.gds WB_InterConnect /home/ali112000/mpw5/UETRV-ECORE/openlane/Wishbone_InterConnect/runs/Wishbone_InterConnect/reports/finishing/WB_InterConnect.xor.gds |& tee >&@stdout /home/ali112000/mpw5/UETRV-ECORE/openlane/Wishbone_InterConnect/runs/Wishbone_InterConnect/logs/finishing/30-xor.log"
+
+Tue Mar 22 00:10:09 UTC 2022 - Executing "openroad -python /openlane/scripts/parse_klayout_xor_log.py -l /home/ali112000/mpw5/UETRV-ECORE/openlane/Wishbone_InterConnect/runs/Wishbone_InterConnect/logs/finishing/30-xor.log -o /home/ali112000/mpw5/UETRV-ECORE/openlane/Wishbone_InterConnect/runs/Wishbone_InterConnect/reports/finishing/30-xor.rpt"
+
+Tue Mar 22 00:10:09 UTC 2022 - Executing "bash /openlane/scripts/klayout/xor.sh /home/ali112000/mpw5/UETRV-ECORE/openlane/Wishbone_InterConnect/runs/Wishbone_InterConnect/results/finishing/WB_InterConnect.gds /home/ali112000/mpw5/UETRV-ECORE/openlane/Wishbone_InterConnect/runs/Wishbone_InterConnect/results/finishing/WB_InterConnect.klayout.gds WB_InterConnect /home/ali112000/mpw5/UETRV-ECORE/openlane/Wishbone_InterConnect/runs/Wishbone_InterConnect/reports/finishing/WB_InterConnect.xor.xml |& tee >&@stdout /home/ali112000/mpw5/UETRV-ECORE/openlane/Wishbone_InterConnect/runs/Wishbone_InterConnect/logs/finishing/30-xor.log"
+
+Tue Mar 22 00:10:53 UTC 2022 - Executing "openroad -python /openlane/scripts/parse_klayout_xor_log.py -l /home/ali112000/mpw5/UETRV-ECORE/openlane/Wishbone_InterConnect/runs/Wishbone_InterConnect/logs/finishing/30-xor.log -o /home/ali112000/mpw5/UETRV-ECORE/openlane/Wishbone_InterConnect/runs/Wishbone_InterConnect/reports/finishing/30-xor.rpt"
+
+Tue Mar 22 00:10:53 UTC 2022 - Executing "magic -noconsole -dnull -rcfile /home/ali112000/Desktop/mpw/pdk/sky130A/libs.tech/magic/sky130A.magicrc /home/ali112000/mpw5/UETRV-ECORE/openlane/Wishbone_InterConnect/runs/Wishbone_InterConnect/tmp/finishing/spice.tcl </dev/null |& tee >&@stdout /home/ali112000/mpw5/UETRV-ECORE/openlane/Wishbone_InterConnect/runs/Wishbone_InterConnect/logs/finishing/31-spice.log"
+
+Tue Mar 22 00:12:13 UTC 2022 - Executing "openroad -python /openlane/scripts/write_powered_def.py -d /home/ali112000/mpw5/UETRV-ECORE/openlane/Wishbone_InterConnect/runs/Wishbone_InterConnect/results/routing/WB_InterConnect.def -l /home/ali112000/mpw5/UETRV-ECORE/openlane/Wishbone_InterConnect/runs/Wishbone_InterConnect/tmp/merged.lef --power-port vccd1 --ground-port vssd1 --powered-netlist {} -o /home/ali112000/mpw5/UETRV-ECORE/openlane/Wishbone_InterConnect/runs/Wishbone_InterConnect/tmp/finishing/31-powered_def.def |& tee >&@stdout /home/ali112000/mpw5/UETRV-ECORE/openlane/Wishbone_InterConnect/runs/Wishbone_InterConnect/logs/finishing/32-write_powered_def.log"
+
+Tue Mar 22 00:12:17 UTC 2022 - Executing "openroad -exit /openlane/scripts/openroad/write_verilog.tcl"
+
+Tue Mar 22 00:12:19 UTC 2022 - Executing "sed -i -e {s/\(set ::env(CURRENT_NETLIST)\).*/\1 \/home\/ali112000\/mpw5\/UETRV-ECORE\/openlane\/Wishbone_InterConnect\/runs\/Wishbone_InterConnect\/tmp\/finishing\/31-powered_netlist.v/} /home/ali112000/mpw5/UETRV-ECORE/openlane/Wishbone_InterConnect/runs/Wishbone_InterConnect/config.tcl"
+
+Tue Mar 22 00:12:19 UTC 2022 - Executing "sed -i -e {s/\(set ::env(PREV_NETLIST)\).*/\1 \/home\/ali112000\/mpw5\/UETRV-ECORE\/openlane\/Wishbone_InterConnect\/runs\/Wishbone_InterConnect\/tmp\/routing\/21-detailed.v/} /home/ali112000/mpw5/UETRV-ECORE/openlane/Wishbone_InterConnect/runs/Wishbone_InterConnect/config.tcl"
+
+Tue Mar 22 00:12:19 UTC 2022 - Executing "netgen -batch source /home/ali112000/mpw5/UETRV-ECORE/openlane/Wishbone_InterConnect/runs/Wishbone_InterConnect/tmp/finishing/34-setup_file.lef.lvs |& tee >&@stdout /home/ali112000/mpw5/UETRV-ECORE/openlane/Wishbone_InterConnect/runs/Wishbone_InterConnect/logs/finishing/34-lef.log"
+
+Tue Mar 22 00:12:28 UTC 2022 - Executing "magic -noconsole -dnull -rcfile /home/ali112000/Desktop/mpw/pdk/sky130A/libs.tech/magic/sky130A.magicrc /openlane/scripts/magic/drc.tcl </dev/null |& tee >&@stdout /home/ali112000/mpw5/UETRV-ECORE/openlane/Wishbone_InterConnect/runs/Wishbone_InterConnect/logs/finishing/35-drc.log"
+
+Tue Mar 22 00:15:26 UTC 2022 - Executing "openroad -python /openlane/scripts/magic_drc_to_tcl.py -i /home/ali112000/mpw5/UETRV-ECORE/openlane/Wishbone_InterConnect/runs/Wishbone_InterConnect/reports/finishing/drc.rpt -o /home/ali112000/mpw5/UETRV-ECORE/openlane/Wishbone_InterConnect/runs/Wishbone_InterConnect/reports/finishing/drc.tcl"
+
+Tue Mar 22 00:15:26 UTC 2022 - Executing "openroad -python /openlane/scripts/magic_drc_to_tr_drc.py -i /home/ali112000/mpw5/UETRV-ECORE/openlane/Wishbone_InterConnect/runs/Wishbone_InterConnect/reports/finishing/drc.rpt -o /home/ali112000/mpw5/UETRV-ECORE/openlane/Wishbone_InterConnect/runs/Wishbone_InterConnect/reports/finishing/drc.tr"
+
+Tue Mar 22 00:15:27 UTC 2022 - Executing "openroad -python /openlane/scripts/tr_drc_to_klayout_drc.py -i /home/ali112000/mpw5/UETRV-ECORE/openlane/Wishbone_InterConnect/runs/Wishbone_InterConnect/reports/finishing/drc.tr -o /home/ali112000/mpw5/UETRV-ECORE/openlane/Wishbone_InterConnect/runs/Wishbone_InterConnect/reports/finishing/drc.klayout.xml --design-name WB_InterConnect"
+
+Tue Mar 22 00:15:27 UTC 2022 - Executing "openroad -python /openlane/scripts/magic_drc_to_rdb.py --magic_drc_in /home/ali112000/mpw5/UETRV-ECORE/openlane/Wishbone_InterConnect/runs/Wishbone_InterConnect/reports/finishing/drc.rpt --rdb_out /home/ali112000/mpw5/UETRV-ECORE/openlane/Wishbone_InterConnect/runs/Wishbone_InterConnect/reports/finishing/drc.rdb"
+
+Tue Mar 22 00:15:27 UTC 2022 - Executing "openroad -exit /openlane/scripts/openroad/antenna_check.tcl"
+
+Tue Mar 22 00:15:29 UTC 2022 - Executing "awk -v vdd=vccd1 -v gnd=vssd1 -f /openlane/scripts/cvc/sky130A/power.awk /home/ali112000/mpw5/UETRV-ECORE/openlane/Wishbone_InterConnect/runs/Wishbone_InterConnect/tmp/finishing/31-powered_netlist.v > /home/ali112000/mpw5/UETRV-ECORE/openlane/Wishbone_InterConnect/runs/Wishbone_InterConnect/tmp/finishing/WB_InterConnect.power"
+
+Tue Mar 22 00:15:29 UTC 2022 - Executing "awk -f /openlane/scripts/cvc/sky130A/cdl.awk /home/ali112000/Desktop/mpw/pdk/sky130A/libs.ref/sky130_fd_sc_hd/cdl/sky130_fd_sc_hd.cdl /home/ali112000/mpw5/UETRV-ECORE/openlane/Wishbone_InterConnect/runs/Wishbone_InterConnect/results/finishing/WB_InterConnect.lef.spice > /home/ali112000/mpw5/UETRV-ECORE/openlane/Wishbone_InterConnect/runs/Wishbone_InterConnect/tmp/finishing/WB_InterConnect.cdl"
+
+Tue Mar 22 00:15:29 UTC 2022 - Executing "cvc /openlane/scripts/cvc/sky130A/cvcrc.sky130A |& tee >&@stdout /home/ali112000/mpw5/UETRV-ECORE/openlane/Wishbone_InterConnect/runs/Wishbone_InterConnect/logs/finishing/37-erc_screen.log"
+
+Tue Mar 22 00:15:31 UTC 2022 - Executing "openroad -python /openlane/scripts/generate_reports.py -d /home/ali112000/mpw5/UETRV-ECORE/openlane/Wishbone_InterConnect --design_name WB_InterConnect --tag Wishbone_InterConnect --output_file /home/ali112000/mpw5/UETRV-ECORE/openlane/Wishbone_InterConnect/runs/Wishbone_InterConnect/reports/final_summary_report.csv --man_report /home/ali112000/mpw5/UETRV-ECORE/openlane/Wishbone_InterConnect/runs/Wishbone_InterConnect/reports/manufacturability_report.rpt --run_path /home/ali112000/mpw5/UETRV-ECORE/openlane/Wishbone_InterConnect/runs/Wishbone_InterConnect"
+

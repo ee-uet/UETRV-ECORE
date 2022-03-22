@@ -53,6 +53,12 @@ module user_project_wrapper (user_clock2,
  output [31:0] wbs_dat_o;
  input [3:0] wbs_sel_i;
 
+ wire io_uart_txen;
+ wire io_spi_cs_en;
+ wire io_spi_clk_en;
+ wire io_spi_mosi_en;
+ wire io_pwm_high_en;
+ wire io_pwm_low_en;
  wire io_uart_tx;
  wire io_spi_cs;
  wire io_spi_clk;
@@ -351,6 +357,10 @@ module user_project_wrapper (user_clock2,
  wire \imem_io_rdata[7] ;
  wire \imem_io_rdata[8] ;
  wire \imem_io_rdata[9] ;
+ wire \imem_io_st_type[0] ;
+ wire \imem_io_st_type[1] ;
+ wire \imem_io_st_type[2] ;
+ wire \imem_io_st_type[3] ;
  wire \imem_io_wdata[0] ;
  wire \imem_io_wdata[10] ;
  wire \imem_io_wdata[11] ;
@@ -895,7 +905,9 @@ module user_project_wrapper (user_clock2,
     .io_ba_match(motor_io_ba_match),
     .io_motor_irq(core_io_irq_motor_irq),
     .io_pwm_high(io_pwm_high),
+    .io_pwm_high_en(io_pwm_high_en),
     .io_pwm_low(io_pwm_low),
+    .io_pwm_low_en(io_pwm_low_en),
     .io_qei_ch_a(io_in[2]),
     .io_qei_ch_b(io_in[3]),
     .io_wbs_ack_o(motor_io_wbs_ack_o),
@@ -1000,13 +1012,17 @@ module user_project_wrapper (user_clock2,
     .io_motor_ack_i(motor_io_wbs_ack_o),
     .io_motor_addr_sel(motor_io_ba_match),
     .io_spi_clk(io_spi_clk),
+    .io_spi_clk_en(io_spi_clk_en),
     .io_spi_cs(io_spi_cs),
+    .io_spi_cs_en(io_spi_cs_en),
     .io_spi_irq(core_io_irq_spi_irq),
     .io_spi_miso(io_in[1]),
     .io_spi_mosi(io_spi_mosi),
+    .io_spi_mosi_en(io_spi_mosi_en),
     .io_uart_irq(core_io_irq_uart_irq),
     .io_uart_rx(io_in[0]),
     .io_uart_tx(io_uart_tx),
+    .io_uart_txen(io_uart_txen),
     .io_wbm_m2s_stb(motor_io_wbs_m2s_stb),
     .io_wbm_m2s_we(motor_io_wbs_m2s_we),
     .reset(wb_rst_i),
@@ -1294,6 +1310,10 @@ module user_project_wrapper (user_clock2,
     \imem_io_rdata[2] ,
     \imem_io_rdata[1] ,
     \imem_io_rdata[0] }),
+    .io_imem_io_st_type({\imem_io_st_type[3] ,
+    \imem_io_st_type[2] ,
+    \imem_io_st_type[1] ,
+    \imem_io_st_type[0] }),
     .io_imem_io_wdata({\imem_io_wdata[31] ,
     \imem_io_wdata[30] ,
     \imem_io_wdata[29] ,
@@ -1410,6 +1430,12 @@ module user_project_wrapper (user_clock2,
     \motor_io_wbs_m2s_sel[2] ,
     \motor_io_wbs_m2s_sel[1] ,
     \motor_io_wbs_m2s_sel[0] }));
+ assign io_oeb[0] = io_uart_txen;
+ assign io_oeb[1] = io_spi_cs_en;
+ assign io_oeb[2] = io_spi_clk_en;
+ assign io_oeb[3] = io_spi_mosi_en;
+ assign io_oeb[4] = io_pwm_high_en;
+ assign io_oeb[5] = io_pwm_low_en;
  assign io_out[0] = io_uart_tx;
  assign io_out[1] = io_spi_cs;
  assign io_out[2] = io_spi_clk;

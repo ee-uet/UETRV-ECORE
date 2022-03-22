@@ -1,0 +1,13 @@
+vccd1 power 1.8
+vssd1 power 0.0
+#define std_input min@vssd1 max@vccd1
+clock input std_input
+io_ba_match input std_input
+io_qei_ch_a input std_input
+io_qei_ch_b input std_input
+io_wbs_m2s_stb input std_input
+io_wbs_m2s_we input std_input
+reset input std_input
+io_wbs_m2s_addr[15:0] input std_input
+io_wbs_m2s_data[31:0] input std_input
+io_wbs_m2s_sel[3:0] input std_input
