@@ -1,0 +1,6 @@
+<< properties >>
+string FIXED_BBOX 0 0 100000 100000
+string GDS_END 17666050
+string GDS_FILE /home/ali112000/mpw5/UETRV-ECORE/openlane/Motor_Top/runs/Motor_Top/results/finishing/Motor_Top.magic.gds
+string GDS_START 1110772
+<< end >>
