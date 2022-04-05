@@ -53,18 +53,25 @@ module user_project_wrapper (user_clock2,
  output [31:0] wbs_dat_o;
  input [3:0] wbs_sel_i;
 
- wire io_uart_txen;
  wire io_spi_cs_en;
  wire io_spi_clk_en;
  wire io_spi_mosi_en;
- wire io_pwm_high_en;
- wire io_pwm_low_en;
+ wire io_m1_io_pwm_high_en;
+ wire io_m1_io_pwm_low_en;
+ wire io_m2_io_pwm_high_en;
+ wire io_m2_io_pwm_low_en;
+ wire io_m3_io_pwm_high_en;
+ wire io_m3_io_pwm_low_en;
  wire io_uart_tx;
  wire io_spi_cs;
  wire io_spi_clk;
  wire io_spi_mosi;
- wire io_pwm_high;
- wire io_pwm_low;
+ wire io_m1_io_pwm_high;
+ wire io_m1_io_pwm_low;
+ wire io_m2_io_pwm_high;
+ wire io_m2_io_pwm_low;
+ wire io_m3_io_pwm_high;
+ wire io_m3_io_pwm_low;
  wire \core_io_dbus_addr[0] ;
  wire \core_io_dbus_addr[10] ;
  wire \core_io_dbus_addr[11] ;
@@ -234,7 +241,9 @@ module user_project_wrapper (user_clock2,
  wire \core_io_ibus_inst[8] ;
  wire \core_io_ibus_inst[9] ;
  wire core_io_ibus_valid;
- wire core_io_irq_motor_irq;
+ wire core_io_irq_m1_irq;
+ wire core_io_irq_m2_irq;
+ wire core_io_irq_m3_irq;
  wire core_io_irq_spi_irq;
  wire core_io_irq_uart_irq;
  wire \dmem_io_addr[0] ;
@@ -245,6 +254,7 @@ module user_project_wrapper (user_clock2,
  wire \dmem_io_addr[5] ;
  wire \dmem_io_addr[6] ;
  wire \dmem_io_addr[7] ;
+ wire \dmem_io_addr[8] ;
  wire dmem_io_cs;
  wire \dmem_io_rdata[0] ;
  wire \dmem_io_rdata[10] ;
@@ -394,101 +404,172 @@ module user_project_wrapper (user_clock2,
  wire \imem_io_wdata[8] ;
  wire \imem_io_wdata[9] ;
  wire imem_io_wr_en;
- wire motor_io_ba_match;
- wire motor_io_wbs_ack_o;
- wire \motor_io_wbs_data_o[0] ;
- wire \motor_io_wbs_data_o[10] ;
- wire \motor_io_wbs_data_o[11] ;
- wire \motor_io_wbs_data_o[12] ;
- wire \motor_io_wbs_data_o[13] ;
- wire \motor_io_wbs_data_o[14] ;
- wire \motor_io_wbs_data_o[15] ;
- wire \motor_io_wbs_data_o[16] ;
- wire \motor_io_wbs_data_o[17] ;
- wire \motor_io_wbs_data_o[18] ;
- wire \motor_io_wbs_data_o[19] ;
- wire \motor_io_wbs_data_o[1] ;
- wire \motor_io_wbs_data_o[20] ;
- wire \motor_io_wbs_data_o[21] ;
- wire \motor_io_wbs_data_o[22] ;
- wire \motor_io_wbs_data_o[23] ;
- wire \motor_io_wbs_data_o[24] ;
- wire \motor_io_wbs_data_o[25] ;
- wire \motor_io_wbs_data_o[26] ;
- wire \motor_io_wbs_data_o[27] ;
- wire \motor_io_wbs_data_o[28] ;
- wire \motor_io_wbs_data_o[29] ;
- wire \motor_io_wbs_data_o[2] ;
- wire \motor_io_wbs_data_o[30] ;
- wire \motor_io_wbs_data_o[31] ;
- wire \motor_io_wbs_data_o[3] ;
- wire \motor_io_wbs_data_o[4] ;
- wire \motor_io_wbs_data_o[5] ;
- wire \motor_io_wbs_data_o[6] ;
- wire \motor_io_wbs_data_o[7] ;
- wire \motor_io_wbs_data_o[8] ;
- wire \motor_io_wbs_data_o[9] ;
- wire \motor_io_wbs_m2s_addr[0] ;
- wire \motor_io_wbs_m2s_addr[10] ;
- wire \motor_io_wbs_m2s_addr[11] ;
- wire \motor_io_wbs_m2s_addr[12] ;
- wire \motor_io_wbs_m2s_addr[13] ;
- wire \motor_io_wbs_m2s_addr[14] ;
- wire \motor_io_wbs_m2s_addr[15] ;
- wire \motor_io_wbs_m2s_addr[1] ;
- wire \motor_io_wbs_m2s_addr[2] ;
- wire \motor_io_wbs_m2s_addr[3] ;
- wire \motor_io_wbs_m2s_addr[4] ;
- wire \motor_io_wbs_m2s_addr[5] ;
- wire \motor_io_wbs_m2s_addr[6] ;
- wire \motor_io_wbs_m2s_addr[7] ;
- wire \motor_io_wbs_m2s_addr[8] ;
- wire \motor_io_wbs_m2s_addr[9] ;
- wire \motor_io_wbs_m2s_data[0] ;
- wire \motor_io_wbs_m2s_data[10] ;
- wire \motor_io_wbs_m2s_data[11] ;
- wire \motor_io_wbs_m2s_data[12] ;
- wire \motor_io_wbs_m2s_data[13] ;
- wire \motor_io_wbs_m2s_data[14] ;
- wire \motor_io_wbs_m2s_data[15] ;
- wire \motor_io_wbs_m2s_data[16] ;
- wire \motor_io_wbs_m2s_data[17] ;
- wire \motor_io_wbs_m2s_data[18] ;
- wire \motor_io_wbs_m2s_data[19] ;
- wire \motor_io_wbs_m2s_data[1] ;
- wire \motor_io_wbs_m2s_data[20] ;
- wire \motor_io_wbs_m2s_data[21] ;
- wire \motor_io_wbs_m2s_data[22] ;
- wire \motor_io_wbs_m2s_data[23] ;
- wire \motor_io_wbs_m2s_data[24] ;
- wire \motor_io_wbs_m2s_data[25] ;
- wire \motor_io_wbs_m2s_data[26] ;
- wire \motor_io_wbs_m2s_data[27] ;
- wire \motor_io_wbs_m2s_data[28] ;
- wire \motor_io_wbs_m2s_data[29] ;
- wire \motor_io_wbs_m2s_data[2] ;
- wire \motor_io_wbs_m2s_data[30] ;
- wire \motor_io_wbs_m2s_data[31] ;
- wire \motor_io_wbs_m2s_data[3] ;
- wire \motor_io_wbs_m2s_data[4] ;
- wire \motor_io_wbs_m2s_data[5] ;
- wire \motor_io_wbs_m2s_data[6] ;
- wire \motor_io_wbs_m2s_data[7] ;
- wire \motor_io_wbs_m2s_data[8] ;
- wire \motor_io_wbs_m2s_data[9] ;
- wire \motor_io_wbs_m2s_sel[0] ;
- wire \motor_io_wbs_m2s_sel[1] ;
- wire \motor_io_wbs_m2s_sel[2] ;
- wire \motor_io_wbs_m2s_sel[3] ;
- wire motor_io_wbs_m2s_stb;
- wire motor_io_wbs_m2s_we;
+ wire io_uart_tx_en;
+ wire m1_io_ba_match;
+ wire m1_io_wbs_ack_o;
+ wire \m1_io_wbs_data_o[0] ;
+ wire \m1_io_wbs_data_o[10] ;
+ wire \m1_io_wbs_data_o[11] ;
+ wire \m1_io_wbs_data_o[12] ;
+ wire \m1_io_wbs_data_o[13] ;
+ wire \m1_io_wbs_data_o[14] ;
+ wire \m1_io_wbs_data_o[15] ;
+ wire \m1_io_wbs_data_o[16] ;
+ wire \m1_io_wbs_data_o[17] ;
+ wire \m1_io_wbs_data_o[18] ;
+ wire \m1_io_wbs_data_o[19] ;
+ wire \m1_io_wbs_data_o[1] ;
+ wire \m1_io_wbs_data_o[20] ;
+ wire \m1_io_wbs_data_o[21] ;
+ wire \m1_io_wbs_data_o[22] ;
+ wire \m1_io_wbs_data_o[23] ;
+ wire \m1_io_wbs_data_o[24] ;
+ wire \m1_io_wbs_data_o[25] ;
+ wire \m1_io_wbs_data_o[26] ;
+ wire \m1_io_wbs_data_o[27] ;
+ wire \m1_io_wbs_data_o[28] ;
+ wire \m1_io_wbs_data_o[29] ;
+ wire \m1_io_wbs_data_o[2] ;
+ wire \m1_io_wbs_data_o[30] ;
+ wire \m1_io_wbs_data_o[31] ;
+ wire \m1_io_wbs_data_o[3] ;
+ wire \m1_io_wbs_data_o[4] ;
+ wire \m1_io_wbs_data_o[5] ;
+ wire \m1_io_wbs_data_o[6] ;
+ wire \m1_io_wbs_data_o[7] ;
+ wire \m1_io_wbs_data_o[8] ;
+ wire \m1_io_wbs_data_o[9] ;
+ wire \m1_io_wbs_m2s_addr[0] ;
+ wire \m1_io_wbs_m2s_addr[10] ;
+ wire \m1_io_wbs_m2s_addr[11] ;
+ wire \m1_io_wbs_m2s_addr[12] ;
+ wire \m1_io_wbs_m2s_addr[13] ;
+ wire \m1_io_wbs_m2s_addr[14] ;
+ wire \m1_io_wbs_m2s_addr[15] ;
+ wire \m1_io_wbs_m2s_addr[1] ;
+ wire \m1_io_wbs_m2s_addr[2] ;
+ wire \m1_io_wbs_m2s_addr[3] ;
+ wire \m1_io_wbs_m2s_addr[4] ;
+ wire \m1_io_wbs_m2s_addr[5] ;
+ wire \m1_io_wbs_m2s_addr[6] ;
+ wire \m1_io_wbs_m2s_addr[7] ;
+ wire \m1_io_wbs_m2s_addr[8] ;
+ wire \m1_io_wbs_m2s_addr[9] ;
+ wire \m1_io_wbs_m2s_data[0] ;
+ wire \m1_io_wbs_m2s_data[10] ;
+ wire \m1_io_wbs_m2s_data[11] ;
+ wire \m1_io_wbs_m2s_data[12] ;
+ wire \m1_io_wbs_m2s_data[13] ;
+ wire \m1_io_wbs_m2s_data[14] ;
+ wire \m1_io_wbs_m2s_data[15] ;
+ wire \m1_io_wbs_m2s_data[16] ;
+ wire \m1_io_wbs_m2s_data[17] ;
+ wire \m1_io_wbs_m2s_data[18] ;
+ wire \m1_io_wbs_m2s_data[19] ;
+ wire \m1_io_wbs_m2s_data[1] ;
+ wire \m1_io_wbs_m2s_data[20] ;
+ wire \m1_io_wbs_m2s_data[21] ;
+ wire \m1_io_wbs_m2s_data[22] ;
+ wire \m1_io_wbs_m2s_data[23] ;
+ wire \m1_io_wbs_m2s_data[24] ;
+ wire \m1_io_wbs_m2s_data[25] ;
+ wire \m1_io_wbs_m2s_data[26] ;
+ wire \m1_io_wbs_m2s_data[27] ;
+ wire \m1_io_wbs_m2s_data[28] ;
+ wire \m1_io_wbs_m2s_data[29] ;
+ wire \m1_io_wbs_m2s_data[2] ;
+ wire \m1_io_wbs_m2s_data[30] ;
+ wire \m1_io_wbs_m2s_data[31] ;
+ wire \m1_io_wbs_m2s_data[3] ;
+ wire \m1_io_wbs_m2s_data[4] ;
+ wire \m1_io_wbs_m2s_data[5] ;
+ wire \m1_io_wbs_m2s_data[6] ;
+ wire \m1_io_wbs_m2s_data[7] ;
+ wire \m1_io_wbs_m2s_data[8] ;
+ wire \m1_io_wbs_m2s_data[9] ;
+ wire \m1_io_wbs_m2s_sel[0] ;
+ wire \m1_io_wbs_m2s_sel[1] ;
+ wire \m1_io_wbs_m2s_sel[2] ;
+ wire \m1_io_wbs_m2s_sel[3] ;
+ wire m1_io_wbs_m2s_stb;
+ wire m1_io_wbs_m2s_we;
+ wire m2_io_ba_match;
+ wire m2_io_wbs_ack_o;
+ wire \m2_io_wbs_data_o[0] ;
+ wire \m2_io_wbs_data_o[10] ;
+ wire \m2_io_wbs_data_o[11] ;
+ wire \m2_io_wbs_data_o[12] ;
+ wire \m2_io_wbs_data_o[13] ;
+ wire \m2_io_wbs_data_o[14] ;
+ wire \m2_io_wbs_data_o[15] ;
+ wire \m2_io_wbs_data_o[16] ;
+ wire \m2_io_wbs_data_o[17] ;
+ wire \m2_io_wbs_data_o[18] ;
+ wire \m2_io_wbs_data_o[19] ;
+ wire \m2_io_wbs_data_o[1] ;
+ wire \m2_io_wbs_data_o[20] ;
+ wire \m2_io_wbs_data_o[21] ;
+ wire \m2_io_wbs_data_o[22] ;
+ wire \m2_io_wbs_data_o[23] ;
+ wire \m2_io_wbs_data_o[24] ;
+ wire \m2_io_wbs_data_o[25] ;
+ wire \m2_io_wbs_data_o[26] ;
+ wire \m2_io_wbs_data_o[27] ;
+ wire \m2_io_wbs_data_o[28] ;
+ wire \m2_io_wbs_data_o[29] ;
+ wire \m2_io_wbs_data_o[2] ;
+ wire \m2_io_wbs_data_o[30] ;
+ wire \m2_io_wbs_data_o[31] ;
+ wire \m2_io_wbs_data_o[3] ;
+ wire \m2_io_wbs_data_o[4] ;
+ wire \m2_io_wbs_data_o[5] ;
+ wire \m2_io_wbs_data_o[6] ;
+ wire \m2_io_wbs_data_o[7] ;
+ wire \m2_io_wbs_data_o[8] ;
+ wire \m2_io_wbs_data_o[9] ;
+ wire m3_io_ba_match;
+ wire m3_io_wbs_ack_o;
+ wire \m3_io_wbs_data_o[0] ;
+ wire \m3_io_wbs_data_o[10] ;
+ wire \m3_io_wbs_data_o[11] ;
+ wire \m3_io_wbs_data_o[12] ;
+ wire \m3_io_wbs_data_o[13] ;
+ wire \m3_io_wbs_data_o[14] ;
+ wire \m3_io_wbs_data_o[15] ;
+ wire \m3_io_wbs_data_o[16] ;
+ wire \m3_io_wbs_data_o[17] ;
+ wire \m3_io_wbs_data_o[18] ;
+ wire \m3_io_wbs_data_o[19] ;
+ wire \m3_io_wbs_data_o[1] ;
+ wire \m3_io_wbs_data_o[20] ;
+ wire \m3_io_wbs_data_o[21] ;
+ wire \m3_io_wbs_data_o[22] ;
+ wire \m3_io_wbs_data_o[23] ;
+ wire \m3_io_wbs_data_o[24] ;
+ wire \m3_io_wbs_data_o[25] ;
+ wire \m3_io_wbs_data_o[26] ;
+ wire \m3_io_wbs_data_o[27] ;
+ wire \m3_io_wbs_data_o[28] ;
+ wire \m3_io_wbs_data_o[29] ;
+ wire \m3_io_wbs_data_o[2] ;
+ wire \m3_io_wbs_data_o[30] ;
+ wire \m3_io_wbs_data_o[31] ;
+ wire \m3_io_wbs_data_o[3] ;
+ wire \m3_io_wbs_data_o[4] ;
+ wire \m3_io_wbs_data_o[5] ;
+ wire \m3_io_wbs_data_o[6] ;
+ wire \m3_io_wbs_data_o[7] ;
+ wire \m3_io_wbs_data_o[8] ;
+ wire \m3_io_wbs_data_o[9] ;
 
  Core core (.clock(wb_clk_i),
     .io_dbus_rd_en(core_io_dbus_rd_en),
     .io_dbus_valid(core_io_dbus_valid),
     .io_dbus_wr_en(core_io_dbus_wr_en),
     .io_ibus_valid(core_io_ibus_valid),
-    .io_irq_motor_irq(core_io_irq_motor_irq),
+    .io_irq_m1_irq(core_io_irq_m1_irq),
+    .io_irq_m2_irq(core_io_irq_m2_irq),
+    .io_irq_m3_irq(core_io_irq_m3_irq),
     .io_irq_spi_irq(core_io_irq_spi_irq),
     .io_irq_uart_irq(core_io_irq_uart_irq),
     .reset(wb_rst_i),
@@ -659,12 +740,13 @@ module user_project_wrapper (user_clock2,
     \core_io_ibus_inst[2] ,
     \core_io_ibus_inst[1] ,
     \core_io_ibus_inst[0] }));
- sky130_sram_1kbyte_1rw1r_32x256_8 dmem (.csb0(dmem_io_cs),
+ sky130_sram_2kbyte_1rw1r_32x512_8 dmem (.csb0(dmem_io_cs),
     .web0(dmem_io_wr_en),
     .clk0(wb_clk_i),
     .vccd1(vccd1),
     .vssd1(vssd1),
-    .addr0({\dmem_io_addr[7] ,
+    .addr0({\dmem_io_addr[8] ,
+    \dmem_io_addr[7] ,
     \dmem_io_addr[6] ,
     \dmem_io_addr[5] ,
     \dmem_io_addr[4] ,
@@ -679,7 +761,8 @@ module user_project_wrapper (user_clock2,
     _NC5,
     _NC6,
     _NC7,
-    _NC8}),
+    _NC8,
+    _NC9}),
     .din0({\dmem_io_wdata[31] ,
     \dmem_io_wdata[30] ,
     \dmem_io_wdata[29] ,
@@ -744,8 +827,7 @@ module user_project_wrapper (user_clock2,
     \dmem_io_rdata[2] ,
     \dmem_io_rdata[1] ,
     \dmem_io_rdata[0] }),
-    .dout1({_NC9,
-    _NC10,
+    .dout1({_NC10,
     _NC11,
     _NC12,
     _NC13,
@@ -775,17 +857,19 @@ module user_project_wrapper (user_clock2,
     _NC37,
     _NC38,
     _NC39,
-    _NC40}),
+    _NC40,
+    _NC41}),
     .wmask0({\dmem_io_st_type[3] ,
     \dmem_io_st_type[2] ,
     \dmem_io_st_type[1] ,
     \dmem_io_st_type[0] }));
- sky130_sram_1kbyte_1rw1r_32x256_8 imem (.csb0(imem_io_cs),
+ sky130_sram_2kbyte_1rw1r_32x512_8 imem (.csb0(imem_io_cs),
     .web0(imem_io_wr_en),
     .clk0(wb_clk_i),
     .vccd1(vccd1),
     .vssd1(vssd1),
-    .addr0({\imem_io_addr[7] ,
+    .addr0({\imem_io_addr[8] ,
+    \imem_io_addr[7] ,
     \imem_io_addr[6] ,
     \imem_io_addr[5] ,
     \imem_io_addr[4] ,
@@ -793,14 +877,15 @@ module user_project_wrapper (user_clock2,
     \imem_io_addr[2] ,
     \imem_io_addr[1] ,
     \imem_io_addr[0] }),
-    .addr1({_NC41,
-    _NC42,
+    .addr1({_NC42,
     _NC43,
     _NC44,
     _NC45,
     _NC46,
     _NC47,
-    _NC48}),
+    _NC48,
+    _NC49,
+    _NC50}),
     .din0({\imem_io_wdata[31] ,
     \imem_io_wdata[30] ,
     \imem_io_wdata[29] ,
@@ -865,9 +950,7 @@ module user_project_wrapper (user_clock2,
     \imem_io_rdata[2] ,
     \imem_io_rdata[1] ,
     \imem_io_rdata[0] }),
-    .dout1({_NC49,
-    _NC50,
-    _NC51,
+    .dout1({_NC51,
     _NC52,
     _NC53,
     _NC54,
@@ -896,110 +979,310 @@ module user_project_wrapper (user_clock2,
     _NC77,
     _NC78,
     _NC79,
-    _NC80}),
+    _NC80,
+    _NC81,
+    _NC82}),
     .wmask0({\dmem_io_st_type[3] ,
     \dmem_io_st_type[2] ,
     \dmem_io_st_type[1] ,
     \dmem_io_st_type[0] }));
- Motor_Top motor (.clock(wb_clk_i),
-    .io_ba_match(motor_io_ba_match),
-    .io_motor_irq(core_io_irq_motor_irq),
-    .io_pwm_high(io_pwm_high),
-    .io_pwm_high_en(io_pwm_high_en),
-    .io_pwm_low(io_pwm_low),
-    .io_pwm_low_en(io_pwm_low_en),
-    .io_qei_ch_a(io_in[2]),
-    .io_qei_ch_b(io_in[3]),
-    .io_wbs_ack_o(motor_io_wbs_ack_o),
-    .io_wbs_m2s_stb(motor_io_wbs_m2s_stb),
-    .io_wbs_m2s_we(motor_io_wbs_m2s_we),
+ Motor_Top m1 (.clock(wb_clk_i),
+    .io_ba_match(m1_io_ba_match),
+    .io_motor_gpio_pwm_high(io_m1_io_pwm_high),
+    .io_motor_gpio_pwm_high_en(io_m1_io_pwm_high_en),
+    .io_motor_gpio_pwm_low(io_m1_io_pwm_low),
+    .io_motor_gpio_pwm_low_en(io_m1_io_pwm_low_en),
+    .io_motor_gpio_qei_ch_a(io_in[2]),
+    .io_motor_gpio_qei_ch_b(io_in[3]),
+    .io_motor_irq(core_io_irq_m1_irq),
+    .io_wbs_ack_o(m1_io_wbs_ack_o),
+    .io_wbs_m2s_stb(m1_io_wbs_m2s_stb),
+    .io_wbs_m2s_we(m1_io_wbs_m2s_we),
     .reset(wb_rst_i),
     .vccd1(vccd1),
     .vssd1(vssd1),
-    .io_wbs_data_o({\motor_io_wbs_data_o[31] ,
-    \motor_io_wbs_data_o[30] ,
-    \motor_io_wbs_data_o[29] ,
-    \motor_io_wbs_data_o[28] ,
-    \motor_io_wbs_data_o[27] ,
-    \motor_io_wbs_data_o[26] ,
-    \motor_io_wbs_data_o[25] ,
-    \motor_io_wbs_data_o[24] ,
-    \motor_io_wbs_data_o[23] ,
-    \motor_io_wbs_data_o[22] ,
-    \motor_io_wbs_data_o[21] ,
-    \motor_io_wbs_data_o[20] ,
-    \motor_io_wbs_data_o[19] ,
-    \motor_io_wbs_data_o[18] ,
-    \motor_io_wbs_data_o[17] ,
-    \motor_io_wbs_data_o[16] ,
-    \motor_io_wbs_data_o[15] ,
-    \motor_io_wbs_data_o[14] ,
-    \motor_io_wbs_data_o[13] ,
-    \motor_io_wbs_data_o[12] ,
-    \motor_io_wbs_data_o[11] ,
-    \motor_io_wbs_data_o[10] ,
-    \motor_io_wbs_data_o[9] ,
-    \motor_io_wbs_data_o[8] ,
-    \motor_io_wbs_data_o[7] ,
-    \motor_io_wbs_data_o[6] ,
-    \motor_io_wbs_data_o[5] ,
-    \motor_io_wbs_data_o[4] ,
-    \motor_io_wbs_data_o[3] ,
-    \motor_io_wbs_data_o[2] ,
-    \motor_io_wbs_data_o[1] ,
-    \motor_io_wbs_data_o[0] }),
-    .io_wbs_m2s_addr({\motor_io_wbs_m2s_addr[15] ,
-    \motor_io_wbs_m2s_addr[14] ,
-    \motor_io_wbs_m2s_addr[13] ,
-    \motor_io_wbs_m2s_addr[12] ,
-    \motor_io_wbs_m2s_addr[11] ,
-    \motor_io_wbs_m2s_addr[10] ,
-    \motor_io_wbs_m2s_addr[9] ,
-    \motor_io_wbs_m2s_addr[8] ,
-    \motor_io_wbs_m2s_addr[7] ,
-    \motor_io_wbs_m2s_addr[6] ,
-    \motor_io_wbs_m2s_addr[5] ,
-    \motor_io_wbs_m2s_addr[4] ,
-    \motor_io_wbs_m2s_addr[3] ,
-    \motor_io_wbs_m2s_addr[2] ,
-    \motor_io_wbs_m2s_addr[1] ,
-    \motor_io_wbs_m2s_addr[0] }),
-    .io_wbs_m2s_data({\motor_io_wbs_m2s_data[31] ,
-    \motor_io_wbs_m2s_data[30] ,
-    \motor_io_wbs_m2s_data[29] ,
-    \motor_io_wbs_m2s_data[28] ,
-    \motor_io_wbs_m2s_data[27] ,
-    \motor_io_wbs_m2s_data[26] ,
-    \motor_io_wbs_m2s_data[25] ,
-    \motor_io_wbs_m2s_data[24] ,
-    \motor_io_wbs_m2s_data[23] ,
-    \motor_io_wbs_m2s_data[22] ,
-    \motor_io_wbs_m2s_data[21] ,
-    \motor_io_wbs_m2s_data[20] ,
-    \motor_io_wbs_m2s_data[19] ,
-    \motor_io_wbs_m2s_data[18] ,
-    \motor_io_wbs_m2s_data[17] ,
-    \motor_io_wbs_m2s_data[16] ,
-    \motor_io_wbs_m2s_data[15] ,
-    \motor_io_wbs_m2s_data[14] ,
-    \motor_io_wbs_m2s_data[13] ,
-    \motor_io_wbs_m2s_data[12] ,
-    \motor_io_wbs_m2s_data[11] ,
-    \motor_io_wbs_m2s_data[10] ,
-    \motor_io_wbs_m2s_data[9] ,
-    \motor_io_wbs_m2s_data[8] ,
-    \motor_io_wbs_m2s_data[7] ,
-    \motor_io_wbs_m2s_data[6] ,
-    \motor_io_wbs_m2s_data[5] ,
-    \motor_io_wbs_m2s_data[4] ,
-    \motor_io_wbs_m2s_data[3] ,
-    \motor_io_wbs_m2s_data[2] ,
-    \motor_io_wbs_m2s_data[1] ,
-    \motor_io_wbs_m2s_data[0] }),
-    .io_wbs_m2s_sel({\motor_io_wbs_m2s_sel[3] ,
-    \motor_io_wbs_m2s_sel[2] ,
-    \motor_io_wbs_m2s_sel[1] ,
-    \motor_io_wbs_m2s_sel[0] }));
+    .io_wbs_data_o({\m1_io_wbs_data_o[31] ,
+    \m1_io_wbs_data_o[30] ,
+    \m1_io_wbs_data_o[29] ,
+    \m1_io_wbs_data_o[28] ,
+    \m1_io_wbs_data_o[27] ,
+    \m1_io_wbs_data_o[26] ,
+    \m1_io_wbs_data_o[25] ,
+    \m1_io_wbs_data_o[24] ,
+    \m1_io_wbs_data_o[23] ,
+    \m1_io_wbs_data_o[22] ,
+    \m1_io_wbs_data_o[21] ,
+    \m1_io_wbs_data_o[20] ,
+    \m1_io_wbs_data_o[19] ,
+    \m1_io_wbs_data_o[18] ,
+    \m1_io_wbs_data_o[17] ,
+    \m1_io_wbs_data_o[16] ,
+    \m1_io_wbs_data_o[15] ,
+    \m1_io_wbs_data_o[14] ,
+    \m1_io_wbs_data_o[13] ,
+    \m1_io_wbs_data_o[12] ,
+    \m1_io_wbs_data_o[11] ,
+    \m1_io_wbs_data_o[10] ,
+    \m1_io_wbs_data_o[9] ,
+    \m1_io_wbs_data_o[8] ,
+    \m1_io_wbs_data_o[7] ,
+    \m1_io_wbs_data_o[6] ,
+    \m1_io_wbs_data_o[5] ,
+    \m1_io_wbs_data_o[4] ,
+    \m1_io_wbs_data_o[3] ,
+    \m1_io_wbs_data_o[2] ,
+    \m1_io_wbs_data_o[1] ,
+    \m1_io_wbs_data_o[0] }),
+    .io_wbs_m2s_addr({\m1_io_wbs_m2s_addr[15] ,
+    \m1_io_wbs_m2s_addr[14] ,
+    \m1_io_wbs_m2s_addr[13] ,
+    \m1_io_wbs_m2s_addr[12] ,
+    \m1_io_wbs_m2s_addr[11] ,
+    \m1_io_wbs_m2s_addr[10] ,
+    \m1_io_wbs_m2s_addr[9] ,
+    \m1_io_wbs_m2s_addr[8] ,
+    \m1_io_wbs_m2s_addr[7] ,
+    \m1_io_wbs_m2s_addr[6] ,
+    \m1_io_wbs_m2s_addr[5] ,
+    \m1_io_wbs_m2s_addr[4] ,
+    \m1_io_wbs_m2s_addr[3] ,
+    \m1_io_wbs_m2s_addr[2] ,
+    \m1_io_wbs_m2s_addr[1] ,
+    \m1_io_wbs_m2s_addr[0] }),
+    .io_wbs_m2s_data({\m1_io_wbs_m2s_data[31] ,
+    \m1_io_wbs_m2s_data[30] ,
+    \m1_io_wbs_m2s_data[29] ,
+    \m1_io_wbs_m2s_data[28] ,
+    \m1_io_wbs_m2s_data[27] ,
+    \m1_io_wbs_m2s_data[26] ,
+    \m1_io_wbs_m2s_data[25] ,
+    \m1_io_wbs_m2s_data[24] ,
+    \m1_io_wbs_m2s_data[23] ,
+    \m1_io_wbs_m2s_data[22] ,
+    \m1_io_wbs_m2s_data[21] ,
+    \m1_io_wbs_m2s_data[20] ,
+    \m1_io_wbs_m2s_data[19] ,
+    \m1_io_wbs_m2s_data[18] ,
+    \m1_io_wbs_m2s_data[17] ,
+    \m1_io_wbs_m2s_data[16] ,
+    \m1_io_wbs_m2s_data[15] ,
+    \m1_io_wbs_m2s_data[14] ,
+    \m1_io_wbs_m2s_data[13] ,
+    \m1_io_wbs_m2s_data[12] ,
+    \m1_io_wbs_m2s_data[11] ,
+    \m1_io_wbs_m2s_data[10] ,
+    \m1_io_wbs_m2s_data[9] ,
+    \m1_io_wbs_m2s_data[8] ,
+    \m1_io_wbs_m2s_data[7] ,
+    \m1_io_wbs_m2s_data[6] ,
+    \m1_io_wbs_m2s_data[5] ,
+    \m1_io_wbs_m2s_data[4] ,
+    \m1_io_wbs_m2s_data[3] ,
+    \m1_io_wbs_m2s_data[2] ,
+    \m1_io_wbs_m2s_data[1] ,
+    \m1_io_wbs_m2s_data[0] }),
+    .io_wbs_m2s_sel({\m1_io_wbs_m2s_sel[3] ,
+    \m1_io_wbs_m2s_sel[2] ,
+    \m1_io_wbs_m2s_sel[1] ,
+    \m1_io_wbs_m2s_sel[0] }));
+ Motor_Top m2 (.clock(wb_clk_i),
+    .io_ba_match(m2_io_ba_match),
+    .io_motor_gpio_pwm_high(io_m2_io_pwm_high),
+    .io_motor_gpio_pwm_high_en(io_m2_io_pwm_high_en),
+    .io_motor_gpio_pwm_low(io_m2_io_pwm_low),
+    .io_motor_gpio_pwm_low_en(io_m2_io_pwm_low_en),
+    .io_motor_gpio_qei_ch_a(io_in[4]),
+    .io_motor_gpio_qei_ch_b(io_in[5]),
+    .io_motor_irq(core_io_irq_m2_irq),
+    .io_wbs_ack_o(m2_io_wbs_ack_o),
+    .io_wbs_m2s_stb(m1_io_wbs_m2s_stb),
+    .io_wbs_m2s_we(m1_io_wbs_m2s_we),
+    .reset(wb_rst_i),
+    .vccd1(vccd1),
+    .vssd1(vssd1),
+    .io_wbs_data_o({\m2_io_wbs_data_o[31] ,
+    \m2_io_wbs_data_o[30] ,
+    \m2_io_wbs_data_o[29] ,
+    \m2_io_wbs_data_o[28] ,
+    \m2_io_wbs_data_o[27] ,
+    \m2_io_wbs_data_o[26] ,
+    \m2_io_wbs_data_o[25] ,
+    \m2_io_wbs_data_o[24] ,
+    \m2_io_wbs_data_o[23] ,
+    \m2_io_wbs_data_o[22] ,
+    \m2_io_wbs_data_o[21] ,
+    \m2_io_wbs_data_o[20] ,
+    \m2_io_wbs_data_o[19] ,
+    \m2_io_wbs_data_o[18] ,
+    \m2_io_wbs_data_o[17] ,
+    \m2_io_wbs_data_o[16] ,
+    \m2_io_wbs_data_o[15] ,
+    \m2_io_wbs_data_o[14] ,
+    \m2_io_wbs_data_o[13] ,
+    \m2_io_wbs_data_o[12] ,
+    \m2_io_wbs_data_o[11] ,
+    \m2_io_wbs_data_o[10] ,
+    \m2_io_wbs_data_o[9] ,
+    \m2_io_wbs_data_o[8] ,
+    \m2_io_wbs_data_o[7] ,
+    \m2_io_wbs_data_o[6] ,
+    \m2_io_wbs_data_o[5] ,
+    \m2_io_wbs_data_o[4] ,
+    \m2_io_wbs_data_o[3] ,
+    \m2_io_wbs_data_o[2] ,
+    \m2_io_wbs_data_o[1] ,
+    \m2_io_wbs_data_o[0] }),
+    .io_wbs_m2s_addr({\m1_io_wbs_m2s_addr[15] ,
+    \m1_io_wbs_m2s_addr[14] ,
+    \m1_io_wbs_m2s_addr[13] ,
+    \m1_io_wbs_m2s_addr[12] ,
+    \m1_io_wbs_m2s_addr[11] ,
+    \m1_io_wbs_m2s_addr[10] ,
+    \m1_io_wbs_m2s_addr[9] ,
+    \m1_io_wbs_m2s_addr[8] ,
+    \m1_io_wbs_m2s_addr[7] ,
+    \m1_io_wbs_m2s_addr[6] ,
+    \m1_io_wbs_m2s_addr[5] ,
+    \m1_io_wbs_m2s_addr[4] ,
+    \m1_io_wbs_m2s_addr[3] ,
+    \m1_io_wbs_m2s_addr[2] ,
+    \m1_io_wbs_m2s_addr[1] ,
+    \m1_io_wbs_m2s_addr[0] }),
+    .io_wbs_m2s_data({\m1_io_wbs_m2s_data[31] ,
+    \m1_io_wbs_m2s_data[30] ,
+    \m1_io_wbs_m2s_data[29] ,
+    \m1_io_wbs_m2s_data[28] ,
+    \m1_io_wbs_m2s_data[27] ,
+    \m1_io_wbs_m2s_data[26] ,
+    \m1_io_wbs_m2s_data[25] ,
+    \m1_io_wbs_m2s_data[24] ,
+    \m1_io_wbs_m2s_data[23] ,
+    \m1_io_wbs_m2s_data[22] ,
+    \m1_io_wbs_m2s_data[21] ,
+    \m1_io_wbs_m2s_data[20] ,
+    \m1_io_wbs_m2s_data[19] ,
+    \m1_io_wbs_m2s_data[18] ,
+    \m1_io_wbs_m2s_data[17] ,
+    \m1_io_wbs_m2s_data[16] ,
+    \m1_io_wbs_m2s_data[15] ,
+    \m1_io_wbs_m2s_data[14] ,
+    \m1_io_wbs_m2s_data[13] ,
+    \m1_io_wbs_m2s_data[12] ,
+    \m1_io_wbs_m2s_data[11] ,
+    \m1_io_wbs_m2s_data[10] ,
+    \m1_io_wbs_m2s_data[9] ,
+    \m1_io_wbs_m2s_data[8] ,
+    \m1_io_wbs_m2s_data[7] ,
+    \m1_io_wbs_m2s_data[6] ,
+    \m1_io_wbs_m2s_data[5] ,
+    \m1_io_wbs_m2s_data[4] ,
+    \m1_io_wbs_m2s_data[3] ,
+    \m1_io_wbs_m2s_data[2] ,
+    \m1_io_wbs_m2s_data[1] ,
+    \m1_io_wbs_m2s_data[0] }),
+    .io_wbs_m2s_sel({\m1_io_wbs_m2s_sel[3] ,
+    \m1_io_wbs_m2s_sel[2] ,
+    \m1_io_wbs_m2s_sel[1] ,
+    \m1_io_wbs_m2s_sel[0] }));
+ Motor_Top m3 (.clock(wb_clk_i),
+    .io_ba_match(m3_io_ba_match),
+    .io_motor_gpio_pwm_high(io_m3_io_pwm_high),
+    .io_motor_gpio_pwm_high_en(io_m3_io_pwm_high_en),
+    .io_motor_gpio_pwm_low(io_m3_io_pwm_low),
+    .io_motor_gpio_pwm_low_en(io_m3_io_pwm_low_en),
+    .io_motor_gpio_qei_ch_a(io_in[6]),
+    .io_motor_gpio_qei_ch_b(io_in[7]),
+    .io_motor_irq(core_io_irq_m3_irq),
+    .io_wbs_ack_o(m3_io_wbs_ack_o),
+    .io_wbs_m2s_stb(m1_io_wbs_m2s_stb),
+    .io_wbs_m2s_we(m1_io_wbs_m2s_we),
+    .reset(wb_rst_i),
+    .vccd1(vccd1),
+    .vssd1(vssd1),
+    .io_wbs_data_o({\m3_io_wbs_data_o[31] ,
+    \m3_io_wbs_data_o[30] ,
+    \m3_io_wbs_data_o[29] ,
+    \m3_io_wbs_data_o[28] ,
+    \m3_io_wbs_data_o[27] ,
+    \m3_io_wbs_data_o[26] ,
+    \m3_io_wbs_data_o[25] ,
+    \m3_io_wbs_data_o[24] ,
+    \m3_io_wbs_data_o[23] ,
+    \m3_io_wbs_data_o[22] ,
+    \m3_io_wbs_data_o[21] ,
+    \m3_io_wbs_data_o[20] ,
+    \m3_io_wbs_data_o[19] ,
+    \m3_io_wbs_data_o[18] ,
+    \m3_io_wbs_data_o[17] ,
+    \m3_io_wbs_data_o[16] ,
+    \m3_io_wbs_data_o[15] ,
+    \m3_io_wbs_data_o[14] ,
+    \m3_io_wbs_data_o[13] ,
+    \m3_io_wbs_data_o[12] ,
+    \m3_io_wbs_data_o[11] ,
+    \m3_io_wbs_data_o[10] ,
+    \m3_io_wbs_data_o[9] ,
+    \m3_io_wbs_data_o[8] ,
+    \m3_io_wbs_data_o[7] ,
+    \m3_io_wbs_data_o[6] ,
+    \m3_io_wbs_data_o[5] ,
+    \m3_io_wbs_data_o[4] ,
+    \m3_io_wbs_data_o[3] ,
+    \m3_io_wbs_data_o[2] ,
+    \m3_io_wbs_data_o[1] ,
+    \m3_io_wbs_data_o[0] }),
+    .io_wbs_m2s_addr({\m1_io_wbs_m2s_addr[15] ,
+    \m1_io_wbs_m2s_addr[14] ,
+    \m1_io_wbs_m2s_addr[13] ,
+    \m1_io_wbs_m2s_addr[12] ,
+    \m1_io_wbs_m2s_addr[11] ,
+    \m1_io_wbs_m2s_addr[10] ,
+    \m1_io_wbs_m2s_addr[9] ,
+    \m1_io_wbs_m2s_addr[8] ,
+    \m1_io_wbs_m2s_addr[7] ,
+    \m1_io_wbs_m2s_addr[6] ,
+    \m1_io_wbs_m2s_addr[5] ,
+    \m1_io_wbs_m2s_addr[4] ,
+    \m1_io_wbs_m2s_addr[3] ,
+    \m1_io_wbs_m2s_addr[2] ,
+    \m1_io_wbs_m2s_addr[1] ,
+    \m1_io_wbs_m2s_addr[0] }),
+    .io_wbs_m2s_data({\m1_io_wbs_m2s_data[31] ,
+    \m1_io_wbs_m2s_data[30] ,
+    \m1_io_wbs_m2s_data[29] ,
+    \m1_io_wbs_m2s_data[28] ,
+    \m1_io_wbs_m2s_data[27] ,
+    \m1_io_wbs_m2s_data[26] ,
+    \m1_io_wbs_m2s_data[25] ,
+    \m1_io_wbs_m2s_data[24] ,
+    \m1_io_wbs_m2s_data[23] ,
+    \m1_io_wbs_m2s_data[22] ,
+    \m1_io_wbs_m2s_data[21] ,
+    \m1_io_wbs_m2s_data[20] ,
+    \m1_io_wbs_m2s_data[19] ,
+    \m1_io_wbs_m2s_data[18] ,
+    \m1_io_wbs_m2s_data[17] ,
+    \m1_io_wbs_m2s_data[16] ,
+    \m1_io_wbs_m2s_data[15] ,
+    \m1_io_wbs_m2s_data[14] ,
+    \m1_io_wbs_m2s_data[13] ,
+    \m1_io_wbs_m2s_data[12] ,
+    \m1_io_wbs_m2s_data[11] ,
+    \m1_io_wbs_m2s_data[10] ,
+    \m1_io_wbs_m2s_data[9] ,
+    \m1_io_wbs_m2s_data[8] ,
+    \m1_io_wbs_m2s_data[7] ,
+    \m1_io_wbs_m2s_data[6] ,
+    \m1_io_wbs_m2s_data[5] ,
+    \m1_io_wbs_m2s_data[4] ,
+    \m1_io_wbs_m2s_data[3] ,
+    \m1_io_wbs_m2s_data[2] ,
+    \m1_io_wbs_m2s_data[1] ,
+    \m1_io_wbs_m2s_data[0] }),
+    .io_wbs_m2s_sel({\m1_io_wbs_m2s_sel[3] ,
+    \m1_io_wbs_m2s_sel[2] ,
+    \m1_io_wbs_m2s_sel[1] ,
+    \m1_io_wbs_m2s_sel[0] }));
  WB_InterConnect wb_inter_connect (.clock(wb_clk_i),
     .io_dbus_rd_en(core_io_dbus_rd_en),
     .io_dbus_valid(core_io_dbus_valid),
@@ -1009,8 +1292,12 @@ module user_project_wrapper (user_clock2,
     .io_ibus_valid(core_io_ibus_valid),
     .io_imem_io_cs(imem_io_cs),
     .io_imem_io_wr_en(imem_io_wr_en),
-    .io_motor_ack_i(motor_io_wbs_ack_o),
-    .io_motor_addr_sel(motor_io_ba_match),
+    .io_m1_ack_i(m1_io_wbs_ack_o),
+    .io_m1_addr_sel(m1_io_ba_match),
+    .io_m2_ack_i(m2_io_wbs_ack_o),
+    .io_m2_addr_sel(m2_io_ba_match),
+    .io_m3_ack_i(m3_io_wbs_ack_o),
+    .io_m3_addr_sel(m3_io_ba_match),
     .io_spi_clk(io_spi_clk),
     .io_spi_clk_en(io_spi_clk_en),
     .io_spi_cs(io_spi_cs),
@@ -1022,9 +1309,9 @@ module user_project_wrapper (user_clock2,
     .io_uart_irq(core_io_irq_uart_irq),
     .io_uart_rx(io_in[0]),
     .io_uart_tx(io_uart_tx),
-    .io_uart_txen(io_uart_txen),
-    .io_wbm_m2s_stb(motor_io_wbs_m2s_stb),
-    .io_wbm_m2s_we(motor_io_wbs_m2s_we),
+    .io_uart_tx_en(io_uart_tx_en),
+    .io_wbm_m2s_stb(m1_io_wbs_m2s_stb),
+    .io_wbm_m2s_we(m1_io_wbs_m2s_we),
     .reset(wb_rst_i),
     .vccd1(vccd1),
     .vssd1(vssd1),
@@ -1129,7 +1416,8 @@ module user_project_wrapper (user_clock2,
     \core_io_dbus_wdata[2] ,
     \core_io_dbus_wdata[1] ,
     \core_io_dbus_wdata[0] }),
-    .io_dmem_io_addr({\dmem_io_addr[7] ,
+    .io_dmem_io_addr({\dmem_io_addr[8] ,
+    \dmem_io_addr[7] ,
     \dmem_io_addr[6] ,
     \dmem_io_addr[5] ,
     \dmem_io_addr[4] ,
@@ -1346,100 +1634,171 @@ module user_project_wrapper (user_clock2,
     \imem_io_wdata[2] ,
     \imem_io_wdata[1] ,
     \imem_io_wdata[0] }),
-    .io_motor_data_i({\motor_io_wbs_data_o[31] ,
-    \motor_io_wbs_data_o[30] ,
-    \motor_io_wbs_data_o[29] ,
-    \motor_io_wbs_data_o[28] ,
-    \motor_io_wbs_data_o[27] ,
-    \motor_io_wbs_data_o[26] ,
-    \motor_io_wbs_data_o[25] ,
-    \motor_io_wbs_data_o[24] ,
-    \motor_io_wbs_data_o[23] ,
-    \motor_io_wbs_data_o[22] ,
-    \motor_io_wbs_data_o[21] ,
-    \motor_io_wbs_data_o[20] ,
-    \motor_io_wbs_data_o[19] ,
-    \motor_io_wbs_data_o[18] ,
-    \motor_io_wbs_data_o[17] ,
-    \motor_io_wbs_data_o[16] ,
-    \motor_io_wbs_data_o[15] ,
-    \motor_io_wbs_data_o[14] ,
-    \motor_io_wbs_data_o[13] ,
-    \motor_io_wbs_data_o[12] ,
-    \motor_io_wbs_data_o[11] ,
-    \motor_io_wbs_data_o[10] ,
-    \motor_io_wbs_data_o[9] ,
-    \motor_io_wbs_data_o[8] ,
-    \motor_io_wbs_data_o[7] ,
-    \motor_io_wbs_data_o[6] ,
-    \motor_io_wbs_data_o[5] ,
-    \motor_io_wbs_data_o[4] ,
-    \motor_io_wbs_data_o[3] ,
-    \motor_io_wbs_data_o[2] ,
-    \motor_io_wbs_data_o[1] ,
-    \motor_io_wbs_data_o[0] }),
-    .io_wbm_m2s_addr({\motor_io_wbs_m2s_addr[15] ,
-    \motor_io_wbs_m2s_addr[14] ,
-    \motor_io_wbs_m2s_addr[13] ,
-    \motor_io_wbs_m2s_addr[12] ,
-    \motor_io_wbs_m2s_addr[11] ,
-    \motor_io_wbs_m2s_addr[10] ,
-    \motor_io_wbs_m2s_addr[9] ,
-    \motor_io_wbs_m2s_addr[8] ,
-    \motor_io_wbs_m2s_addr[7] ,
-    \motor_io_wbs_m2s_addr[6] ,
-    \motor_io_wbs_m2s_addr[5] ,
-    \motor_io_wbs_m2s_addr[4] ,
-    \motor_io_wbs_m2s_addr[3] ,
-    \motor_io_wbs_m2s_addr[2] ,
-    \motor_io_wbs_m2s_addr[1] ,
-    \motor_io_wbs_m2s_addr[0] }),
-    .io_wbm_m2s_data({\motor_io_wbs_m2s_data[31] ,
-    \motor_io_wbs_m2s_data[30] ,
-    \motor_io_wbs_m2s_data[29] ,
-    \motor_io_wbs_m2s_data[28] ,
-    \motor_io_wbs_m2s_data[27] ,
-    \motor_io_wbs_m2s_data[26] ,
-    \motor_io_wbs_m2s_data[25] ,
-    \motor_io_wbs_m2s_data[24] ,
-    \motor_io_wbs_m2s_data[23] ,
-    \motor_io_wbs_m2s_data[22] ,
-    \motor_io_wbs_m2s_data[21] ,
-    \motor_io_wbs_m2s_data[20] ,
-    \motor_io_wbs_m2s_data[19] ,
-    \motor_io_wbs_m2s_data[18] ,
-    \motor_io_wbs_m2s_data[17] ,
-    \motor_io_wbs_m2s_data[16] ,
-    \motor_io_wbs_m2s_data[15] ,
-    \motor_io_wbs_m2s_data[14] ,
-    \motor_io_wbs_m2s_data[13] ,
-    \motor_io_wbs_m2s_data[12] ,
-    \motor_io_wbs_m2s_data[11] ,
-    \motor_io_wbs_m2s_data[10] ,
-    \motor_io_wbs_m2s_data[9] ,
-    \motor_io_wbs_m2s_data[8] ,
-    \motor_io_wbs_m2s_data[7] ,
-    \motor_io_wbs_m2s_data[6] ,
-    \motor_io_wbs_m2s_data[5] ,
-    \motor_io_wbs_m2s_data[4] ,
-    \motor_io_wbs_m2s_data[3] ,
-    \motor_io_wbs_m2s_data[2] ,
-    \motor_io_wbs_m2s_data[1] ,
-    \motor_io_wbs_m2s_data[0] }),
-    .io_wbm_m2s_sel({\motor_io_wbs_m2s_sel[3] ,
-    \motor_io_wbs_m2s_sel[2] ,
-    \motor_io_wbs_m2s_sel[1] ,
-    \motor_io_wbs_m2s_sel[0] }));
- assign io_oeb[0] = io_uart_txen;
+    .io_m1_data_i({\m1_io_wbs_data_o[31] ,
+    \m1_io_wbs_data_o[30] ,
+    \m1_io_wbs_data_o[29] ,
+    \m1_io_wbs_data_o[28] ,
+    \m1_io_wbs_data_o[27] ,
+    \m1_io_wbs_data_o[26] ,
+    \m1_io_wbs_data_o[25] ,
+    \m1_io_wbs_data_o[24] ,
+    \m1_io_wbs_data_o[23] ,
+    \m1_io_wbs_data_o[22] ,
+    \m1_io_wbs_data_o[21] ,
+    \m1_io_wbs_data_o[20] ,
+    \m1_io_wbs_data_o[19] ,
+    \m1_io_wbs_data_o[18] ,
+    \m1_io_wbs_data_o[17] ,
+    \m1_io_wbs_data_o[16] ,
+    \m1_io_wbs_data_o[15] ,
+    \m1_io_wbs_data_o[14] ,
+    \m1_io_wbs_data_o[13] ,
+    \m1_io_wbs_data_o[12] ,
+    \m1_io_wbs_data_o[11] ,
+    \m1_io_wbs_data_o[10] ,
+    \m1_io_wbs_data_o[9] ,
+    \m1_io_wbs_data_o[8] ,
+    \m1_io_wbs_data_o[7] ,
+    \m1_io_wbs_data_o[6] ,
+    \m1_io_wbs_data_o[5] ,
+    \m1_io_wbs_data_o[4] ,
+    \m1_io_wbs_data_o[3] ,
+    \m1_io_wbs_data_o[2] ,
+    \m1_io_wbs_data_o[1] ,
+    \m1_io_wbs_data_o[0] }),
+    .io_m2_data_i({\m2_io_wbs_data_o[31] ,
+    \m2_io_wbs_data_o[30] ,
+    \m2_io_wbs_data_o[29] ,
+    \m2_io_wbs_data_o[28] ,
+    \m2_io_wbs_data_o[27] ,
+    \m2_io_wbs_data_o[26] ,
+    \m2_io_wbs_data_o[25] ,
+    \m2_io_wbs_data_o[24] ,
+    \m2_io_wbs_data_o[23] ,
+    \m2_io_wbs_data_o[22] ,
+    \m2_io_wbs_data_o[21] ,
+    \m2_io_wbs_data_o[20] ,
+    \m2_io_wbs_data_o[19] ,
+    \m2_io_wbs_data_o[18] ,
+    \m2_io_wbs_data_o[17] ,
+    \m2_io_wbs_data_o[16] ,
+    \m2_io_wbs_data_o[15] ,
+    \m2_io_wbs_data_o[14] ,
+    \m2_io_wbs_data_o[13] ,
+    \m2_io_wbs_data_o[12] ,
+    \m2_io_wbs_data_o[11] ,
+    \m2_io_wbs_data_o[10] ,
+    \m2_io_wbs_data_o[9] ,
+    \m2_io_wbs_data_o[8] ,
+    \m2_io_wbs_data_o[7] ,
+    \m2_io_wbs_data_o[6] ,
+    \m2_io_wbs_data_o[5] ,
+    \m2_io_wbs_data_o[4] ,
+    \m2_io_wbs_data_o[3] ,
+    \m2_io_wbs_data_o[2] ,
+    \m2_io_wbs_data_o[1] ,
+    \m2_io_wbs_data_o[0] }),
+    .io_m3_data_i({\m3_io_wbs_data_o[31] ,
+    \m3_io_wbs_data_o[30] ,
+    \m3_io_wbs_data_o[29] ,
+    \m3_io_wbs_data_o[28] ,
+    \m3_io_wbs_data_o[27] ,
+    \m3_io_wbs_data_o[26] ,
+    \m3_io_wbs_data_o[25] ,
+    \m3_io_wbs_data_o[24] ,
+    \m3_io_wbs_data_o[23] ,
+    \m3_io_wbs_data_o[22] ,
+    \m3_io_wbs_data_o[21] ,
+    \m3_io_wbs_data_o[20] ,
+    \m3_io_wbs_data_o[19] ,
+    \m3_io_wbs_data_o[18] ,
+    \m3_io_wbs_data_o[17] ,
+    \m3_io_wbs_data_o[16] ,
+    \m3_io_wbs_data_o[15] ,
+    \m3_io_wbs_data_o[14] ,
+    \m3_io_wbs_data_o[13] ,
+    \m3_io_wbs_data_o[12] ,
+    \m3_io_wbs_data_o[11] ,
+    \m3_io_wbs_data_o[10] ,
+    \m3_io_wbs_data_o[9] ,
+    \m3_io_wbs_data_o[8] ,
+    \m3_io_wbs_data_o[7] ,
+    \m3_io_wbs_data_o[6] ,
+    \m3_io_wbs_data_o[5] ,
+    \m3_io_wbs_data_o[4] ,
+    \m3_io_wbs_data_o[3] ,
+    \m3_io_wbs_data_o[2] ,
+    \m3_io_wbs_data_o[1] ,
+    \m3_io_wbs_data_o[0] }),
+    .io_wbm_m2s_addr({\m1_io_wbs_m2s_addr[15] ,
+    \m1_io_wbs_m2s_addr[14] ,
+    \m1_io_wbs_m2s_addr[13] ,
+    \m1_io_wbs_m2s_addr[12] ,
+    \m1_io_wbs_m2s_addr[11] ,
+    \m1_io_wbs_m2s_addr[10] ,
+    \m1_io_wbs_m2s_addr[9] ,
+    \m1_io_wbs_m2s_addr[8] ,
+    \m1_io_wbs_m2s_addr[7] ,
+    \m1_io_wbs_m2s_addr[6] ,
+    \m1_io_wbs_m2s_addr[5] ,
+    \m1_io_wbs_m2s_addr[4] ,
+    \m1_io_wbs_m2s_addr[3] ,
+    \m1_io_wbs_m2s_addr[2] ,
+    \m1_io_wbs_m2s_addr[1] ,
+    \m1_io_wbs_m2s_addr[0] }),
+    .io_wbm_m2s_data({\m1_io_wbs_m2s_data[31] ,
+    \m1_io_wbs_m2s_data[30] ,
+    \m1_io_wbs_m2s_data[29] ,
+    \m1_io_wbs_m2s_data[28] ,
+    \m1_io_wbs_m2s_data[27] ,
+    \m1_io_wbs_m2s_data[26] ,
+    \m1_io_wbs_m2s_data[25] ,
+    \m1_io_wbs_m2s_data[24] ,
+    \m1_io_wbs_m2s_data[23] ,
+    \m1_io_wbs_m2s_data[22] ,
+    \m1_io_wbs_m2s_data[21] ,
+    \m1_io_wbs_m2s_data[20] ,
+    \m1_io_wbs_m2s_data[19] ,
+    \m1_io_wbs_m2s_data[18] ,
+    \m1_io_wbs_m2s_data[17] ,
+    \m1_io_wbs_m2s_data[16] ,
+    \m1_io_wbs_m2s_data[15] ,
+    \m1_io_wbs_m2s_data[14] ,
+    \m1_io_wbs_m2s_data[13] ,
+    \m1_io_wbs_m2s_data[12] ,
+    \m1_io_wbs_m2s_data[11] ,
+    \m1_io_wbs_m2s_data[10] ,
+    \m1_io_wbs_m2s_data[9] ,
+    \m1_io_wbs_m2s_data[8] ,
+    \m1_io_wbs_m2s_data[7] ,
+    \m1_io_wbs_m2s_data[6] ,
+    \m1_io_wbs_m2s_data[5] ,
+    \m1_io_wbs_m2s_data[4] ,
+    \m1_io_wbs_m2s_data[3] ,
+    \m1_io_wbs_m2s_data[2] ,
+    \m1_io_wbs_m2s_data[1] ,
+    \m1_io_wbs_m2s_data[0] }),
+    .io_wbm_m2s_sel({\m1_io_wbs_m2s_sel[3] ,
+    \m1_io_wbs_m2s_sel[2] ,
+    \m1_io_wbs_m2s_sel[1] ,
+    \m1_io_wbs_m2s_sel[0] }));
  assign io_oeb[1] = io_spi_cs_en;
  assign io_oeb[2] = io_spi_clk_en;
  assign io_oeb[3] = io_spi_mosi_en;
- assign io_oeb[4] = io_pwm_high_en;
- assign io_oeb[5] = io_pwm_low_en;
+ assign io_oeb[4] = io_m1_io_pwm_high_en;
+ assign io_oeb[5] = io_m1_io_pwm_low_en;
+ assign io_oeb[6] = io_m2_io_pwm_high_en;
+ assign io_oeb[7] = io_m2_io_pwm_low_en;
+ assign io_oeb[8] = io_m3_io_pwm_high_en;
+ assign io_oeb[9] = io_m3_io_pwm_low_en;
  assign io_out[0] = io_uart_tx;
  assign io_out[1] = io_spi_cs;
  assign io_out[2] = io_spi_clk;
  assign io_out[3] = io_spi_mosi;
- assign io_out[4] = io_pwm_high;
- assign io_out[5] = io_pwm_low;
+ assign io_out[4] = io_m1_io_pwm_high;
+ assign io_out[5] = io_m1_io_pwm_low;
+ assign io_out[6] = io_m2_io_pwm_high;
+ assign io_out[7] = io_m2_io_pwm_low;
+ assign io_out[8] = io_m3_io_pwm_high;
+ assign io_out[9] = io_m3_io_pwm_low;
 endmodule
