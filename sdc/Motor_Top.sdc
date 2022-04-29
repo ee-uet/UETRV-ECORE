@@ -1,6 +1,6 @@
 ###############################################################################
 # Created by write_sdc
-# Mon Mar 21 23:43:39 2022
+# Tue Apr  5 07:41:19 2022
 ###############################################################################
 current_design Motor_Top
 ###############################################################################
@@ -11,8 +11,8 @@ set_clock_transition 0.1500 [get_clocks {clock}]
 set_clock_uncertainty 0.2500 clock
 set_propagated_clock [get_clocks {clock}]
 set_input_delay 4.0000 -clock [get_clocks {clock}] -add_delay [get_ports {io_ba_match}]
-set_input_delay 4.0000 -clock [get_clocks {clock}] -add_delay [get_ports {io_qei_ch_a}]
-set_input_delay 4.0000 -clock [get_clocks {clock}] -add_delay [get_ports {io_qei_ch_b}]
+set_input_delay 4.0000 -clock [get_clocks {clock}] -add_delay [get_ports {io_motor_gpio_qei_ch_a}]
+set_input_delay 4.0000 -clock [get_clocks {clock}] -add_delay [get_ports {io_motor_gpio_qei_ch_b}]
 set_input_delay 4.0000 -clock [get_clocks {clock}] -add_delay [get_ports {io_wbs_m2s_addr[0]}]
 set_input_delay 4.0000 -clock [get_clocks {clock}] -add_delay [get_ports {io_wbs_m2s_addr[10]}]
 set_input_delay 4.0000 -clock [get_clocks {clock}] -add_delay [get_ports {io_wbs_m2s_addr[11]}]
@@ -68,11 +68,11 @@ set_input_delay 4.0000 -clock [get_clocks {clock}] -add_delay [get_ports {io_wbs
 set_input_delay 4.0000 -clock [get_clocks {clock}] -add_delay [get_ports {io_wbs_m2s_stb}]
 set_input_delay 4.0000 -clock [get_clocks {clock}] -add_delay [get_ports {io_wbs_m2s_we}]
 set_input_delay 4.0000 -clock [get_clocks {clock}] -add_delay [get_ports {reset}]
+set_output_delay 4.0000 -clock [get_clocks {clock}] -add_delay [get_ports {io_motor_gpio_pwm_high}]
+set_output_delay 4.0000 -clock [get_clocks {clock}] -add_delay [get_ports {io_motor_gpio_pwm_high_en}]
+set_output_delay 4.0000 -clock [get_clocks {clock}] -add_delay [get_ports {io_motor_gpio_pwm_low}]
+set_output_delay 4.0000 -clock [get_clocks {clock}] -add_delay [get_ports {io_motor_gpio_pwm_low_en}]
 set_output_delay 4.0000 -clock [get_clocks {clock}] -add_delay [get_ports {io_motor_irq}]
-set_output_delay 4.0000 -clock [get_clocks {clock}] -add_delay [get_ports {io_pwm_high}]
-set_output_delay 4.0000 -clock [get_clocks {clock}] -add_delay [get_ports {io_pwm_high_en}]
-set_output_delay 4.0000 -clock [get_clocks {clock}] -add_delay [get_ports {io_pwm_low}]
-set_output_delay 4.0000 -clock [get_clocks {clock}] -add_delay [get_ports {io_pwm_low_en}]
 set_output_delay 4.0000 -clock [get_clocks {clock}] -add_delay [get_ports {io_wbs_ack_o}]
 set_output_delay 4.0000 -clock [get_clocks {clock}] -add_delay [get_ports {io_wbs_data_o[0]}]
 set_output_delay 4.0000 -clock [get_clocks {clock}] -add_delay [get_ports {io_wbs_data_o[10]}]
@@ -109,11 +109,11 @@ set_output_delay 4.0000 -clock [get_clocks {clock}] -add_delay [get_ports {io_wb
 ###############################################################################
 # Environment
 ###############################################################################
+set_load -pin_load 0.0334 [get_ports {io_motor_gpio_pwm_high}]
+set_load -pin_load 0.0334 [get_ports {io_motor_gpio_pwm_high_en}]
+set_load -pin_load 0.0334 [get_ports {io_motor_gpio_pwm_low}]
+set_load -pin_load 0.0334 [get_ports {io_motor_gpio_pwm_low_en}]
 set_load -pin_load 0.0334 [get_ports {io_motor_irq}]
-set_load -pin_load 0.0334 [get_ports {io_pwm_high}]
-set_load -pin_load 0.0334 [get_ports {io_pwm_high_en}]
-set_load -pin_load 0.0334 [get_ports {io_pwm_low}]
-set_load -pin_load 0.0334 [get_ports {io_pwm_low_en}]
 set_load -pin_load 0.0334 [get_ports {io_wbs_ack_o}]
 set_load -pin_load 0.0334 [get_ports {io_wbs_data_o[31]}]
 set_load -pin_load 0.0334 [get_ports {io_wbs_data_o[30]}]
@@ -149,8 +149,8 @@ set_load -pin_load 0.0334 [get_ports {io_wbs_data_o[1]}]
 set_load -pin_load 0.0334 [get_ports {io_wbs_data_o[0]}]
 set_driving_cell -lib_cell sky130_fd_sc_hd__inv_2 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {clock}]
 set_driving_cell -lib_cell sky130_fd_sc_hd__inv_2 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {io_ba_match}]
-set_driving_cell -lib_cell sky130_fd_sc_hd__inv_2 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {io_qei_ch_a}]
-set_driving_cell -lib_cell sky130_fd_sc_hd__inv_2 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {io_qei_ch_b}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_2 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {io_motor_gpio_qei_ch_a}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_2 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {io_motor_gpio_qei_ch_b}]
 set_driving_cell -lib_cell sky130_fd_sc_hd__inv_2 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {io_wbs_m2s_stb}]
 set_driving_cell -lib_cell sky130_fd_sc_hd__inv_2 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {io_wbs_m2s_we}]
 set_driving_cell -lib_cell sky130_fd_sc_hd__inv_2 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {reset}]

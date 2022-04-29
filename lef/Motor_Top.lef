@@ -6,13 +6,13 @@ MACRO Motor_Top
   CLASS BLOCK ;
   FOREIGN Motor_Top ;
   ORIGIN 0.000 0.000 ;
-  SIZE 500.000 BY 500.000 ;
+  SIZE 550.000 BY 550.000 ;
   PIN clock
     DIRECTION INPUT ;
     USE SIGNAL ;
     PORT
       LAYER met2 ;
-        RECT 24.930 496.000 25.210 500.000 ;
+        RECT 30.450 546.000 30.730 550.000 ;
     END
   END clock
   PIN io_ba_match
@@ -20,95 +20,95 @@ MACRO Motor_Top
     USE SIGNAL ;
     PORT
       LAYER met3 ;
-        RECT 0.000 425.040 4.000 425.640 ;
+        RECT 0.000 447.480 4.000 448.080 ;
     END
   END io_ba_match
+  PIN io_motor_gpio_pwm_high
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 21.250 0.000 21.530 4.000 ;
+    END
+  END io_motor_gpio_pwm_high
+  PIN io_motor_gpio_pwm_high_en
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 63.570 0.000 63.850 4.000 ;
+    END
+  END io_motor_gpio_pwm_high_en
+  PIN io_motor_gpio_pwm_low
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 105.890 0.000 106.170 4.000 ;
+    END
+  END io_motor_gpio_pwm_low
+  PIN io_motor_gpio_pwm_low_en
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 148.210 0.000 148.490 4.000 ;
+    END
+  END io_motor_gpio_pwm_low_en
+  PIN io_motor_gpio_qei_ch_a
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 190.530 0.000 190.810 4.000 ;
+    END
+  END io_motor_gpio_qei_ch_a
+  PIN io_motor_gpio_qei_ch_b
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 232.850 0.000 233.130 4.000 ;
+    END
+  END io_motor_gpio_qei_ch_b
   PIN io_motor_irq
     DIRECTION OUTPUT TRISTATE ;
     USE SIGNAL ;
     PORT
       LAYER met2 ;
-        RECT 104.050 0.000 104.330 4.000 ;
+        RECT 275.170 0.000 275.450 4.000 ;
     END
   END io_motor_irq
-  PIN io_pwm_high
-    DIRECTION OUTPUT TRISTATE ;
-    USE SIGNAL ;
-    PORT
-      LAYER met3 ;
-        RECT 496.000 22.480 500.000 23.080 ;
-    END
-  END io_pwm_high
-  PIN io_pwm_high_en
-    DIRECTION OUTPUT TRISTATE ;
-    USE SIGNAL ;
-    PORT
-      LAYER met3 ;
-        RECT 496.000 112.920 500.000 113.520 ;
-    END
-  END io_pwm_high_en
-  PIN io_pwm_low
-    DIRECTION OUTPUT TRISTATE ;
-    USE SIGNAL ;
-    PORT
-      LAYER met3 ;
-        RECT 496.000 67.360 500.000 67.960 ;
-    END
-  END io_pwm_low
-  PIN io_pwm_low_en
-    DIRECTION OUTPUT TRISTATE ;
-    USE SIGNAL ;
-    PORT
-      LAYER met2 ;
-        RECT 124.750 496.000 125.030 500.000 ;
-    END
-  END io_pwm_low_en
-  PIN io_qei_ch_a
-    DIRECTION INPUT ;
-    USE SIGNAL ;
-    PORT
-      LAYER met2 ;
-        RECT 20.790 0.000 21.070 4.000 ;
-    END
-  END io_qei_ch_a
-  PIN io_qei_ch_b
-    DIRECTION INPUT ;
-    USE SIGNAL ;
-    PORT
-      LAYER met2 ;
-        RECT 62.190 0.000 62.470 4.000 ;
-    END
-  END io_qei_ch_b
   PIN io_wbs_ack_o
     DIRECTION OUTPUT TRISTATE ;
     USE SIGNAL ;
     PORT
       LAYER met3 ;
-        RECT 496.000 158.480 500.000 159.080 ;
+        RECT 546.000 34.040 550.000 34.640 ;
     END
   END io_wbs_ack_o
   PIN io_wbs_data_o[0]
     DIRECTION OUTPUT TRISTATE ;
     USE SIGNAL ;
     PORT
-      LAYER met2 ;
-        RECT 174.890 496.000 175.170 500.000 ;
+      LAYER met3 ;
+        RECT 546.000 102.720 550.000 103.320 ;
     END
   END io_wbs_data_o[0]
   PIN io_wbs_data_o[10]
     DIRECTION OUTPUT TRISTATE ;
     USE SIGNAL ;
     PORT
-      LAYER met2 ;
-        RECT 228.710 0.000 228.990 4.000 ;
+      LAYER met3 ;
+        RECT 0.000 480.120 4.000 480.720 ;
     END
   END io_wbs_data_o[10]
   PIN io_wbs_data_o[11]
     DIRECTION OUTPUT TRISTATE ;
     USE SIGNAL ;
     PORT
-      LAYER met3 ;
-        RECT 496.000 340.040 500.000 340.640 ;
+      LAYER met2 ;
+        RECT 317.490 0.000 317.770 4.000 ;
     END
   END io_wbs_data_o[11]
   PIN io_wbs_data_o[12]
@@ -116,7 +116,7 @@ MACRO Motor_Top
     USE SIGNAL ;
     PORT
       LAYER met2 ;
-        RECT 270.570 0.000 270.850 4.000 ;
+        RECT 213.530 546.000 213.810 550.000 ;
     END
   END io_wbs_data_o[12]
   PIN io_wbs_data_o[13]
@@ -124,7 +124,7 @@ MACRO Motor_Top
     USE SIGNAL ;
     PORT
       LAYER met2 ;
-        RECT 312.430 0.000 312.710 4.000 ;
+        RECT 359.810 0.000 360.090 4.000 ;
     END
   END io_wbs_data_o[13]
   PIN io_wbs_data_o[14]
@@ -132,7 +132,7 @@ MACRO Motor_Top
     USE SIGNAL ;
     PORT
       LAYER met3 ;
-        RECT 0.000 440.680 4.000 441.280 ;
+        RECT 546.000 514.800 550.000 515.400 ;
     END
   END io_wbs_data_o[14]
   PIN io_wbs_data_o[15]
@@ -140,7 +140,7 @@ MACRO Motor_Top
     USE SIGNAL ;
     PORT
       LAYER met2 ;
-        RECT 374.530 496.000 374.810 500.000 ;
+        RECT 274.710 546.000 274.990 550.000 ;
     END
   END io_wbs_data_o[15]
   PIN io_wbs_data_o[16]
@@ -148,7 +148,7 @@ MACRO Motor_Top
     USE SIGNAL ;
     PORT
       LAYER met2 ;
-        RECT 353.830 0.000 354.110 4.000 ;
+        RECT 402.130 0.000 402.410 4.000 ;
     END
   END io_wbs_data_o[16]
   PIN io_wbs_data_o[17]
@@ -156,23 +156,23 @@ MACRO Motor_Top
     USE SIGNAL ;
     PORT
       LAYER met3 ;
-        RECT 0.000 448.160 4.000 448.760 ;
+        RECT 0.000 488.280 4.000 488.880 ;
     END
   END io_wbs_data_o[17]
   PIN io_wbs_data_o[18]
     DIRECTION OUTPUT TRISTATE ;
     USE SIGNAL ;
     PORT
-      LAYER met2 ;
-        RECT 395.690 0.000 395.970 4.000 ;
+      LAYER met3 ;
+        RECT 0.000 496.440 4.000 497.040 ;
     END
   END io_wbs_data_o[18]
   PIN io_wbs_data_o[19]
     DIRECTION OUTPUT TRISTATE ;
     USE SIGNAL ;
     PORT
-      LAYER met3 ;
-        RECT 0.000 456.320 4.000 456.920 ;
+      LAYER met2 ;
+        RECT 335.890 546.000 336.170 550.000 ;
     END
   END io_wbs_data_o[19]
   PIN io_wbs_data_o[1]
@@ -180,15 +180,15 @@ MACRO Motor_Top
     USE SIGNAL ;
     PORT
       LAYER met3 ;
-        RECT 0.000 432.520 4.000 433.120 ;
+        RECT 546.000 171.400 550.000 172.000 ;
     END
   END io_wbs_data_o[1]
   PIN io_wbs_data_o[20]
     DIRECTION OUTPUT TRISTATE ;
     USE SIGNAL ;
     PORT
-      LAYER met3 ;
-        RECT 0.000 463.800 4.000 464.400 ;
+      LAYER met2 ;
+        RECT 444.450 0.000 444.730 4.000 ;
     END
   END io_wbs_data_o[20]
   PIN io_wbs_data_o[21]
@@ -196,7 +196,7 @@ MACRO Motor_Top
     USE SIGNAL ;
     PORT
       LAYER met2 ;
-        RECT 424.670 496.000 424.950 500.000 ;
+        RECT 397.070 546.000 397.350 550.000 ;
     END
   END io_wbs_data_o[21]
   PIN io_wbs_data_o[22]
@@ -204,23 +204,23 @@ MACRO Motor_Top
     USE SIGNAL ;
     PORT
       LAYER met3 ;
-        RECT 0.000 471.960 4.000 472.560 ;
+        RECT 0.000 504.600 4.000 505.200 ;
     END
   END io_wbs_data_o[22]
   PIN io_wbs_data_o[23]
     DIRECTION OUTPUT TRISTATE ;
     USE SIGNAL ;
     PORT
-      LAYER met3 ;
-        RECT 496.000 385.600 500.000 386.200 ;
+      LAYER met2 ;
+        RECT 486.770 0.000 487.050 4.000 ;
     END
   END io_wbs_data_o[23]
   PIN io_wbs_data_o[24]
     DIRECTION OUTPUT TRISTATE ;
     USE SIGNAL ;
     PORT
-      LAYER met2 ;
-        RECT 437.090 0.000 437.370 4.000 ;
+      LAYER met3 ;
+        RECT 0.000 512.760 4.000 513.360 ;
     END
   END io_wbs_data_o[24]
   PIN io_wbs_data_o[25]
@@ -228,7 +228,7 @@ MACRO Motor_Top
     USE SIGNAL ;
     PORT
       LAYER met3 ;
-        RECT 0.000 479.440 4.000 480.040 ;
+        RECT 0.000 520.920 4.000 521.520 ;
     END
   END io_wbs_data_o[25]
   PIN io_wbs_data_o[26]
@@ -236,23 +236,23 @@ MACRO Motor_Top
     USE SIGNAL ;
     PORT
       LAYER met3 ;
-        RECT 0.000 487.600 4.000 488.200 ;
+        RECT 0.000 529.080 4.000 529.680 ;
     END
   END io_wbs_data_o[26]
   PIN io_wbs_data_o[27]
     DIRECTION OUTPUT TRISTATE ;
     USE SIGNAL ;
     PORT
-      LAYER met3 ;
-        RECT 0.000 495.080 4.000 495.680 ;
+      LAYER met2 ;
+        RECT 458.250 546.000 458.530 550.000 ;
     END
   END io_wbs_data_o[27]
   PIN io_wbs_data_o[28]
     DIRECTION OUTPUT TRISTATE ;
     USE SIGNAL ;
     PORT
-      LAYER met2 ;
-        RECT 478.950 0.000 479.230 4.000 ;
+      LAYER met3 ;
+        RECT 0.000 537.240 4.000 537.840 ;
     END
   END io_wbs_data_o[28]
   PIN io_wbs_data_o[29]
@@ -260,23 +260,23 @@ MACRO Motor_Top
     USE SIGNAL ;
     PORT
       LAYER met2 ;
-        RECT 474.810 496.000 475.090 500.000 ;
+        RECT 529.090 0.000 529.370 4.000 ;
     END
   END io_wbs_data_o[29]
   PIN io_wbs_data_o[2]
     DIRECTION OUTPUT TRISTATE ;
     USE SIGNAL ;
     PORT
-      LAYER met2 ;
-        RECT 224.570 496.000 224.850 500.000 ;
+      LAYER met3 ;
+        RECT 0.000 455.640 4.000 456.240 ;
     END
   END io_wbs_data_o[2]
   PIN io_wbs_data_o[30]
     DIRECTION OUTPUT TRISTATE ;
     USE SIGNAL ;
     PORT
-      LAYER met3 ;
-        RECT 496.000 431.160 500.000 431.760 ;
+      LAYER met2 ;
+        RECT 519.430 546.000 519.710 550.000 ;
     END
   END io_wbs_data_o[30]
   PIN io_wbs_data_o[31]
@@ -284,7 +284,7 @@ MACRO Motor_Top
     USE SIGNAL ;
     PORT
       LAYER met3 ;
-        RECT 496.000 476.720 500.000 477.320 ;
+        RECT 0.000 545.400 4.000 546.000 ;
     END
   END io_wbs_data_o[31]
   PIN io_wbs_data_o[3]
@@ -292,15 +292,15 @@ MACRO Motor_Top
     USE SIGNAL ;
     PORT
       LAYER met2 ;
-        RECT 274.710 496.000 274.990 500.000 ;
+        RECT 152.350 546.000 152.630 550.000 ;
     END
   END io_wbs_data_o[3]
   PIN io_wbs_data_o[4]
     DIRECTION OUTPUT TRISTATE ;
     USE SIGNAL ;
     PORT
-      LAYER met2 ;
-        RECT 324.850 496.000 325.130 500.000 ;
+      LAYER met3 ;
+        RECT 546.000 240.080 550.000 240.680 ;
     END
   END io_wbs_data_o[4]
   PIN io_wbs_data_o[5]
@@ -308,7 +308,7 @@ MACRO Motor_Top
     USE SIGNAL ;
     PORT
       LAYER met3 ;
-        RECT 496.000 204.040 500.000 204.640 ;
+        RECT 546.000 308.760 550.000 309.360 ;
     END
   END io_wbs_data_o[5]
   PIN io_wbs_data_o[6]
@@ -316,15 +316,15 @@ MACRO Motor_Top
     USE SIGNAL ;
     PORT
       LAYER met3 ;
-        RECT 496.000 249.600 500.000 250.200 ;
+        RECT 0.000 463.800 4.000 464.400 ;
     END
   END io_wbs_data_o[6]
   PIN io_wbs_data_o[7]
     DIRECTION OUTPUT TRISTATE ;
     USE SIGNAL ;
     PORT
-      LAYER met2 ;
-        RECT 145.450 0.000 145.730 4.000 ;
+      LAYER met3 ;
+        RECT 0.000 471.960 4.000 472.560 ;
     END
   END io_wbs_data_o[7]
   PIN io_wbs_data_o[8]
@@ -332,15 +332,15 @@ MACRO Motor_Top
     USE SIGNAL ;
     PORT
       LAYER met3 ;
-        RECT 496.000 294.480 500.000 295.080 ;
+        RECT 546.000 377.440 550.000 378.040 ;
     END
   END io_wbs_data_o[8]
   PIN io_wbs_data_o[9]
     DIRECTION OUTPUT TRISTATE ;
     USE SIGNAL ;
     PORT
-      LAYER met2 ;
-        RECT 187.310 0.000 187.590 4.000 ;
+      LAYER met3 ;
+        RECT 546.000 446.120 550.000 446.720 ;
     END
   END io_wbs_data_o[9]
   PIN io_wbs_m2s_addr[0]
@@ -348,7 +348,7 @@ MACRO Motor_Top
     USE SIGNAL ;
     PORT
       LAYER met3 ;
-        RECT 0.000 18.400 4.000 19.000 ;
+        RECT 0.000 20.440 4.000 21.040 ;
     END
   END io_wbs_m2s_addr[0]
   PIN io_wbs_m2s_addr[10]
@@ -356,7 +356,7 @@ MACRO Motor_Top
     USE SIGNAL ;
     PORT
       LAYER met3 ;
-        RECT 0.000 206.080 4.000 206.680 ;
+        RECT 0.000 216.960 4.000 217.560 ;
     END
   END io_wbs_m2s_addr[10]
   PIN io_wbs_m2s_addr[11]
@@ -364,7 +364,7 @@ MACRO Motor_Top
     USE SIGNAL ;
     PORT
       LAYER met3 ;
-        RECT 0.000 221.720 4.000 222.320 ;
+        RECT 0.000 233.960 4.000 234.560 ;
     END
   END io_wbs_m2s_addr[11]
   PIN io_wbs_m2s_addr[12]
@@ -372,7 +372,7 @@ MACRO Motor_Top
     USE SIGNAL ;
     PORT
       LAYER met3 ;
-        RECT 0.000 237.360 4.000 237.960 ;
+        RECT 0.000 250.280 4.000 250.880 ;
     END
   END io_wbs_m2s_addr[12]
   PIN io_wbs_m2s_addr[13]
@@ -380,7 +380,7 @@ MACRO Motor_Top
     USE SIGNAL ;
     PORT
       LAYER met3 ;
-        RECT 0.000 253.000 4.000 253.600 ;
+        RECT 0.000 266.600 4.000 267.200 ;
     END
   END io_wbs_m2s_addr[13]
   PIN io_wbs_m2s_addr[14]
@@ -388,7 +388,7 @@ MACRO Motor_Top
     USE SIGNAL ;
     PORT
       LAYER met3 ;
-        RECT 0.000 268.640 4.000 269.240 ;
+        RECT 0.000 282.920 4.000 283.520 ;
     END
   END io_wbs_m2s_addr[14]
   PIN io_wbs_m2s_addr[15]
@@ -396,7 +396,7 @@ MACRO Motor_Top
     USE SIGNAL ;
     PORT
       LAYER met3 ;
-        RECT 0.000 284.280 4.000 284.880 ;
+        RECT 0.000 299.240 4.000 299.840 ;
     END
   END io_wbs_m2s_addr[15]
   PIN io_wbs_m2s_addr[1]
@@ -404,7 +404,7 @@ MACRO Motor_Top
     USE SIGNAL ;
     PORT
       LAYER met3 ;
-        RECT 0.000 42.200 4.000 42.800 ;
+        RECT 0.000 44.920 4.000 45.520 ;
     END
   END io_wbs_m2s_addr[1]
   PIN io_wbs_m2s_addr[2]
@@ -412,7 +412,7 @@ MACRO Motor_Top
     USE SIGNAL ;
     PORT
       LAYER met3 ;
-        RECT 0.000 65.320 4.000 65.920 ;
+        RECT 0.000 69.400 4.000 70.000 ;
     END
   END io_wbs_m2s_addr[2]
   PIN io_wbs_m2s_addr[3]
@@ -420,7 +420,7 @@ MACRO Motor_Top
     USE SIGNAL ;
     PORT
       LAYER met3 ;
-        RECT 0.000 89.120 4.000 89.720 ;
+        RECT 0.000 93.880 4.000 94.480 ;
     END
   END io_wbs_m2s_addr[3]
   PIN io_wbs_m2s_addr[4]
@@ -428,7 +428,7 @@ MACRO Motor_Top
     USE SIGNAL ;
     PORT
       LAYER met3 ;
-        RECT 0.000 112.240 4.000 112.840 ;
+        RECT 0.000 119.040 4.000 119.640 ;
     END
   END io_wbs_m2s_addr[4]
   PIN io_wbs_m2s_addr[5]
@@ -436,7 +436,7 @@ MACRO Motor_Top
     USE SIGNAL ;
     PORT
       LAYER met3 ;
-        RECT 0.000 127.880 4.000 128.480 ;
+        RECT 0.000 135.360 4.000 135.960 ;
     END
   END io_wbs_m2s_addr[5]
   PIN io_wbs_m2s_addr[6]
@@ -444,7 +444,7 @@ MACRO Motor_Top
     USE SIGNAL ;
     PORT
       LAYER met3 ;
-        RECT 0.000 143.520 4.000 144.120 ;
+        RECT 0.000 151.680 4.000 152.280 ;
     END
   END io_wbs_m2s_addr[6]
   PIN io_wbs_m2s_addr[7]
@@ -452,7 +452,7 @@ MACRO Motor_Top
     USE SIGNAL ;
     PORT
       LAYER met3 ;
-        RECT 0.000 159.160 4.000 159.760 ;
+        RECT 0.000 168.000 4.000 168.600 ;
     END
   END io_wbs_m2s_addr[7]
   PIN io_wbs_m2s_addr[8]
@@ -460,7 +460,7 @@ MACRO Motor_Top
     USE SIGNAL ;
     PORT
       LAYER met3 ;
-        RECT 0.000 174.800 4.000 175.400 ;
+        RECT 0.000 184.320 4.000 184.920 ;
     END
   END io_wbs_m2s_addr[8]
   PIN io_wbs_m2s_addr[9]
@@ -468,7 +468,7 @@ MACRO Motor_Top
     USE SIGNAL ;
     PORT
       LAYER met3 ;
-        RECT 0.000 190.440 4.000 191.040 ;
+        RECT 0.000 200.640 4.000 201.240 ;
     END
   END io_wbs_m2s_addr[9]
   PIN io_wbs_m2s_data[0]
@@ -476,7 +476,7 @@ MACRO Motor_Top
     USE SIGNAL ;
     PORT
       LAYER met3 ;
-        RECT 0.000 26.560 4.000 27.160 ;
+        RECT 0.000 28.600 4.000 29.200 ;
     END
   END io_wbs_m2s_data[0]
   PIN io_wbs_m2s_data[10]
@@ -484,7 +484,7 @@ MACRO Motor_Top
     USE SIGNAL ;
     PORT
       LAYER met3 ;
-        RECT 0.000 214.240 4.000 214.840 ;
+        RECT 0.000 225.800 4.000 226.400 ;
     END
   END io_wbs_m2s_data[10]
   PIN io_wbs_m2s_data[11]
@@ -492,7 +492,7 @@ MACRO Motor_Top
     USE SIGNAL ;
     PORT
       LAYER met3 ;
-        RECT 0.000 229.880 4.000 230.480 ;
+        RECT 0.000 242.120 4.000 242.720 ;
     END
   END io_wbs_m2s_data[11]
   PIN io_wbs_m2s_data[12]
@@ -500,7 +500,7 @@ MACRO Motor_Top
     USE SIGNAL ;
     PORT
       LAYER met3 ;
-        RECT 0.000 245.520 4.000 246.120 ;
+        RECT 0.000 258.440 4.000 259.040 ;
     END
   END io_wbs_m2s_data[12]
   PIN io_wbs_m2s_data[13]
@@ -508,7 +508,7 @@ MACRO Motor_Top
     USE SIGNAL ;
     PORT
       LAYER met3 ;
-        RECT 0.000 260.480 4.000 261.080 ;
+        RECT 0.000 274.760 4.000 275.360 ;
     END
   END io_wbs_m2s_data[13]
   PIN io_wbs_m2s_data[14]
@@ -516,7 +516,7 @@ MACRO Motor_Top
     USE SIGNAL ;
     PORT
       LAYER met3 ;
-        RECT 0.000 276.120 4.000 276.720 ;
+        RECT 0.000 291.080 4.000 291.680 ;
     END
   END io_wbs_m2s_data[14]
   PIN io_wbs_m2s_data[15]
@@ -524,7 +524,7 @@ MACRO Motor_Top
     USE SIGNAL ;
     PORT
       LAYER met3 ;
-        RECT 0.000 291.760 4.000 292.360 ;
+        RECT 0.000 307.400 4.000 308.000 ;
     END
   END io_wbs_m2s_data[15]
   PIN io_wbs_m2s_data[16]
@@ -532,7 +532,7 @@ MACRO Motor_Top
     USE SIGNAL ;
     PORT
       LAYER met3 ;
-        RECT 0.000 299.920 4.000 300.520 ;
+        RECT 0.000 315.560 4.000 316.160 ;
     END
   END io_wbs_m2s_data[16]
   PIN io_wbs_m2s_data[17]
@@ -540,7 +540,7 @@ MACRO Motor_Top
     USE SIGNAL ;
     PORT
       LAYER met3 ;
-        RECT 0.000 307.400 4.000 308.000 ;
+        RECT 0.000 323.720 4.000 324.320 ;
     END
   END io_wbs_m2s_data[17]
   PIN io_wbs_m2s_data[18]
@@ -548,7 +548,7 @@ MACRO Motor_Top
     USE SIGNAL ;
     PORT
       LAYER met3 ;
-        RECT 0.000 315.560 4.000 316.160 ;
+        RECT 0.000 331.880 4.000 332.480 ;
     END
   END io_wbs_m2s_data[18]
   PIN io_wbs_m2s_data[19]
@@ -556,7 +556,7 @@ MACRO Motor_Top
     USE SIGNAL ;
     PORT
       LAYER met3 ;
-        RECT 0.000 323.040 4.000 323.640 ;
+        RECT 0.000 340.720 4.000 341.320 ;
     END
   END io_wbs_m2s_data[19]
   PIN io_wbs_m2s_data[1]
@@ -564,7 +564,7 @@ MACRO Motor_Top
     USE SIGNAL ;
     PORT
       LAYER met3 ;
-        RECT 0.000 49.680 4.000 50.280 ;
+        RECT 0.000 53.080 4.000 53.680 ;
     END
   END io_wbs_m2s_data[1]
   PIN io_wbs_m2s_data[20]
@@ -572,7 +572,7 @@ MACRO Motor_Top
     USE SIGNAL ;
     PORT
       LAYER met3 ;
-        RECT 0.000 331.200 4.000 331.800 ;
+        RECT 0.000 348.880 4.000 349.480 ;
     END
   END io_wbs_m2s_data[20]
   PIN io_wbs_m2s_data[21]
@@ -580,7 +580,7 @@ MACRO Motor_Top
     USE SIGNAL ;
     PORT
       LAYER met3 ;
-        RECT 0.000 338.680 4.000 339.280 ;
+        RECT 0.000 357.040 4.000 357.640 ;
     END
   END io_wbs_m2s_data[21]
   PIN io_wbs_m2s_data[22]
@@ -588,7 +588,7 @@ MACRO Motor_Top
     USE SIGNAL ;
     PORT
       LAYER met3 ;
-        RECT 0.000 346.840 4.000 347.440 ;
+        RECT 0.000 365.200 4.000 365.800 ;
     END
   END io_wbs_m2s_data[22]
   PIN io_wbs_m2s_data[23]
@@ -596,7 +596,7 @@ MACRO Motor_Top
     USE SIGNAL ;
     PORT
       LAYER met3 ;
-        RECT 0.000 354.320 4.000 354.920 ;
+        RECT 0.000 373.360 4.000 373.960 ;
     END
   END io_wbs_m2s_data[23]
   PIN io_wbs_m2s_data[24]
@@ -604,7 +604,7 @@ MACRO Motor_Top
     USE SIGNAL ;
     PORT
       LAYER met3 ;
-        RECT 0.000 362.480 4.000 363.080 ;
+        RECT 0.000 381.520 4.000 382.120 ;
     END
   END io_wbs_m2s_data[24]
   PIN io_wbs_m2s_data[25]
@@ -612,7 +612,7 @@ MACRO Motor_Top
     USE SIGNAL ;
     PORT
       LAYER met3 ;
-        RECT 0.000 369.960 4.000 370.560 ;
+        RECT 0.000 389.680 4.000 390.280 ;
     END
   END io_wbs_m2s_data[25]
   PIN io_wbs_m2s_data[26]
@@ -620,7 +620,7 @@ MACRO Motor_Top
     USE SIGNAL ;
     PORT
       LAYER met3 ;
-        RECT 0.000 378.120 4.000 378.720 ;
+        RECT 0.000 397.840 4.000 398.440 ;
     END
   END io_wbs_m2s_data[26]
   PIN io_wbs_m2s_data[27]
@@ -628,7 +628,7 @@ MACRO Motor_Top
     USE SIGNAL ;
     PORT
       LAYER met3 ;
-        RECT 0.000 385.600 4.000 386.200 ;
+        RECT 0.000 406.000 4.000 406.600 ;
     END
   END io_wbs_m2s_data[27]
   PIN io_wbs_m2s_data[28]
@@ -636,7 +636,7 @@ MACRO Motor_Top
     USE SIGNAL ;
     PORT
       LAYER met3 ;
-        RECT 0.000 393.760 4.000 394.360 ;
+        RECT 0.000 414.160 4.000 414.760 ;
     END
   END io_wbs_m2s_data[28]
   PIN io_wbs_m2s_data[29]
@@ -644,7 +644,7 @@ MACRO Motor_Top
     USE SIGNAL ;
     PORT
       LAYER met3 ;
-        RECT 0.000 401.240 4.000 401.840 ;
+        RECT 0.000 422.320 4.000 422.920 ;
     END
   END io_wbs_m2s_data[29]
   PIN io_wbs_m2s_data[2]
@@ -652,7 +652,7 @@ MACRO Motor_Top
     USE SIGNAL ;
     PORT
       LAYER met3 ;
-        RECT 0.000 73.480 4.000 74.080 ;
+        RECT 0.000 77.560 4.000 78.160 ;
     END
   END io_wbs_m2s_data[2]
   PIN io_wbs_m2s_data[30]
@@ -660,7 +660,7 @@ MACRO Motor_Top
     USE SIGNAL ;
     PORT
       LAYER met3 ;
-        RECT 0.000 409.400 4.000 410.000 ;
+        RECT 0.000 430.480 4.000 431.080 ;
     END
   END io_wbs_m2s_data[30]
   PIN io_wbs_m2s_data[31]
@@ -668,7 +668,7 @@ MACRO Motor_Top
     USE SIGNAL ;
     PORT
       LAYER met3 ;
-        RECT 0.000 416.880 4.000 417.480 ;
+        RECT 0.000 438.640 4.000 439.240 ;
     END
   END io_wbs_m2s_data[31]
   PIN io_wbs_m2s_data[3]
@@ -676,7 +676,7 @@ MACRO Motor_Top
     USE SIGNAL ;
     PORT
       LAYER met3 ;
-        RECT 0.000 96.600 4.000 97.200 ;
+        RECT 0.000 102.040 4.000 102.640 ;
     END
   END io_wbs_m2s_data[3]
   PIN io_wbs_m2s_data[4]
@@ -684,7 +684,7 @@ MACRO Motor_Top
     USE SIGNAL ;
     PORT
       LAYER met3 ;
-        RECT 0.000 120.400 4.000 121.000 ;
+        RECT 0.000 127.200 4.000 127.800 ;
     END
   END io_wbs_m2s_data[4]
   PIN io_wbs_m2s_data[5]
@@ -692,7 +692,7 @@ MACRO Motor_Top
     USE SIGNAL ;
     PORT
       LAYER met3 ;
-        RECT 0.000 136.040 4.000 136.640 ;
+        RECT 0.000 143.520 4.000 144.120 ;
     END
   END io_wbs_m2s_data[5]
   PIN io_wbs_m2s_data[6]
@@ -700,7 +700,7 @@ MACRO Motor_Top
     USE SIGNAL ;
     PORT
       LAYER met3 ;
-        RECT 0.000 151.680 4.000 152.280 ;
+        RECT 0.000 159.840 4.000 160.440 ;
     END
   END io_wbs_m2s_data[6]
   PIN io_wbs_m2s_data[7]
@@ -708,7 +708,7 @@ MACRO Motor_Top
     USE SIGNAL ;
     PORT
       LAYER met3 ;
-        RECT 0.000 167.320 4.000 167.920 ;
+        RECT 0.000 176.160 4.000 176.760 ;
     END
   END io_wbs_m2s_data[7]
   PIN io_wbs_m2s_data[8]
@@ -716,7 +716,7 @@ MACRO Motor_Top
     USE SIGNAL ;
     PORT
       LAYER met3 ;
-        RECT 0.000 182.960 4.000 183.560 ;
+        RECT 0.000 192.480 4.000 193.080 ;
     END
   END io_wbs_m2s_data[8]
   PIN io_wbs_m2s_data[9]
@@ -724,7 +724,7 @@ MACRO Motor_Top
     USE SIGNAL ;
     PORT
       LAYER met3 ;
-        RECT 0.000 198.600 4.000 199.200 ;
+        RECT 0.000 208.800 4.000 209.400 ;
     END
   END io_wbs_m2s_data[9]
   PIN io_wbs_m2s_sel[0]
@@ -732,7 +732,7 @@ MACRO Motor_Top
     USE SIGNAL ;
     PORT
       LAYER met3 ;
-        RECT 0.000 34.040 4.000 34.640 ;
+        RECT 0.000 36.760 4.000 37.360 ;
     END
   END io_wbs_m2s_sel[0]
   PIN io_wbs_m2s_sel[1]
@@ -740,7 +740,7 @@ MACRO Motor_Top
     USE SIGNAL ;
     PORT
       LAYER met3 ;
-        RECT 0.000 57.840 4.000 58.440 ;
+        RECT 0.000 61.240 4.000 61.840 ;
     END
   END io_wbs_m2s_sel[1]
   PIN io_wbs_m2s_sel[2]
@@ -748,7 +748,7 @@ MACRO Motor_Top
     USE SIGNAL ;
     PORT
       LAYER met3 ;
-        RECT 0.000 80.960 4.000 81.560 ;
+        RECT 0.000 85.720 4.000 86.320 ;
     END
   END io_wbs_m2s_sel[2]
   PIN io_wbs_m2s_sel[3]
@@ -756,7 +756,7 @@ MACRO Motor_Top
     USE SIGNAL ;
     PORT
       LAYER met3 ;
-        RECT 0.000 104.760 4.000 105.360 ;
+        RECT 0.000 110.200 4.000 110.800 ;
     END
   END io_wbs_m2s_sel[3]
   PIN io_wbs_m2s_stb
@@ -764,7 +764,7 @@ MACRO Motor_Top
     USE SIGNAL ;
     PORT
       LAYER met3 ;
-        RECT 0.000 3.440 4.000 4.040 ;
+        RECT 0.000 4.120 4.000 4.720 ;
     END
   END io_wbs_m2s_stb
   PIN io_wbs_m2s_we
@@ -772,7 +772,7 @@ MACRO Motor_Top
     USE SIGNAL ;
     PORT
       LAYER met3 ;
-        RECT 0.000 10.920 4.000 11.520 ;
+        RECT 0.000 12.280 4.000 12.880 ;
     END
   END io_wbs_m2s_we
   PIN reset
@@ -780,7 +780,7 @@ MACRO Motor_Top
     USE SIGNAL ;
     PORT
       LAYER met2 ;
-        RECT 74.610 496.000 74.890 500.000 ;
+        RECT 91.170 546.000 91.450 550.000 ;
     END
   END reset
   PIN vccd1
@@ -788,19 +788,19 @@ MACRO Motor_Top
     USE POWER ;
     PORT
       LAYER met4 ;
-        RECT 21.040 10.640 22.640 487.120 ;
+        RECT 21.040 10.640 22.640 538.800 ;
     END
     PORT
       LAYER met4 ;
-        RECT 174.640 10.640 176.240 487.120 ;
+        RECT 174.640 10.640 176.240 538.800 ;
     END
     PORT
       LAYER met4 ;
-        RECT 328.240 10.640 329.840 487.120 ;
+        RECT 328.240 10.640 329.840 538.800 ;
     END
     PORT
       LAYER met4 ;
-        RECT 481.840 10.640 483.440 487.120 ;
+        RECT 481.840 10.640 483.440 538.800 ;
     END
   END vccd1
   PIN vssd1
@@ -808,201 +808,203 @@ MACRO Motor_Top
     USE GROUND ;
     PORT
       LAYER met4 ;
-        RECT 97.840 10.640 99.440 487.120 ;
+        RECT 97.840 10.640 99.440 538.800 ;
     END
     PORT
       LAYER met4 ;
-        RECT 251.440 10.640 253.040 487.120 ;
+        RECT 251.440 10.640 253.040 538.800 ;
     END
     PORT
       LAYER met4 ;
-        RECT 405.040 10.640 406.640 487.120 ;
+        RECT 405.040 10.640 406.640 538.800 ;
     END
   END vssd1
   OBS
       LAYER li1 ;
-        RECT 5.520 10.795 494.040 486.965 ;
+        RECT 5.520 10.795 544.180 538.645 ;
       LAYER met1 ;
-        RECT 5.520 10.640 494.040 487.120 ;
+        RECT 5.520 9.900 544.180 538.800 ;
       LAYER met2 ;
-        RECT 6.990 495.720 24.650 496.810 ;
-        RECT 25.490 495.720 74.330 496.810 ;
-        RECT 75.170 495.720 124.470 496.810 ;
-        RECT 125.310 495.720 174.610 496.810 ;
-        RECT 175.450 495.720 224.290 496.810 ;
-        RECT 225.130 495.720 274.430 496.810 ;
-        RECT 275.270 495.720 324.570 496.810 ;
-        RECT 325.410 495.720 374.250 496.810 ;
-        RECT 375.090 495.720 424.390 496.810 ;
-        RECT 425.230 495.720 474.530 496.810 ;
-        RECT 475.370 495.720 491.190 496.810 ;
-        RECT 6.990 4.280 491.190 495.720 ;
-        RECT 6.990 3.555 20.510 4.280 ;
-        RECT 21.350 3.555 61.910 4.280 ;
-        RECT 62.750 3.555 103.770 4.280 ;
-        RECT 104.610 3.555 145.170 4.280 ;
-        RECT 146.010 3.555 187.030 4.280 ;
-        RECT 187.870 3.555 228.430 4.280 ;
-        RECT 229.270 3.555 270.290 4.280 ;
-        RECT 271.130 3.555 312.150 4.280 ;
-        RECT 312.990 3.555 353.550 4.280 ;
-        RECT 354.390 3.555 395.410 4.280 ;
-        RECT 396.250 3.555 436.810 4.280 ;
-        RECT 437.650 3.555 478.670 4.280 ;
-        RECT 479.510 3.555 491.190 4.280 ;
+        RECT 6.990 545.720 30.170 546.450 ;
+        RECT 31.010 545.720 90.890 546.450 ;
+        RECT 91.730 545.720 152.070 546.450 ;
+        RECT 152.910 545.720 213.250 546.450 ;
+        RECT 214.090 545.720 274.430 546.450 ;
+        RECT 275.270 545.720 335.610 546.450 ;
+        RECT 336.450 545.720 396.790 546.450 ;
+        RECT 397.630 545.720 457.970 546.450 ;
+        RECT 458.810 545.720 519.150 546.450 ;
+        RECT 519.990 545.720 541.330 546.450 ;
+        RECT 6.990 4.280 541.330 545.720 ;
+        RECT 6.990 4.000 20.970 4.280 ;
+        RECT 21.810 4.000 63.290 4.280 ;
+        RECT 64.130 4.000 105.610 4.280 ;
+        RECT 106.450 4.000 147.930 4.280 ;
+        RECT 148.770 4.000 190.250 4.280 ;
+        RECT 191.090 4.000 232.570 4.280 ;
+        RECT 233.410 4.000 274.890 4.280 ;
+        RECT 275.730 4.000 317.210 4.280 ;
+        RECT 318.050 4.000 359.530 4.280 ;
+        RECT 360.370 4.000 401.850 4.280 ;
+        RECT 402.690 4.000 444.170 4.280 ;
+        RECT 445.010 4.000 486.490 4.280 ;
+        RECT 487.330 4.000 528.810 4.280 ;
+        RECT 529.650 4.000 541.330 4.280 ;
       LAYER met3 ;
-        RECT 4.400 494.680 496.000 495.545 ;
-        RECT 4.000 488.600 496.000 494.680 ;
-        RECT 4.400 487.200 496.000 488.600 ;
-        RECT 4.000 480.440 496.000 487.200 ;
-        RECT 4.400 479.040 496.000 480.440 ;
-        RECT 4.000 477.720 496.000 479.040 ;
-        RECT 4.000 476.320 495.600 477.720 ;
-        RECT 4.000 472.960 496.000 476.320 ;
-        RECT 4.400 471.560 496.000 472.960 ;
-        RECT 4.000 464.800 496.000 471.560 ;
-        RECT 4.400 463.400 496.000 464.800 ;
-        RECT 4.000 457.320 496.000 463.400 ;
-        RECT 4.400 455.920 496.000 457.320 ;
-        RECT 4.000 449.160 496.000 455.920 ;
-        RECT 4.400 447.760 496.000 449.160 ;
-        RECT 4.000 441.680 496.000 447.760 ;
-        RECT 4.400 440.280 496.000 441.680 ;
-        RECT 4.000 433.520 496.000 440.280 ;
-        RECT 4.400 432.160 496.000 433.520 ;
-        RECT 4.400 432.120 495.600 432.160 ;
-        RECT 4.000 430.760 495.600 432.120 ;
-        RECT 4.000 426.040 496.000 430.760 ;
-        RECT 4.400 424.640 496.000 426.040 ;
-        RECT 4.000 417.880 496.000 424.640 ;
-        RECT 4.400 416.480 496.000 417.880 ;
-        RECT 4.000 410.400 496.000 416.480 ;
-        RECT 4.400 409.000 496.000 410.400 ;
-        RECT 4.000 402.240 496.000 409.000 ;
-        RECT 4.400 400.840 496.000 402.240 ;
-        RECT 4.000 394.760 496.000 400.840 ;
-        RECT 4.400 393.360 496.000 394.760 ;
-        RECT 4.000 386.600 496.000 393.360 ;
-        RECT 4.400 385.200 495.600 386.600 ;
-        RECT 4.000 379.120 496.000 385.200 ;
-        RECT 4.400 377.720 496.000 379.120 ;
-        RECT 4.000 370.960 496.000 377.720 ;
-        RECT 4.400 369.560 496.000 370.960 ;
-        RECT 4.000 363.480 496.000 369.560 ;
-        RECT 4.400 362.080 496.000 363.480 ;
-        RECT 4.000 355.320 496.000 362.080 ;
-        RECT 4.400 353.920 496.000 355.320 ;
-        RECT 4.000 347.840 496.000 353.920 ;
-        RECT 4.400 346.440 496.000 347.840 ;
-        RECT 4.000 341.040 496.000 346.440 ;
-        RECT 4.000 339.680 495.600 341.040 ;
-        RECT 4.400 339.640 495.600 339.680 ;
-        RECT 4.400 338.280 496.000 339.640 ;
-        RECT 4.000 332.200 496.000 338.280 ;
-        RECT 4.400 330.800 496.000 332.200 ;
-        RECT 4.000 324.040 496.000 330.800 ;
-        RECT 4.400 322.640 496.000 324.040 ;
-        RECT 4.000 316.560 496.000 322.640 ;
-        RECT 4.400 315.160 496.000 316.560 ;
-        RECT 4.000 308.400 496.000 315.160 ;
-        RECT 4.400 307.000 496.000 308.400 ;
-        RECT 4.000 300.920 496.000 307.000 ;
-        RECT 4.400 299.520 496.000 300.920 ;
-        RECT 4.000 295.480 496.000 299.520 ;
-        RECT 4.000 294.080 495.600 295.480 ;
-        RECT 4.000 292.760 496.000 294.080 ;
-        RECT 4.400 291.360 496.000 292.760 ;
-        RECT 4.000 285.280 496.000 291.360 ;
-        RECT 4.400 283.880 496.000 285.280 ;
-        RECT 4.000 277.120 496.000 283.880 ;
-        RECT 4.400 275.720 496.000 277.120 ;
-        RECT 4.000 269.640 496.000 275.720 ;
-        RECT 4.400 268.240 496.000 269.640 ;
-        RECT 4.000 261.480 496.000 268.240 ;
-        RECT 4.400 260.080 496.000 261.480 ;
-        RECT 4.000 254.000 496.000 260.080 ;
-        RECT 4.400 252.600 496.000 254.000 ;
-        RECT 4.000 250.600 496.000 252.600 ;
-        RECT 4.000 249.200 495.600 250.600 ;
-        RECT 4.000 246.520 496.000 249.200 ;
-        RECT 4.400 245.120 496.000 246.520 ;
-        RECT 4.000 238.360 496.000 245.120 ;
-        RECT 4.400 236.960 496.000 238.360 ;
-        RECT 4.000 230.880 496.000 236.960 ;
-        RECT 4.400 229.480 496.000 230.880 ;
-        RECT 4.000 222.720 496.000 229.480 ;
-        RECT 4.400 221.320 496.000 222.720 ;
-        RECT 4.000 215.240 496.000 221.320 ;
-        RECT 4.400 213.840 496.000 215.240 ;
-        RECT 4.000 207.080 496.000 213.840 ;
-        RECT 4.400 205.680 496.000 207.080 ;
-        RECT 4.000 205.040 496.000 205.680 ;
-        RECT 4.000 203.640 495.600 205.040 ;
-        RECT 4.000 199.600 496.000 203.640 ;
-        RECT 4.400 198.200 496.000 199.600 ;
-        RECT 4.000 191.440 496.000 198.200 ;
-        RECT 4.400 190.040 496.000 191.440 ;
-        RECT 4.000 183.960 496.000 190.040 ;
-        RECT 4.400 182.560 496.000 183.960 ;
-        RECT 4.000 175.800 496.000 182.560 ;
-        RECT 4.400 174.400 496.000 175.800 ;
-        RECT 4.000 168.320 496.000 174.400 ;
-        RECT 4.400 166.920 496.000 168.320 ;
-        RECT 4.000 160.160 496.000 166.920 ;
-        RECT 4.400 159.480 496.000 160.160 ;
-        RECT 4.400 158.760 495.600 159.480 ;
-        RECT 4.000 158.080 495.600 158.760 ;
-        RECT 4.000 152.680 496.000 158.080 ;
-        RECT 4.400 151.280 496.000 152.680 ;
-        RECT 4.000 144.520 496.000 151.280 ;
-        RECT 4.400 143.120 496.000 144.520 ;
-        RECT 4.000 137.040 496.000 143.120 ;
-        RECT 4.400 135.640 496.000 137.040 ;
-        RECT 4.000 128.880 496.000 135.640 ;
-        RECT 4.400 127.480 496.000 128.880 ;
-        RECT 4.000 121.400 496.000 127.480 ;
-        RECT 4.400 120.000 496.000 121.400 ;
-        RECT 4.000 113.920 496.000 120.000 ;
-        RECT 4.000 113.240 495.600 113.920 ;
-        RECT 4.400 112.520 495.600 113.240 ;
-        RECT 4.400 111.840 496.000 112.520 ;
-        RECT 4.000 105.760 496.000 111.840 ;
-        RECT 4.400 104.360 496.000 105.760 ;
-        RECT 4.000 97.600 496.000 104.360 ;
-        RECT 4.400 96.200 496.000 97.600 ;
-        RECT 4.000 90.120 496.000 96.200 ;
-        RECT 4.400 88.720 496.000 90.120 ;
-        RECT 4.000 81.960 496.000 88.720 ;
-        RECT 4.400 80.560 496.000 81.960 ;
-        RECT 4.000 74.480 496.000 80.560 ;
-        RECT 4.400 73.080 496.000 74.480 ;
-        RECT 4.000 68.360 496.000 73.080 ;
-        RECT 4.000 66.960 495.600 68.360 ;
-        RECT 4.000 66.320 496.000 66.960 ;
-        RECT 4.400 64.920 496.000 66.320 ;
-        RECT 4.000 58.840 496.000 64.920 ;
-        RECT 4.400 57.440 496.000 58.840 ;
-        RECT 4.000 50.680 496.000 57.440 ;
-        RECT 4.400 49.280 496.000 50.680 ;
-        RECT 4.000 43.200 496.000 49.280 ;
-        RECT 4.400 41.800 496.000 43.200 ;
-        RECT 4.000 35.040 496.000 41.800 ;
-        RECT 4.400 33.640 496.000 35.040 ;
-        RECT 4.000 27.560 496.000 33.640 ;
-        RECT 4.400 26.160 496.000 27.560 ;
-        RECT 4.000 23.480 496.000 26.160 ;
-        RECT 4.000 22.080 495.600 23.480 ;
-        RECT 4.000 19.400 496.000 22.080 ;
-        RECT 4.400 18.000 496.000 19.400 ;
-        RECT 4.000 11.920 496.000 18.000 ;
-        RECT 4.400 10.520 496.000 11.920 ;
-        RECT 4.000 4.440 496.000 10.520 ;
-        RECT 4.400 3.575 496.000 4.440 ;
+        RECT 4.400 545.000 546.000 545.865 ;
+        RECT 4.000 538.240 546.000 545.000 ;
+        RECT 4.400 536.840 546.000 538.240 ;
+        RECT 4.000 530.080 546.000 536.840 ;
+        RECT 4.400 528.680 546.000 530.080 ;
+        RECT 4.000 521.920 546.000 528.680 ;
+        RECT 4.400 520.520 546.000 521.920 ;
+        RECT 4.000 515.800 546.000 520.520 ;
+        RECT 4.000 514.400 545.600 515.800 ;
+        RECT 4.000 513.760 546.000 514.400 ;
+        RECT 4.400 512.360 546.000 513.760 ;
+        RECT 4.000 505.600 546.000 512.360 ;
+        RECT 4.400 504.200 546.000 505.600 ;
+        RECT 4.000 497.440 546.000 504.200 ;
+        RECT 4.400 496.040 546.000 497.440 ;
+        RECT 4.000 489.280 546.000 496.040 ;
+        RECT 4.400 487.880 546.000 489.280 ;
+        RECT 4.000 481.120 546.000 487.880 ;
+        RECT 4.400 479.720 546.000 481.120 ;
+        RECT 4.000 472.960 546.000 479.720 ;
+        RECT 4.400 471.560 546.000 472.960 ;
+        RECT 4.000 464.800 546.000 471.560 ;
+        RECT 4.400 463.400 546.000 464.800 ;
+        RECT 4.000 456.640 546.000 463.400 ;
+        RECT 4.400 455.240 546.000 456.640 ;
+        RECT 4.000 448.480 546.000 455.240 ;
+        RECT 4.400 447.120 546.000 448.480 ;
+        RECT 4.400 447.080 545.600 447.120 ;
+        RECT 4.000 445.720 545.600 447.080 ;
+        RECT 4.000 439.640 546.000 445.720 ;
+        RECT 4.400 438.240 546.000 439.640 ;
+        RECT 4.000 431.480 546.000 438.240 ;
+        RECT 4.400 430.080 546.000 431.480 ;
+        RECT 4.000 423.320 546.000 430.080 ;
+        RECT 4.400 421.920 546.000 423.320 ;
+        RECT 4.000 415.160 546.000 421.920 ;
+        RECT 4.400 413.760 546.000 415.160 ;
+        RECT 4.000 407.000 546.000 413.760 ;
+        RECT 4.400 405.600 546.000 407.000 ;
+        RECT 4.000 398.840 546.000 405.600 ;
+        RECT 4.400 397.440 546.000 398.840 ;
+        RECT 4.000 390.680 546.000 397.440 ;
+        RECT 4.400 389.280 546.000 390.680 ;
+        RECT 4.000 382.520 546.000 389.280 ;
+        RECT 4.400 381.120 546.000 382.520 ;
+        RECT 4.000 378.440 546.000 381.120 ;
+        RECT 4.000 377.040 545.600 378.440 ;
+        RECT 4.000 374.360 546.000 377.040 ;
+        RECT 4.400 372.960 546.000 374.360 ;
+        RECT 4.000 366.200 546.000 372.960 ;
+        RECT 4.400 364.800 546.000 366.200 ;
+        RECT 4.000 358.040 546.000 364.800 ;
+        RECT 4.400 356.640 546.000 358.040 ;
+        RECT 4.000 349.880 546.000 356.640 ;
+        RECT 4.400 348.480 546.000 349.880 ;
+        RECT 4.000 341.720 546.000 348.480 ;
+        RECT 4.400 340.320 546.000 341.720 ;
+        RECT 4.000 332.880 546.000 340.320 ;
+        RECT 4.400 331.480 546.000 332.880 ;
+        RECT 4.000 324.720 546.000 331.480 ;
+        RECT 4.400 323.320 546.000 324.720 ;
+        RECT 4.000 316.560 546.000 323.320 ;
+        RECT 4.400 315.160 546.000 316.560 ;
+        RECT 4.000 309.760 546.000 315.160 ;
+        RECT 4.000 308.400 545.600 309.760 ;
+        RECT 4.400 308.360 545.600 308.400 ;
+        RECT 4.400 307.000 546.000 308.360 ;
+        RECT 4.000 300.240 546.000 307.000 ;
+        RECT 4.400 298.840 546.000 300.240 ;
+        RECT 4.000 292.080 546.000 298.840 ;
+        RECT 4.400 290.680 546.000 292.080 ;
+        RECT 4.000 283.920 546.000 290.680 ;
+        RECT 4.400 282.520 546.000 283.920 ;
+        RECT 4.000 275.760 546.000 282.520 ;
+        RECT 4.400 274.360 546.000 275.760 ;
+        RECT 4.000 267.600 546.000 274.360 ;
+        RECT 4.400 266.200 546.000 267.600 ;
+        RECT 4.000 259.440 546.000 266.200 ;
+        RECT 4.400 258.040 546.000 259.440 ;
+        RECT 4.000 251.280 546.000 258.040 ;
+        RECT 4.400 249.880 546.000 251.280 ;
+        RECT 4.000 243.120 546.000 249.880 ;
+        RECT 4.400 241.720 546.000 243.120 ;
+        RECT 4.000 241.080 546.000 241.720 ;
+        RECT 4.000 239.680 545.600 241.080 ;
+        RECT 4.000 234.960 546.000 239.680 ;
+        RECT 4.400 233.560 546.000 234.960 ;
+        RECT 4.000 226.800 546.000 233.560 ;
+        RECT 4.400 225.400 546.000 226.800 ;
+        RECT 4.000 217.960 546.000 225.400 ;
+        RECT 4.400 216.560 546.000 217.960 ;
+        RECT 4.000 209.800 546.000 216.560 ;
+        RECT 4.400 208.400 546.000 209.800 ;
+        RECT 4.000 201.640 546.000 208.400 ;
+        RECT 4.400 200.240 546.000 201.640 ;
+        RECT 4.000 193.480 546.000 200.240 ;
+        RECT 4.400 192.080 546.000 193.480 ;
+        RECT 4.000 185.320 546.000 192.080 ;
+        RECT 4.400 183.920 546.000 185.320 ;
+        RECT 4.000 177.160 546.000 183.920 ;
+        RECT 4.400 175.760 546.000 177.160 ;
+        RECT 4.000 172.400 546.000 175.760 ;
+        RECT 4.000 171.000 545.600 172.400 ;
+        RECT 4.000 169.000 546.000 171.000 ;
+        RECT 4.400 167.600 546.000 169.000 ;
+        RECT 4.000 160.840 546.000 167.600 ;
+        RECT 4.400 159.440 546.000 160.840 ;
+        RECT 4.000 152.680 546.000 159.440 ;
+        RECT 4.400 151.280 546.000 152.680 ;
+        RECT 4.000 144.520 546.000 151.280 ;
+        RECT 4.400 143.120 546.000 144.520 ;
+        RECT 4.000 136.360 546.000 143.120 ;
+        RECT 4.400 134.960 546.000 136.360 ;
+        RECT 4.000 128.200 546.000 134.960 ;
+        RECT 4.400 126.800 546.000 128.200 ;
+        RECT 4.000 120.040 546.000 126.800 ;
+        RECT 4.400 118.640 546.000 120.040 ;
+        RECT 4.000 111.200 546.000 118.640 ;
+        RECT 4.400 109.800 546.000 111.200 ;
+        RECT 4.000 103.720 546.000 109.800 ;
+        RECT 4.000 103.040 545.600 103.720 ;
+        RECT 4.400 102.320 545.600 103.040 ;
+        RECT 4.400 101.640 546.000 102.320 ;
+        RECT 4.000 94.880 546.000 101.640 ;
+        RECT 4.400 93.480 546.000 94.880 ;
+        RECT 4.000 86.720 546.000 93.480 ;
+        RECT 4.400 85.320 546.000 86.720 ;
+        RECT 4.000 78.560 546.000 85.320 ;
+        RECT 4.400 77.160 546.000 78.560 ;
+        RECT 4.000 70.400 546.000 77.160 ;
+        RECT 4.400 69.000 546.000 70.400 ;
+        RECT 4.000 62.240 546.000 69.000 ;
+        RECT 4.400 60.840 546.000 62.240 ;
+        RECT 4.000 54.080 546.000 60.840 ;
+        RECT 4.400 52.680 546.000 54.080 ;
+        RECT 4.000 45.920 546.000 52.680 ;
+        RECT 4.400 44.520 546.000 45.920 ;
+        RECT 4.000 37.760 546.000 44.520 ;
+        RECT 4.400 36.360 546.000 37.760 ;
+        RECT 4.000 35.040 546.000 36.360 ;
+        RECT 4.000 33.640 545.600 35.040 ;
+        RECT 4.000 29.600 546.000 33.640 ;
+        RECT 4.400 28.200 546.000 29.600 ;
+        RECT 4.000 21.440 546.000 28.200 ;
+        RECT 4.400 20.040 546.000 21.440 ;
+        RECT 4.000 13.280 546.000 20.040 ;
+        RECT 4.400 11.880 546.000 13.280 ;
+        RECT 4.000 5.120 546.000 11.880 ;
+        RECT 4.400 4.255 546.000 5.120 ;
       LAYER met4 ;
-        RECT 40.775 13.095 97.440 479.225 ;
-        RECT 99.840 13.095 174.240 479.225 ;
-        RECT 176.640 13.095 251.040 479.225 ;
-        RECT 253.440 13.095 289.505 479.225 ;
+        RECT 50.895 11.735 97.440 458.825 ;
+        RECT 99.840 11.735 174.240 458.825 ;
+        RECT 176.640 11.735 251.040 458.825 ;
+        RECT 253.440 11.735 303.305 458.825 ;
   END
 END Motor_Top
 END LIBRARY

@@ -28,7 +28,7 @@ MACRO Core
     USE SIGNAL ;
     PORT
       LAYER met3 ;
-        RECT 496.000 112.240 500.000 112.840 ;
+        RECT 496.000 111.560 500.000 112.160 ;
     END
   END io_dbus_addr[10]
   PIN io_dbus_addr[11]
@@ -36,7 +36,7 @@ MACRO Core
     USE SIGNAL ;
     PORT
       LAYER met3 ;
-        RECT 496.000 121.080 500.000 121.680 ;
+        RECT 496.000 120.400 500.000 121.000 ;
     END
   END io_dbus_addr[11]
   PIN io_dbus_addr[12]
@@ -44,7 +44,7 @@ MACRO Core
     USE SIGNAL ;
     PORT
       LAYER met3 ;
-        RECT 496.000 129.920 500.000 130.520 ;
+        RECT 496.000 129.240 500.000 129.840 ;
     END
   END io_dbus_addr[12]
   PIN io_dbus_addr[13]
@@ -52,7 +52,7 @@ MACRO Core
     USE SIGNAL ;
     PORT
       LAYER met3 ;
-        RECT 496.000 138.760 500.000 139.360 ;
+        RECT 496.000 137.400 500.000 138.000 ;
     END
   END io_dbus_addr[13]
   PIN io_dbus_addr[14]
@@ -60,7 +60,7 @@ MACRO Core
     USE SIGNAL ;
     PORT
       LAYER met3 ;
-        RECT 496.000 146.920 500.000 147.520 ;
+        RECT 496.000 146.240 500.000 146.840 ;
     END
   END io_dbus_addr[14]
   PIN io_dbus_addr[15]
@@ -68,7 +68,7 @@ MACRO Core
     USE SIGNAL ;
     PORT
       LAYER met3 ;
-        RECT 496.000 155.760 500.000 156.360 ;
+        RECT 496.000 155.080 500.000 155.680 ;
     END
   END io_dbus_addr[15]
   PIN io_dbus_addr[16]
@@ -76,7 +76,7 @@ MACRO Core
     USE SIGNAL ;
     PORT
       LAYER met3 ;
-        RECT 496.000 164.600 500.000 165.200 ;
+        RECT 496.000 163.920 500.000 164.520 ;
     END
   END io_dbus_addr[16]
   PIN io_dbus_addr[17]
@@ -84,7 +84,7 @@ MACRO Core
     USE SIGNAL ;
     PORT
       LAYER met3 ;
-        RECT 496.000 173.440 500.000 174.040 ;
+        RECT 496.000 172.760 500.000 173.360 ;
     END
   END io_dbus_addr[17]
   PIN io_dbus_addr[18]
@@ -92,7 +92,7 @@ MACRO Core
     USE SIGNAL ;
     PORT
       LAYER met3 ;
-        RECT 496.000 182.280 500.000 182.880 ;
+        RECT 496.000 180.920 500.000 181.520 ;
     END
   END io_dbus_addr[18]
   PIN io_dbus_addr[19]
@@ -100,7 +100,7 @@ MACRO Core
     USE SIGNAL ;
     PORT
       LAYER met3 ;
-        RECT 496.000 191.120 500.000 191.720 ;
+        RECT 496.000 189.760 500.000 190.360 ;
     END
   END io_dbus_addr[19]
   PIN io_dbus_addr[1]
@@ -116,7 +116,7 @@ MACRO Core
     USE SIGNAL ;
     PORT
       LAYER met3 ;
-        RECT 496.000 199.960 500.000 200.560 ;
+        RECT 496.000 198.600 500.000 199.200 ;
     END
   END io_dbus_addr[20]
   PIN io_dbus_addr[21]
@@ -124,7 +124,7 @@ MACRO Core
     USE SIGNAL ;
     PORT
       LAYER met3 ;
-        RECT 496.000 208.800 500.000 209.400 ;
+        RECT 496.000 207.440 500.000 208.040 ;
     END
   END io_dbus_addr[21]
   PIN io_dbus_addr[22]
@@ -132,7 +132,7 @@ MACRO Core
     USE SIGNAL ;
     PORT
       LAYER met3 ;
-        RECT 496.000 217.640 500.000 218.240 ;
+        RECT 496.000 216.280 500.000 216.880 ;
     END
   END io_dbus_addr[22]
   PIN io_dbus_addr[23]
@@ -140,7 +140,7 @@ MACRO Core
     USE SIGNAL ;
     PORT
       LAYER met3 ;
-        RECT 496.000 225.800 500.000 226.400 ;
+        RECT 496.000 225.120 500.000 225.720 ;
     END
   END io_dbus_addr[23]
   PIN io_dbus_addr[24]
@@ -148,7 +148,7 @@ MACRO Core
     USE SIGNAL ;
     PORT
       LAYER met3 ;
-        RECT 496.000 234.640 500.000 235.240 ;
+        RECT 496.000 233.280 500.000 233.880 ;
     END
   END io_dbus_addr[24]
   PIN io_dbus_addr[25]
@@ -156,7 +156,7 @@ MACRO Core
     USE SIGNAL ;
     PORT
       LAYER met3 ;
-        RECT 496.000 243.480 500.000 244.080 ;
+        RECT 496.000 242.120 500.000 242.720 ;
     END
   END io_dbus_addr[25]
   PIN io_dbus_addr[26]
@@ -164,7 +164,7 @@ MACRO Core
     USE SIGNAL ;
     PORT
       LAYER met3 ;
-        RECT 496.000 252.320 500.000 252.920 ;
+        RECT 496.000 250.960 500.000 251.560 ;
     END
   END io_dbus_addr[26]
   PIN io_dbus_addr[27]
@@ -172,7 +172,7 @@ MACRO Core
     USE SIGNAL ;
     PORT
       LAYER met3 ;
-        RECT 496.000 261.160 500.000 261.760 ;
+        RECT 496.000 259.800 500.000 260.400 ;
     END
   END io_dbus_addr[27]
   PIN io_dbus_addr[28]
@@ -180,7 +180,7 @@ MACRO Core
     USE SIGNAL ;
     PORT
       LAYER met3 ;
-        RECT 496.000 270.000 500.000 270.600 ;
+        RECT 496.000 268.640 500.000 269.240 ;
     END
   END io_dbus_addr[28]
   PIN io_dbus_addr[29]
@@ -188,7 +188,7 @@ MACRO Core
     USE SIGNAL ;
     PORT
       LAYER met3 ;
-        RECT 496.000 278.840 500.000 279.440 ;
+        RECT 496.000 276.800 500.000 277.400 ;
     END
   END io_dbus_addr[29]
   PIN io_dbus_addr[2]
@@ -204,7 +204,7 @@ MACRO Core
     USE SIGNAL ;
     PORT
       LAYER met3 ;
-        RECT 496.000 287.680 500.000 288.280 ;
+        RECT 496.000 285.640 500.000 286.240 ;
     END
   END io_dbus_addr[30]
   PIN io_dbus_addr[31]
@@ -212,7 +212,7 @@ MACRO Core
     USE SIGNAL ;
     PORT
       LAYER met3 ;
-        RECT 496.000 296.520 500.000 297.120 ;
+        RECT 496.000 294.480 500.000 295.080 ;
     END
   END io_dbus_addr[31]
   PIN io_dbus_addr[3]
@@ -220,7 +220,7 @@ MACRO Core
     USE SIGNAL ;
     PORT
       LAYER met3 ;
-        RECT 496.000 51.040 500.000 51.640 ;
+        RECT 496.000 50.360 500.000 50.960 ;
     END
   END io_dbus_addr[3]
   PIN io_dbus_addr[4]
@@ -252,7 +252,7 @@ MACRO Core
     USE SIGNAL ;
     PORT
       LAYER met3 ;
-        RECT 496.000 85.720 500.000 86.320 ;
+        RECT 496.000 85.040 500.000 85.640 ;
     END
   END io_dbus_addr[7]
   PIN io_dbus_addr[8]
@@ -260,7 +260,7 @@ MACRO Core
     USE SIGNAL ;
     PORT
       LAYER met3 ;
-        RECT 496.000 94.560 500.000 95.160 ;
+        RECT 496.000 93.880 500.000 94.480 ;
     END
   END io_dbus_addr[8]
   PIN io_dbus_addr[9]
@@ -268,7 +268,7 @@ MACRO Core
     USE SIGNAL ;
     PORT
       LAYER met3 ;
-        RECT 496.000 103.400 500.000 104.000 ;
+        RECT 496.000 102.720 500.000 103.320 ;
     END
   END io_dbus_addr[9]
   PIN io_dbus_ld_type[0]
@@ -292,7 +292,7 @@ MACRO Core
     USE SIGNAL ;
     PORT
       LAYER met3 ;
-        RECT 496.000 42.200 500.000 42.800 ;
+        RECT 496.000 41.520 500.000 42.120 ;
     END
   END io_dbus_ld_type[2]
   PIN io_dbus_rd_en
@@ -316,7 +316,7 @@ MACRO Core
     USE SIGNAL ;
     PORT
       LAYER met3 ;
-        RECT 496.000 114.960 500.000 115.560 ;
+        RECT 496.000 114.280 500.000 114.880 ;
     END
   END io_dbus_rdata[10]
   PIN io_dbus_rdata[11]
@@ -324,7 +324,7 @@ MACRO Core
     USE SIGNAL ;
     PORT
       LAYER met3 ;
-        RECT 496.000 123.800 500.000 124.400 ;
+        RECT 496.000 123.120 500.000 123.720 ;
     END
   END io_dbus_rdata[11]
   PIN io_dbus_rdata[12]
@@ -332,7 +332,7 @@ MACRO Core
     USE SIGNAL ;
     PORT
       LAYER met3 ;
-        RECT 496.000 132.640 500.000 133.240 ;
+        RECT 496.000 131.960 500.000 132.560 ;
     END
   END io_dbus_rdata[12]
   PIN io_dbus_rdata[13]
@@ -340,7 +340,7 @@ MACRO Core
     USE SIGNAL ;
     PORT
       LAYER met3 ;
-        RECT 496.000 141.480 500.000 142.080 ;
+        RECT 496.000 140.800 500.000 141.400 ;
     END
   END io_dbus_rdata[13]
   PIN io_dbus_rdata[14]
@@ -348,7 +348,7 @@ MACRO Core
     USE SIGNAL ;
     PORT
       LAYER met3 ;
-        RECT 496.000 150.320 500.000 150.920 ;
+        RECT 496.000 148.960 500.000 149.560 ;
     END
   END io_dbus_rdata[14]
   PIN io_dbus_rdata[15]
@@ -356,7 +356,7 @@ MACRO Core
     USE SIGNAL ;
     PORT
       LAYER met3 ;
-        RECT 496.000 159.160 500.000 159.760 ;
+        RECT 496.000 157.800 500.000 158.400 ;
     END
   END io_dbus_rdata[15]
   PIN io_dbus_rdata[16]
@@ -364,7 +364,7 @@ MACRO Core
     USE SIGNAL ;
     PORT
       LAYER met3 ;
-        RECT 496.000 168.000 500.000 168.600 ;
+        RECT 496.000 166.640 500.000 167.240 ;
     END
   END io_dbus_rdata[16]
   PIN io_dbus_rdata[17]
@@ -372,7 +372,7 @@ MACRO Core
     USE SIGNAL ;
     PORT
       LAYER met3 ;
-        RECT 496.000 176.160 500.000 176.760 ;
+        RECT 496.000 175.480 500.000 176.080 ;
     END
   END io_dbus_rdata[17]
   PIN io_dbus_rdata[18]
@@ -380,7 +380,7 @@ MACRO Core
     USE SIGNAL ;
     PORT
       LAYER met3 ;
-        RECT 496.000 185.000 500.000 185.600 ;
+        RECT 496.000 184.320 500.000 184.920 ;
     END
   END io_dbus_rdata[18]
   PIN io_dbus_rdata[19]
@@ -388,7 +388,7 @@ MACRO Core
     USE SIGNAL ;
     PORT
       LAYER met3 ;
-        RECT 496.000 193.840 500.000 194.440 ;
+        RECT 496.000 193.160 500.000 193.760 ;
     END
   END io_dbus_rdata[19]
   PIN io_dbus_rdata[1]
@@ -404,7 +404,7 @@ MACRO Core
     USE SIGNAL ;
     PORT
       LAYER met3 ;
-        RECT 496.000 202.680 500.000 203.280 ;
+        RECT 496.000 201.320 500.000 201.920 ;
     END
   END io_dbus_rdata[20]
   PIN io_dbus_rdata[21]
@@ -412,7 +412,7 @@ MACRO Core
     USE SIGNAL ;
     PORT
       LAYER met3 ;
-        RECT 496.000 211.520 500.000 212.120 ;
+        RECT 496.000 210.160 500.000 210.760 ;
     END
   END io_dbus_rdata[21]
   PIN io_dbus_rdata[22]
@@ -420,7 +420,7 @@ MACRO Core
     USE SIGNAL ;
     PORT
       LAYER met3 ;
-        RECT 496.000 220.360 500.000 220.960 ;
+        RECT 496.000 219.000 500.000 219.600 ;
     END
   END io_dbus_rdata[22]
   PIN io_dbus_rdata[23]
@@ -428,7 +428,7 @@ MACRO Core
     USE SIGNAL ;
     PORT
       LAYER met3 ;
-        RECT 496.000 229.200 500.000 229.800 ;
+        RECT 496.000 227.840 500.000 228.440 ;
     END
   END io_dbus_rdata[23]
   PIN io_dbus_rdata[24]
@@ -436,7 +436,7 @@ MACRO Core
     USE SIGNAL ;
     PORT
       LAYER met3 ;
-        RECT 496.000 238.040 500.000 238.640 ;
+        RECT 496.000 236.680 500.000 237.280 ;
     END
   END io_dbus_rdata[24]
   PIN io_dbus_rdata[25]
@@ -444,7 +444,7 @@ MACRO Core
     USE SIGNAL ;
     PORT
       LAYER met3 ;
-        RECT 496.000 246.880 500.000 247.480 ;
+        RECT 496.000 244.840 500.000 245.440 ;
     END
   END io_dbus_rdata[25]
   PIN io_dbus_rdata[26]
@@ -452,7 +452,7 @@ MACRO Core
     USE SIGNAL ;
     PORT
       LAYER met3 ;
-        RECT 496.000 255.040 500.000 255.640 ;
+        RECT 496.000 253.680 500.000 254.280 ;
     END
   END io_dbus_rdata[26]
   PIN io_dbus_rdata[27]
@@ -460,7 +460,7 @@ MACRO Core
     USE SIGNAL ;
     PORT
       LAYER met3 ;
-        RECT 496.000 263.880 500.000 264.480 ;
+        RECT 496.000 262.520 500.000 263.120 ;
     END
   END io_dbus_rdata[27]
   PIN io_dbus_rdata[28]
@@ -468,7 +468,7 @@ MACRO Core
     USE SIGNAL ;
     PORT
       LAYER met3 ;
-        RECT 496.000 272.720 500.000 273.320 ;
+        RECT 496.000 271.360 500.000 271.960 ;
     END
   END io_dbus_rdata[28]
   PIN io_dbus_rdata[29]
@@ -476,7 +476,7 @@ MACRO Core
     USE SIGNAL ;
     PORT
       LAYER met3 ;
-        RECT 496.000 281.560 500.000 282.160 ;
+        RECT 496.000 280.200 500.000 280.800 ;
     END
   END io_dbus_rdata[29]
   PIN io_dbus_rdata[2]
@@ -492,7 +492,7 @@ MACRO Core
     USE SIGNAL ;
     PORT
       LAYER met3 ;
-        RECT 496.000 290.400 500.000 291.000 ;
+        RECT 496.000 289.040 500.000 289.640 ;
     END
   END io_dbus_rdata[30]
   PIN io_dbus_rdata[31]
@@ -500,7 +500,7 @@ MACRO Core
     USE SIGNAL ;
     PORT
       LAYER met3 ;
-        RECT 496.000 299.240 500.000 299.840 ;
+        RECT 496.000 297.200 500.000 297.800 ;
     END
   END io_dbus_rdata[31]
   PIN io_dbus_rdata[3]
@@ -508,7 +508,7 @@ MACRO Core
     USE SIGNAL ;
     PORT
       LAYER met3 ;
-        RECT 496.000 53.760 500.000 54.360 ;
+        RECT 496.000 53.080 500.000 53.680 ;
     END
   END io_dbus_rdata[3]
   PIN io_dbus_rdata[4]
@@ -516,7 +516,7 @@ MACRO Core
     USE SIGNAL ;
     PORT
       LAYER met3 ;
-        RECT 496.000 62.600 500.000 63.200 ;
+        RECT 496.000 61.920 500.000 62.520 ;
     END
   END io_dbus_rdata[4]
   PIN io_dbus_rdata[5]
@@ -524,7 +524,7 @@ MACRO Core
     USE SIGNAL ;
     PORT
       LAYER met3 ;
-        RECT 496.000 71.440 500.000 72.040 ;
+        RECT 496.000 70.760 500.000 71.360 ;
     END
   END io_dbus_rdata[5]
   PIN io_dbus_rdata[6]
@@ -532,7 +532,7 @@ MACRO Core
     USE SIGNAL ;
     PORT
       LAYER met3 ;
-        RECT 496.000 80.280 500.000 80.880 ;
+        RECT 496.000 79.600 500.000 80.200 ;
     END
   END io_dbus_rdata[6]
   PIN io_dbus_rdata[7]
@@ -556,7 +556,7 @@ MACRO Core
     USE SIGNAL ;
     PORT
       LAYER met3 ;
-        RECT 496.000 106.120 500.000 106.720 ;
+        RECT 496.000 105.440 500.000 106.040 ;
     END
   END io_dbus_rdata[9]
   PIN io_dbus_st_type[0]
@@ -588,7 +588,7 @@ MACRO Core
     USE SIGNAL ;
     PORT
       LAYER met3 ;
-        RECT 496.000 21.800 500.000 22.400 ;
+        RECT 496.000 21.120 500.000 21.720 ;
     END
   END io_dbus_wdata[0]
   PIN io_dbus_wdata[10]
@@ -596,7 +596,7 @@ MACRO Core
     USE SIGNAL ;
     PORT
       LAYER met3 ;
-        RECT 496.000 117.680 500.000 118.280 ;
+        RECT 496.000 117.000 500.000 117.600 ;
     END
   END io_dbus_wdata[10]
   PIN io_dbus_wdata[11]
@@ -604,7 +604,7 @@ MACRO Core
     USE SIGNAL ;
     PORT
       LAYER met3 ;
-        RECT 496.000 126.520 500.000 127.120 ;
+        RECT 496.000 125.840 500.000 126.440 ;
     END
   END io_dbus_wdata[11]
   PIN io_dbus_wdata[12]
@@ -612,7 +612,7 @@ MACRO Core
     USE SIGNAL ;
     PORT
       LAYER met3 ;
-        RECT 496.000 135.360 500.000 135.960 ;
+        RECT 496.000 134.680 500.000 135.280 ;
     END
   END io_dbus_wdata[12]
   PIN io_dbus_wdata[13]
@@ -620,7 +620,7 @@ MACRO Core
     USE SIGNAL ;
     PORT
       LAYER met3 ;
-        RECT 496.000 144.200 500.000 144.800 ;
+        RECT 496.000 143.520 500.000 144.120 ;
     END
   END io_dbus_wdata[13]
   PIN io_dbus_wdata[14]
@@ -628,7 +628,7 @@ MACRO Core
     USE SIGNAL ;
     PORT
       LAYER met3 ;
-        RECT 496.000 153.040 500.000 153.640 ;
+        RECT 496.000 152.360 500.000 152.960 ;
     END
   END io_dbus_wdata[14]
   PIN io_dbus_wdata[15]
@@ -636,7 +636,7 @@ MACRO Core
     USE SIGNAL ;
     PORT
       LAYER met3 ;
-        RECT 496.000 161.880 500.000 162.480 ;
+        RECT 496.000 161.200 500.000 161.800 ;
     END
   END io_dbus_wdata[15]
   PIN io_dbus_wdata[16]
@@ -644,7 +644,7 @@ MACRO Core
     USE SIGNAL ;
     PORT
       LAYER met3 ;
-        RECT 496.000 170.720 500.000 171.320 ;
+        RECT 496.000 169.360 500.000 169.960 ;
     END
   END io_dbus_wdata[16]
   PIN io_dbus_wdata[17]
@@ -652,7 +652,7 @@ MACRO Core
     USE SIGNAL ;
     PORT
       LAYER met3 ;
-        RECT 496.000 179.560 500.000 180.160 ;
+        RECT 496.000 178.200 500.000 178.800 ;
     END
   END io_dbus_wdata[17]
   PIN io_dbus_wdata[18]
@@ -660,7 +660,7 @@ MACRO Core
     USE SIGNAL ;
     PORT
       LAYER met3 ;
-        RECT 496.000 188.400 500.000 189.000 ;
+        RECT 496.000 187.040 500.000 187.640 ;
     END
   END io_dbus_wdata[18]
   PIN io_dbus_wdata[19]
@@ -668,7 +668,7 @@ MACRO Core
     USE SIGNAL ;
     PORT
       LAYER met3 ;
-        RECT 496.000 196.560 500.000 197.160 ;
+        RECT 496.000 195.880 500.000 196.480 ;
     END
   END io_dbus_wdata[19]
   PIN io_dbus_wdata[1]
@@ -684,7 +684,7 @@ MACRO Core
     USE SIGNAL ;
     PORT
       LAYER met3 ;
-        RECT 496.000 205.400 500.000 206.000 ;
+        RECT 496.000 204.720 500.000 205.320 ;
     END
   END io_dbus_wdata[20]
   PIN io_dbus_wdata[21]
@@ -692,7 +692,7 @@ MACRO Core
     USE SIGNAL ;
     PORT
       LAYER met3 ;
-        RECT 496.000 214.240 500.000 214.840 ;
+        RECT 496.000 212.880 500.000 213.480 ;
     END
   END io_dbus_wdata[21]
   PIN io_dbus_wdata[22]
@@ -700,7 +700,7 @@ MACRO Core
     USE SIGNAL ;
     PORT
       LAYER met3 ;
-        RECT 496.000 223.080 500.000 223.680 ;
+        RECT 496.000 221.720 500.000 222.320 ;
     END
   END io_dbus_wdata[22]
   PIN io_dbus_wdata[23]
@@ -708,7 +708,7 @@ MACRO Core
     USE SIGNAL ;
     PORT
       LAYER met3 ;
-        RECT 496.000 231.920 500.000 232.520 ;
+        RECT 496.000 230.560 500.000 231.160 ;
     END
   END io_dbus_wdata[23]
   PIN io_dbus_wdata[24]
@@ -716,7 +716,7 @@ MACRO Core
     USE SIGNAL ;
     PORT
       LAYER met3 ;
-        RECT 496.000 240.760 500.000 241.360 ;
+        RECT 496.000 239.400 500.000 240.000 ;
     END
   END io_dbus_wdata[24]
   PIN io_dbus_wdata[25]
@@ -724,7 +724,7 @@ MACRO Core
     USE SIGNAL ;
     PORT
       LAYER met3 ;
-        RECT 496.000 249.600 500.000 250.200 ;
+        RECT 496.000 248.240 500.000 248.840 ;
     END
   END io_dbus_wdata[25]
   PIN io_dbus_wdata[26]
@@ -732,7 +732,7 @@ MACRO Core
     USE SIGNAL ;
     PORT
       LAYER met3 ;
-        RECT 496.000 258.440 500.000 259.040 ;
+        RECT 496.000 257.080 500.000 257.680 ;
     END
   END io_dbus_wdata[26]
   PIN io_dbus_wdata[27]
@@ -740,7 +740,7 @@ MACRO Core
     USE SIGNAL ;
     PORT
       LAYER met3 ;
-        RECT 496.000 267.280 500.000 267.880 ;
+        RECT 496.000 265.240 500.000 265.840 ;
     END
   END io_dbus_wdata[27]
   PIN io_dbus_wdata[28]
@@ -748,7 +748,7 @@ MACRO Core
     USE SIGNAL ;
     PORT
       LAYER met3 ;
-        RECT 496.000 276.120 500.000 276.720 ;
+        RECT 496.000 274.080 500.000 274.680 ;
     END
   END io_dbus_wdata[28]
   PIN io_dbus_wdata[29]
@@ -756,7 +756,7 @@ MACRO Core
     USE SIGNAL ;
     PORT
       LAYER met3 ;
-        RECT 496.000 284.280 500.000 284.880 ;
+        RECT 496.000 282.920 500.000 283.520 ;
     END
   END io_dbus_wdata[29]
   PIN io_dbus_wdata[2]
@@ -772,7 +772,7 @@ MACRO Core
     USE SIGNAL ;
     PORT
       LAYER met3 ;
-        RECT 496.000 293.120 500.000 293.720 ;
+        RECT 496.000 291.760 500.000 292.360 ;
     END
   END io_dbus_wdata[30]
   PIN io_dbus_wdata[31]
@@ -780,7 +780,7 @@ MACRO Core
     USE SIGNAL ;
     PORT
       LAYER met3 ;
-        RECT 496.000 301.960 500.000 302.560 ;
+        RECT 496.000 300.600 500.000 301.200 ;
     END
   END io_dbus_wdata[31]
   PIN io_dbus_wdata[3]
@@ -804,7 +804,7 @@ MACRO Core
     USE SIGNAL ;
     PORT
       LAYER met3 ;
-        RECT 496.000 74.160 500.000 74.760 ;
+        RECT 496.000 73.480 500.000 74.080 ;
     END
   END io_dbus_wdata[5]
   PIN io_dbus_wdata[6]
@@ -812,7 +812,7 @@ MACRO Core
     USE SIGNAL ;
     PORT
       LAYER met3 ;
-        RECT 496.000 83.000 500.000 83.600 ;
+        RECT 496.000 82.320 500.000 82.920 ;
     END
   END io_dbus_wdata[6]
   PIN io_dbus_wdata[7]
@@ -820,7 +820,7 @@ MACRO Core
     USE SIGNAL ;
     PORT
       LAYER met3 ;
-        RECT 496.000 91.840 500.000 92.440 ;
+        RECT 496.000 91.160 500.000 91.760 ;
     END
   END io_dbus_wdata[7]
   PIN io_dbus_wdata[8]
@@ -828,7 +828,7 @@ MACRO Core
     USE SIGNAL ;
     PORT
       LAYER met3 ;
-        RECT 496.000 100.680 500.000 101.280 ;
+        RECT 496.000 100.000 500.000 100.600 ;
     END
   END io_dbus_wdata[8]
   PIN io_dbus_wdata[9]
@@ -836,7 +836,7 @@ MACRO Core
     USE SIGNAL ;
     PORT
       LAYER met3 ;
-        RECT 496.000 109.520 500.000 110.120 ;
+        RECT 496.000 108.840 500.000 109.440 ;
     END
   END io_dbus_wdata[9]
   PIN io_dbus_wr_en
@@ -852,7 +852,7 @@ MACRO Core
     USE SIGNAL ;
     PORT
       LAYER met3 ;
-        RECT 496.000 308.080 500.000 308.680 ;
+        RECT 496.000 306.040 500.000 306.640 ;
     END
   END io_ibus_addr[0]
   PIN io_ibus_addr[10]
@@ -860,7 +860,7 @@ MACRO Core
     USE SIGNAL ;
     PORT
       LAYER met3 ;
-        RECT 496.000 366.560 500.000 367.160 ;
+        RECT 496.000 364.520 500.000 365.120 ;
     END
   END io_ibus_addr[10]
   PIN io_ibus_addr[11]
@@ -868,7 +868,7 @@ MACRO Core
     USE SIGNAL ;
     PORT
       LAYER met3 ;
-        RECT 496.000 372.000 500.000 372.600 ;
+        RECT 496.000 369.960 500.000 370.560 ;
     END
   END io_ibus_addr[11]
   PIN io_ibus_addr[12]
@@ -876,7 +876,7 @@ MACRO Core
     USE SIGNAL ;
     PORT
       LAYER met3 ;
-        RECT 496.000 378.120 500.000 378.720 ;
+        RECT 496.000 376.080 500.000 376.680 ;
     END
   END io_ibus_addr[12]
   PIN io_ibus_addr[13]
@@ -884,7 +884,7 @@ MACRO Core
     USE SIGNAL ;
     PORT
       LAYER met3 ;
-        RECT 496.000 384.240 500.000 384.840 ;
+        RECT 496.000 381.520 500.000 382.120 ;
     END
   END io_ibus_addr[13]
   PIN io_ibus_addr[14]
@@ -892,7 +892,7 @@ MACRO Core
     USE SIGNAL ;
     PORT
       LAYER met3 ;
-        RECT 496.000 389.680 500.000 390.280 ;
+        RECT 496.000 387.640 500.000 388.240 ;
     END
   END io_ibus_addr[14]
   PIN io_ibus_addr[15]
@@ -900,7 +900,7 @@ MACRO Core
     USE SIGNAL ;
     PORT
       LAYER met3 ;
-        RECT 496.000 395.800 500.000 396.400 ;
+        RECT 496.000 393.080 500.000 393.680 ;
     END
   END io_ibus_addr[15]
   PIN io_ibus_addr[16]
@@ -908,7 +908,7 @@ MACRO Core
     USE SIGNAL ;
     PORT
       LAYER met3 ;
-        RECT 496.000 401.240 500.000 401.840 ;
+        RECT 496.000 399.200 500.000 399.800 ;
     END
   END io_ibus_addr[16]
   PIN io_ibus_addr[17]
@@ -916,7 +916,7 @@ MACRO Core
     USE SIGNAL ;
     PORT
       LAYER met3 ;
-        RECT 496.000 407.360 500.000 407.960 ;
+        RECT 496.000 404.640 500.000 405.240 ;
     END
   END io_ibus_addr[17]
   PIN io_ibus_addr[18]
@@ -924,7 +924,7 @@ MACRO Core
     USE SIGNAL ;
     PORT
       LAYER met3 ;
-        RECT 496.000 413.480 500.000 414.080 ;
+        RECT 496.000 410.760 500.000 411.360 ;
     END
   END io_ibus_addr[18]
   PIN io_ibus_addr[19]
@@ -932,7 +932,7 @@ MACRO Core
     USE SIGNAL ;
     PORT
       LAYER met3 ;
-        RECT 496.000 418.920 500.000 419.520 ;
+        RECT 496.000 416.880 500.000 417.480 ;
     END
   END io_ibus_addr[19]
   PIN io_ibus_addr[1]
@@ -940,7 +940,7 @@ MACRO Core
     USE SIGNAL ;
     PORT
       LAYER met3 ;
-        RECT 496.000 313.520 500.000 314.120 ;
+        RECT 496.000 312.160 500.000 312.760 ;
     END
   END io_ibus_addr[1]
   PIN io_ibus_addr[20]
@@ -948,7 +948,7 @@ MACRO Core
     USE SIGNAL ;
     PORT
       LAYER met3 ;
-        RECT 496.000 425.040 500.000 425.640 ;
+        RECT 496.000 422.320 500.000 422.920 ;
     END
   END io_ibus_addr[20]
   PIN io_ibus_addr[21]
@@ -956,7 +956,7 @@ MACRO Core
     USE SIGNAL ;
     PORT
       LAYER met3 ;
-        RECT 496.000 430.480 500.000 431.080 ;
+        RECT 496.000 428.440 500.000 429.040 ;
     END
   END io_ibus_addr[21]
   PIN io_ibus_addr[22]
@@ -964,7 +964,7 @@ MACRO Core
     USE SIGNAL ;
     PORT
       LAYER met3 ;
-        RECT 496.000 436.600 500.000 437.200 ;
+        RECT 496.000 433.880 500.000 434.480 ;
     END
   END io_ibus_addr[22]
   PIN io_ibus_addr[23]
@@ -972,7 +972,7 @@ MACRO Core
     USE SIGNAL ;
     PORT
       LAYER met3 ;
-        RECT 496.000 442.720 500.000 443.320 ;
+        RECT 496.000 440.000 500.000 440.600 ;
     END
   END io_ibus_addr[23]
   PIN io_ibus_addr[24]
@@ -980,7 +980,7 @@ MACRO Core
     USE SIGNAL ;
     PORT
       LAYER met3 ;
-        RECT 496.000 448.160 500.000 448.760 ;
+        RECT 496.000 445.440 500.000 446.040 ;
     END
   END io_ibus_addr[24]
   PIN io_ibus_addr[25]
@@ -988,7 +988,7 @@ MACRO Core
     USE SIGNAL ;
     PORT
       LAYER met3 ;
-        RECT 496.000 454.280 500.000 454.880 ;
+        RECT 496.000 451.560 500.000 452.160 ;
     END
   END io_ibus_addr[25]
   PIN io_ibus_addr[26]
@@ -996,7 +996,7 @@ MACRO Core
     USE SIGNAL ;
     PORT
       LAYER met3 ;
-        RECT 496.000 459.720 500.000 460.320 ;
+        RECT 496.000 457.000 500.000 457.600 ;
     END
   END io_ibus_addr[26]
   PIN io_ibus_addr[27]
@@ -1004,7 +1004,7 @@ MACRO Core
     USE SIGNAL ;
     PORT
       LAYER met3 ;
-        RECT 496.000 465.840 500.000 466.440 ;
+        RECT 496.000 463.120 500.000 463.720 ;
     END
   END io_ibus_addr[27]
   PIN io_ibus_addr[28]
@@ -1012,7 +1012,7 @@ MACRO Core
     USE SIGNAL ;
     PORT
       LAYER met3 ;
-        RECT 496.000 471.960 500.000 472.560 ;
+        RECT 496.000 468.560 500.000 469.160 ;
     END
   END io_ibus_addr[28]
   PIN io_ibus_addr[29]
@@ -1020,7 +1020,7 @@ MACRO Core
     USE SIGNAL ;
     PORT
       LAYER met3 ;
-        RECT 496.000 477.400 500.000 478.000 ;
+        RECT 496.000 474.680 500.000 475.280 ;
     END
   END io_ibus_addr[29]
   PIN io_ibus_addr[2]
@@ -1028,7 +1028,7 @@ MACRO Core
     USE SIGNAL ;
     PORT
       LAYER met3 ;
-        RECT 496.000 319.640 500.000 320.240 ;
+        RECT 496.000 317.600 500.000 318.200 ;
     END
   END io_ibus_addr[2]
   PIN io_ibus_addr[30]
@@ -1036,7 +1036,7 @@ MACRO Core
     USE SIGNAL ;
     PORT
       LAYER met3 ;
-        RECT 496.000 483.520 500.000 484.120 ;
+        RECT 496.000 480.800 500.000 481.400 ;
     END
   END io_ibus_addr[30]
   PIN io_ibus_addr[31]
@@ -1044,7 +1044,7 @@ MACRO Core
     USE SIGNAL ;
     PORT
       LAYER met3 ;
-        RECT 496.000 488.960 500.000 489.560 ;
+        RECT 496.000 486.240 500.000 486.840 ;
     END
   END io_ibus_addr[31]
   PIN io_ibus_addr[3]
@@ -1052,7 +1052,7 @@ MACRO Core
     USE SIGNAL ;
     PORT
       LAYER met3 ;
-        RECT 496.000 325.760 500.000 326.360 ;
+        RECT 496.000 323.720 500.000 324.320 ;
     END
   END io_ibus_addr[3]
   PIN io_ibus_addr[4]
@@ -1060,7 +1060,7 @@ MACRO Core
     USE SIGNAL ;
     PORT
       LAYER met3 ;
-        RECT 496.000 331.200 500.000 331.800 ;
+        RECT 496.000 329.160 500.000 329.760 ;
     END
   END io_ibus_addr[4]
   PIN io_ibus_addr[5]
@@ -1068,7 +1068,7 @@ MACRO Core
     USE SIGNAL ;
     PORT
       LAYER met3 ;
-        RECT 496.000 337.320 500.000 337.920 ;
+        RECT 496.000 335.280 500.000 335.880 ;
     END
   END io_ibus_addr[5]
   PIN io_ibus_addr[6]
@@ -1076,7 +1076,7 @@ MACRO Core
     USE SIGNAL ;
     PORT
       LAYER met3 ;
-        RECT 496.000 342.760 500.000 343.360 ;
+        RECT 496.000 340.720 500.000 341.320 ;
     END
   END io_ibus_addr[6]
   PIN io_ibus_addr[7]
@@ -1084,7 +1084,7 @@ MACRO Core
     USE SIGNAL ;
     PORT
       LAYER met3 ;
-        RECT 496.000 348.880 500.000 349.480 ;
+        RECT 496.000 346.840 500.000 347.440 ;
     END
   END io_ibus_addr[7]
   PIN io_ibus_addr[8]
@@ -1092,7 +1092,7 @@ MACRO Core
     USE SIGNAL ;
     PORT
       LAYER met3 ;
-        RECT 496.000 355.000 500.000 355.600 ;
+        RECT 496.000 352.960 500.000 353.560 ;
     END
   END io_ibus_addr[8]
   PIN io_ibus_addr[9]
@@ -1100,7 +1100,7 @@ MACRO Core
     USE SIGNAL ;
     PORT
       LAYER met3 ;
-        RECT 496.000 360.440 500.000 361.040 ;
+        RECT 496.000 358.400 500.000 359.000 ;
     END
   END io_ibus_addr[9]
   PIN io_ibus_inst[0]
@@ -1108,7 +1108,7 @@ MACRO Core
     USE SIGNAL ;
     PORT
       LAYER met3 ;
-        RECT 496.000 310.800 500.000 311.400 ;
+        RECT 496.000 308.760 500.000 309.360 ;
     END
   END io_ibus_inst[0]
   PIN io_ibus_inst[10]
@@ -1116,7 +1116,7 @@ MACRO Core
     USE SIGNAL ;
     PORT
       LAYER met3 ;
-        RECT 496.000 369.280 500.000 369.880 ;
+        RECT 496.000 367.240 500.000 367.840 ;
     END
   END io_ibus_inst[10]
   PIN io_ibus_inst[11]
@@ -1124,7 +1124,7 @@ MACRO Core
     USE SIGNAL ;
     PORT
       LAYER met3 ;
-        RECT 496.000 375.400 500.000 376.000 ;
+        RECT 496.000 372.680 500.000 373.280 ;
     END
   END io_ibus_inst[11]
   PIN io_ibus_inst[12]
@@ -1132,7 +1132,7 @@ MACRO Core
     USE SIGNAL ;
     PORT
       LAYER met3 ;
-        RECT 496.000 380.840 500.000 381.440 ;
+        RECT 496.000 378.800 500.000 379.400 ;
     END
   END io_ibus_inst[12]
   PIN io_ibus_inst[13]
@@ -1140,7 +1140,7 @@ MACRO Core
     USE SIGNAL ;
     PORT
       LAYER met3 ;
-        RECT 496.000 386.960 500.000 387.560 ;
+        RECT 496.000 384.920 500.000 385.520 ;
     END
   END io_ibus_inst[13]
   PIN io_ibus_inst[14]
@@ -1148,7 +1148,7 @@ MACRO Core
     USE SIGNAL ;
     PORT
       LAYER met3 ;
-        RECT 496.000 392.400 500.000 393.000 ;
+        RECT 496.000 390.360 500.000 390.960 ;
     END
   END io_ibus_inst[14]
   PIN io_ibus_inst[15]
@@ -1156,7 +1156,7 @@ MACRO Core
     USE SIGNAL ;
     PORT
       LAYER met3 ;
-        RECT 496.000 398.520 500.000 399.120 ;
+        RECT 496.000 396.480 500.000 397.080 ;
     END
   END io_ibus_inst[15]
   PIN io_ibus_inst[16]
@@ -1164,7 +1164,7 @@ MACRO Core
     USE SIGNAL ;
     PORT
       LAYER met3 ;
-        RECT 496.000 404.640 500.000 405.240 ;
+        RECT 496.000 401.920 500.000 402.520 ;
     END
   END io_ibus_inst[16]
   PIN io_ibus_inst[17]
@@ -1172,7 +1172,7 @@ MACRO Core
     USE SIGNAL ;
     PORT
       LAYER met3 ;
-        RECT 496.000 410.080 500.000 410.680 ;
+        RECT 496.000 408.040 500.000 408.640 ;
     END
   END io_ibus_inst[17]
   PIN io_ibus_inst[18]
@@ -1180,7 +1180,7 @@ MACRO Core
     USE SIGNAL ;
     PORT
       LAYER met3 ;
-        RECT 496.000 416.200 500.000 416.800 ;
+        RECT 496.000 413.480 500.000 414.080 ;
     END
   END io_ibus_inst[18]
   PIN io_ibus_inst[19]
@@ -1188,7 +1188,7 @@ MACRO Core
     USE SIGNAL ;
     PORT
       LAYER met3 ;
-        RECT 496.000 421.640 500.000 422.240 ;
+        RECT 496.000 419.600 500.000 420.200 ;
     END
   END io_ibus_inst[19]
   PIN io_ibus_inst[1]
@@ -1196,7 +1196,7 @@ MACRO Core
     USE SIGNAL ;
     PORT
       LAYER met3 ;
-        RECT 496.000 316.920 500.000 317.520 ;
+        RECT 496.000 314.880 500.000 315.480 ;
     END
   END io_ibus_inst[1]
   PIN io_ibus_inst[20]
@@ -1204,7 +1204,7 @@ MACRO Core
     USE SIGNAL ;
     PORT
       LAYER met3 ;
-        RECT 496.000 427.760 500.000 428.360 ;
+        RECT 496.000 425.040 500.000 425.640 ;
     END
   END io_ibus_inst[20]
   PIN io_ibus_inst[21]
@@ -1212,7 +1212,7 @@ MACRO Core
     USE SIGNAL ;
     PORT
       LAYER met3 ;
-        RECT 496.000 433.880 500.000 434.480 ;
+        RECT 496.000 431.160 500.000 431.760 ;
     END
   END io_ibus_inst[21]
   PIN io_ibus_inst[22]
@@ -1220,7 +1220,7 @@ MACRO Core
     USE SIGNAL ;
     PORT
       LAYER met3 ;
-        RECT 496.000 439.320 500.000 439.920 ;
+        RECT 496.000 436.600 500.000 437.200 ;
     END
   END io_ibus_inst[22]
   PIN io_ibus_inst[23]
@@ -1228,7 +1228,7 @@ MACRO Core
     USE SIGNAL ;
     PORT
       LAYER met3 ;
-        RECT 496.000 445.440 500.000 446.040 ;
+        RECT 496.000 442.720 500.000 443.320 ;
     END
   END io_ibus_inst[23]
   PIN io_ibus_inst[24]
@@ -1236,7 +1236,7 @@ MACRO Core
     USE SIGNAL ;
     PORT
       LAYER met3 ;
-        RECT 496.000 450.880 500.000 451.480 ;
+        RECT 496.000 448.840 500.000 449.440 ;
     END
   END io_ibus_inst[24]
   PIN io_ibus_inst[25]
@@ -1244,7 +1244,7 @@ MACRO Core
     USE SIGNAL ;
     PORT
       LAYER met3 ;
-        RECT 496.000 457.000 500.000 457.600 ;
+        RECT 496.000 454.280 500.000 454.880 ;
     END
   END io_ibus_inst[25]
   PIN io_ibus_inst[26]
@@ -1252,7 +1252,7 @@ MACRO Core
     USE SIGNAL ;
     PORT
       LAYER met3 ;
-        RECT 496.000 463.120 500.000 463.720 ;
+        RECT 496.000 460.400 500.000 461.000 ;
     END
   END io_ibus_inst[26]
   PIN io_ibus_inst[27]
@@ -1260,7 +1260,7 @@ MACRO Core
     USE SIGNAL ;
     PORT
       LAYER met3 ;
-        RECT 496.000 468.560 500.000 469.160 ;
+        RECT 496.000 465.840 500.000 466.440 ;
     END
   END io_ibus_inst[27]
   PIN io_ibus_inst[28]
@@ -1268,7 +1268,7 @@ MACRO Core
     USE SIGNAL ;
     PORT
       LAYER met3 ;
-        RECT 496.000 474.680 500.000 475.280 ;
+        RECT 496.000 471.960 500.000 472.560 ;
     END
   END io_ibus_inst[28]
   PIN io_ibus_inst[29]
@@ -1276,7 +1276,7 @@ MACRO Core
     USE SIGNAL ;
     PORT
       LAYER met3 ;
-        RECT 496.000 480.120 500.000 480.720 ;
+        RECT 496.000 477.400 500.000 478.000 ;
     END
   END io_ibus_inst[29]
   PIN io_ibus_inst[2]
@@ -1284,7 +1284,7 @@ MACRO Core
     USE SIGNAL ;
     PORT
       LAYER met3 ;
-        RECT 496.000 322.360 500.000 322.960 ;
+        RECT 496.000 321.000 500.000 321.600 ;
     END
   END io_ibus_inst[2]
   PIN io_ibus_inst[30]
@@ -1292,7 +1292,7 @@ MACRO Core
     USE SIGNAL ;
     PORT
       LAYER met3 ;
-        RECT 496.000 486.240 500.000 486.840 ;
+        RECT 496.000 483.520 500.000 484.120 ;
     END
   END io_ibus_inst[30]
   PIN io_ibus_inst[31]
@@ -1300,7 +1300,7 @@ MACRO Core
     USE SIGNAL ;
     PORT
       LAYER met3 ;
-        RECT 496.000 492.360 500.000 492.960 ;
+        RECT 496.000 488.960 500.000 489.560 ;
     END
   END io_ibus_inst[31]
   PIN io_ibus_inst[3]
@@ -1308,7 +1308,7 @@ MACRO Core
     USE SIGNAL ;
     PORT
       LAYER met3 ;
-        RECT 496.000 328.480 500.000 329.080 ;
+        RECT 496.000 326.440 500.000 327.040 ;
     END
   END io_ibus_inst[3]
   PIN io_ibus_inst[4]
@@ -1316,7 +1316,7 @@ MACRO Core
     USE SIGNAL ;
     PORT
       LAYER met3 ;
-        RECT 496.000 334.600 500.000 335.200 ;
+        RECT 496.000 332.560 500.000 333.160 ;
     END
   END io_ibus_inst[4]
   PIN io_ibus_inst[5]
@@ -1324,7 +1324,7 @@ MACRO Core
     USE SIGNAL ;
     PORT
       LAYER met3 ;
-        RECT 496.000 340.040 500.000 340.640 ;
+        RECT 496.000 338.000 500.000 338.600 ;
     END
   END io_ibus_inst[5]
   PIN io_ibus_inst[6]
@@ -1332,7 +1332,7 @@ MACRO Core
     USE SIGNAL ;
     PORT
       LAYER met3 ;
-        RECT 496.000 346.160 500.000 346.760 ;
+        RECT 496.000 344.120 500.000 344.720 ;
     END
   END io_ibus_inst[6]
   PIN io_ibus_inst[7]
@@ -1340,7 +1340,7 @@ MACRO Core
     USE SIGNAL ;
     PORT
       LAYER met3 ;
-        RECT 496.000 351.600 500.000 352.200 ;
+        RECT 496.000 349.560 500.000 350.160 ;
     END
   END io_ibus_inst[7]
   PIN io_ibus_inst[8]
@@ -1348,7 +1348,7 @@ MACRO Core
     USE SIGNAL ;
     PORT
       LAYER met3 ;
-        RECT 496.000 357.720 500.000 358.320 ;
+        RECT 496.000 355.680 500.000 356.280 ;
     END
   END io_ibus_inst[8]
   PIN io_ibus_inst[9]
@@ -1356,7 +1356,7 @@ MACRO Core
     USE SIGNAL ;
     PORT
       LAYER met3 ;
-        RECT 496.000 363.160 500.000 363.760 ;
+        RECT 496.000 361.120 500.000 361.720 ;
     END
   END io_ibus_inst[9]
   PIN io_ibus_valid
@@ -1364,23 +1364,39 @@ MACRO Core
     USE SIGNAL ;
     PORT
       LAYER met3 ;
-        RECT 496.000 305.360 500.000 305.960 ;
+        RECT 496.000 303.320 500.000 303.920 ;
     END
   END io_ibus_valid
-  PIN io_irq_motor_irq
+  PIN io_irq_m1_irq
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 496.000 497.800 500.000 498.400 ;
+    END
+  END io_irq_m1_irq
+  PIN io_irq_m2_irq
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 0.000 249.600 4.000 250.200 ;
+    END
+  END io_irq_m2_irq
+  PIN io_irq_m3_irq
     DIRECTION INPUT ;
     USE SIGNAL ;
     PORT
       LAYER met2 ;
         RECT 249.870 0.000 250.150 4.000 ;
     END
-  END io_irq_motor_irq
+  END io_irq_m3_irq
   PIN io_irq_spi_irq
     DIRECTION INPUT ;
     USE SIGNAL ;
     PORT
       LAYER met3 ;
-        RECT 496.000 495.080 500.000 495.680 ;
+        RECT 496.000 492.360 500.000 492.960 ;
     END
   END io_irq_spi_irq
   PIN io_irq_uart_irq
@@ -1388,7 +1404,7 @@ MACRO Core
     USE SIGNAL ;
     PORT
       LAYER met3 ;
-        RECT 496.000 497.800 500.000 498.400 ;
+        RECT 496.000 495.080 500.000 495.680 ;
     END
   END io_irq_uart_irq
   PIN reset
@@ -1436,456 +1452,372 @@ MACRO Core
     END
   END vssd1
   OBS
-      LAYER nwell ;
-        RECT 5.330 485.465 494.230 487.070 ;
-        RECT 5.330 480.025 494.230 482.855 ;
-        RECT 5.330 474.585 494.230 477.415 ;
-        RECT 5.330 469.145 494.230 471.975 ;
-        RECT 5.330 463.705 494.230 466.535 ;
-        RECT 5.330 458.265 494.230 461.095 ;
-        RECT 5.330 452.825 494.230 455.655 ;
-        RECT 5.330 447.385 494.230 450.215 ;
-        RECT 5.330 441.945 494.230 444.775 ;
-        RECT 5.330 436.505 494.230 439.335 ;
-        RECT 5.330 431.065 494.230 433.895 ;
-        RECT 5.330 425.625 494.230 428.455 ;
-        RECT 5.330 420.185 494.230 423.015 ;
-        RECT 5.330 414.745 494.230 417.575 ;
-        RECT 5.330 409.305 494.230 412.135 ;
-        RECT 5.330 403.865 494.230 406.695 ;
-        RECT 5.330 398.425 494.230 401.255 ;
-        RECT 5.330 392.985 494.230 395.815 ;
-        RECT 5.330 387.545 494.230 390.375 ;
-        RECT 5.330 382.105 494.230 384.935 ;
-        RECT 5.330 376.665 494.230 379.495 ;
-        RECT 5.330 371.225 494.230 374.055 ;
-        RECT 5.330 365.785 494.230 368.615 ;
-        RECT 5.330 360.345 494.230 363.175 ;
-        RECT 5.330 354.905 494.230 357.735 ;
-        RECT 5.330 349.465 494.230 352.295 ;
-        RECT 5.330 344.025 494.230 346.855 ;
-        RECT 5.330 338.585 494.230 341.415 ;
-        RECT 5.330 333.145 494.230 335.975 ;
-        RECT 5.330 327.705 494.230 330.535 ;
-        RECT 5.330 322.265 494.230 325.095 ;
-        RECT 5.330 316.825 494.230 319.655 ;
-        RECT 5.330 311.385 494.230 314.215 ;
-        RECT 5.330 305.945 494.230 308.775 ;
-        RECT 5.330 300.505 494.230 303.335 ;
-        RECT 5.330 295.065 494.230 297.895 ;
-        RECT 5.330 289.625 494.230 292.455 ;
-        RECT 5.330 284.185 494.230 287.015 ;
-        RECT 5.330 278.745 494.230 281.575 ;
-        RECT 5.330 273.305 494.230 276.135 ;
-        RECT 5.330 267.865 494.230 270.695 ;
-        RECT 5.330 262.425 494.230 265.255 ;
-        RECT 5.330 256.985 494.230 259.815 ;
-        RECT 5.330 251.545 494.230 254.375 ;
-        RECT 5.330 246.105 494.230 248.935 ;
-        RECT 5.330 240.665 494.230 243.495 ;
-        RECT 5.330 235.225 494.230 238.055 ;
-        RECT 5.330 229.785 494.230 232.615 ;
-        RECT 5.330 224.345 494.230 227.175 ;
-        RECT 5.330 218.905 494.230 221.735 ;
-        RECT 5.330 213.465 494.230 216.295 ;
-        RECT 5.330 208.025 494.230 210.855 ;
-        RECT 5.330 202.585 494.230 205.415 ;
-        RECT 5.330 197.145 494.230 199.975 ;
-        RECT 5.330 191.705 494.230 194.535 ;
-        RECT 5.330 186.265 494.230 189.095 ;
-        RECT 5.330 180.825 494.230 183.655 ;
-        RECT 5.330 175.385 494.230 178.215 ;
-        RECT 5.330 169.945 494.230 172.775 ;
-        RECT 5.330 164.505 494.230 167.335 ;
-        RECT 5.330 159.065 494.230 161.895 ;
-        RECT 5.330 153.625 494.230 156.455 ;
-        RECT 5.330 148.185 494.230 151.015 ;
-        RECT 5.330 142.745 494.230 145.575 ;
-        RECT 5.330 137.305 494.230 140.135 ;
-        RECT 5.330 131.865 494.230 134.695 ;
-        RECT 5.330 126.425 494.230 129.255 ;
-        RECT 5.330 120.985 494.230 123.815 ;
-        RECT 5.330 115.545 494.230 118.375 ;
-        RECT 5.330 110.105 494.230 112.935 ;
-        RECT 5.330 104.665 494.230 107.495 ;
-        RECT 5.330 99.225 494.230 102.055 ;
-        RECT 5.330 93.785 494.230 96.615 ;
-        RECT 5.330 88.345 494.230 91.175 ;
-        RECT 5.330 82.905 494.230 85.735 ;
-        RECT 5.330 77.465 494.230 80.295 ;
-        RECT 5.330 72.025 494.230 74.855 ;
-        RECT 5.330 66.585 494.230 69.415 ;
-        RECT 5.330 61.145 494.230 63.975 ;
-        RECT 5.330 55.705 494.230 58.535 ;
-        RECT 5.330 50.265 494.230 53.095 ;
-        RECT 5.330 44.825 494.230 47.655 ;
-        RECT 5.330 39.385 494.230 42.215 ;
-        RECT 5.330 33.945 494.230 36.775 ;
-        RECT 5.330 28.505 494.230 31.335 ;
-        RECT 5.330 23.065 494.230 25.895 ;
-        RECT 5.330 17.625 494.230 20.455 ;
-        RECT 5.330 12.185 494.230 15.015 ;
       LAYER li1 ;
         RECT 5.520 10.795 494.040 486.965 ;
       LAYER met1 ;
-        RECT 5.520 10.640 499.490 488.200 ;
+        RECT 5.520 10.240 499.490 487.520 ;
       LAYER met2 ;
-        RECT 7.000 495.720 124.470 498.285 ;
+        RECT 6.990 495.720 124.470 498.285 ;
         RECT 125.310 495.720 374.250 498.285 ;
-        RECT 375.090 495.720 499.930 498.285 ;
-        RECT 7.000 4.280 499.930 495.720 ;
-        RECT 7.000 1.515 249.590 4.280 ;
-        RECT 250.430 1.515 499.930 4.280 ;
+        RECT 375.090 495.720 499.470 498.285 ;
+        RECT 6.990 4.280 499.470 495.720 ;
+        RECT 6.990 1.515 249.590 4.280 ;
+        RECT 250.430 1.515 499.470 4.280 ;
       LAYER met3 ;
-        RECT 17.545 497.400 495.600 498.265 ;
-        RECT 17.545 496.080 499.955 497.400 ;
-        RECT 17.545 494.680 495.600 496.080 ;
-        RECT 17.545 493.360 499.955 494.680 ;
-        RECT 17.545 491.960 495.600 493.360 ;
-        RECT 17.545 489.960 499.955 491.960 ;
-        RECT 17.545 488.560 495.600 489.960 ;
-        RECT 17.545 487.240 499.955 488.560 ;
-        RECT 17.545 485.840 495.600 487.240 ;
-        RECT 17.545 484.520 499.955 485.840 ;
-        RECT 17.545 483.120 495.600 484.520 ;
-        RECT 17.545 481.120 499.955 483.120 ;
-        RECT 17.545 479.720 495.600 481.120 ;
-        RECT 17.545 478.400 499.955 479.720 ;
-        RECT 17.545 477.000 495.600 478.400 ;
-        RECT 17.545 475.680 499.955 477.000 ;
-        RECT 17.545 474.280 495.600 475.680 ;
-        RECT 17.545 472.960 499.955 474.280 ;
-        RECT 17.545 471.560 495.600 472.960 ;
-        RECT 17.545 469.560 499.955 471.560 ;
-        RECT 17.545 468.160 495.600 469.560 ;
-        RECT 17.545 466.840 499.955 468.160 ;
-        RECT 17.545 465.440 495.600 466.840 ;
-        RECT 17.545 464.120 499.955 465.440 ;
-        RECT 17.545 462.720 495.600 464.120 ;
-        RECT 17.545 460.720 499.955 462.720 ;
-        RECT 17.545 459.320 495.600 460.720 ;
-        RECT 17.545 458.000 499.955 459.320 ;
-        RECT 17.545 456.600 495.600 458.000 ;
-        RECT 17.545 455.280 499.955 456.600 ;
-        RECT 17.545 453.880 495.600 455.280 ;
-        RECT 17.545 451.880 499.955 453.880 ;
-        RECT 17.545 450.480 495.600 451.880 ;
-        RECT 17.545 449.160 499.955 450.480 ;
-        RECT 17.545 447.760 495.600 449.160 ;
-        RECT 17.545 446.440 499.955 447.760 ;
-        RECT 17.545 445.040 495.600 446.440 ;
-        RECT 17.545 443.720 499.955 445.040 ;
-        RECT 17.545 442.320 495.600 443.720 ;
-        RECT 17.545 440.320 499.955 442.320 ;
-        RECT 17.545 438.920 495.600 440.320 ;
-        RECT 17.545 437.600 499.955 438.920 ;
-        RECT 17.545 436.200 495.600 437.600 ;
-        RECT 17.545 434.880 499.955 436.200 ;
-        RECT 17.545 433.480 495.600 434.880 ;
-        RECT 17.545 431.480 499.955 433.480 ;
-        RECT 17.545 430.080 495.600 431.480 ;
-        RECT 17.545 428.760 499.955 430.080 ;
-        RECT 17.545 427.360 495.600 428.760 ;
-        RECT 17.545 426.040 499.955 427.360 ;
-        RECT 17.545 424.640 495.600 426.040 ;
-        RECT 17.545 422.640 499.955 424.640 ;
-        RECT 17.545 421.240 495.600 422.640 ;
-        RECT 17.545 419.920 499.955 421.240 ;
-        RECT 17.545 418.520 495.600 419.920 ;
-        RECT 17.545 417.200 499.955 418.520 ;
-        RECT 17.545 415.800 495.600 417.200 ;
-        RECT 17.545 414.480 499.955 415.800 ;
-        RECT 17.545 413.080 495.600 414.480 ;
-        RECT 17.545 411.080 499.955 413.080 ;
-        RECT 17.545 409.680 495.600 411.080 ;
-        RECT 17.545 408.360 499.955 409.680 ;
-        RECT 17.545 406.960 495.600 408.360 ;
-        RECT 17.545 405.640 499.955 406.960 ;
-        RECT 17.545 404.240 495.600 405.640 ;
-        RECT 17.545 402.240 499.955 404.240 ;
-        RECT 17.545 400.840 495.600 402.240 ;
-        RECT 17.545 399.520 499.955 400.840 ;
-        RECT 17.545 398.120 495.600 399.520 ;
-        RECT 17.545 396.800 499.955 398.120 ;
-        RECT 17.545 395.400 495.600 396.800 ;
-        RECT 17.545 393.400 499.955 395.400 ;
-        RECT 17.545 392.000 495.600 393.400 ;
-        RECT 17.545 390.680 499.955 392.000 ;
-        RECT 17.545 389.280 495.600 390.680 ;
-        RECT 17.545 387.960 499.955 389.280 ;
-        RECT 17.545 386.560 495.600 387.960 ;
-        RECT 17.545 385.240 499.955 386.560 ;
-        RECT 17.545 383.840 495.600 385.240 ;
-        RECT 17.545 381.840 499.955 383.840 ;
-        RECT 17.545 380.440 495.600 381.840 ;
-        RECT 17.545 379.120 499.955 380.440 ;
-        RECT 17.545 377.720 495.600 379.120 ;
-        RECT 17.545 376.400 499.955 377.720 ;
-        RECT 17.545 375.000 495.600 376.400 ;
-        RECT 17.545 373.000 499.955 375.000 ;
-        RECT 17.545 371.600 495.600 373.000 ;
-        RECT 17.545 370.280 499.955 371.600 ;
-        RECT 17.545 368.880 495.600 370.280 ;
-        RECT 17.545 367.560 499.955 368.880 ;
-        RECT 17.545 366.160 495.600 367.560 ;
-        RECT 17.545 364.160 499.955 366.160 ;
-        RECT 17.545 362.760 495.600 364.160 ;
-        RECT 17.545 361.440 499.955 362.760 ;
-        RECT 17.545 360.040 495.600 361.440 ;
-        RECT 17.545 358.720 499.955 360.040 ;
-        RECT 17.545 357.320 495.600 358.720 ;
-        RECT 17.545 356.000 499.955 357.320 ;
-        RECT 17.545 354.600 495.600 356.000 ;
-        RECT 17.545 352.600 499.955 354.600 ;
-        RECT 17.545 351.200 495.600 352.600 ;
-        RECT 17.545 349.880 499.955 351.200 ;
-        RECT 17.545 348.480 495.600 349.880 ;
-        RECT 17.545 347.160 499.955 348.480 ;
-        RECT 17.545 345.760 495.600 347.160 ;
-        RECT 17.545 343.760 499.955 345.760 ;
-        RECT 17.545 342.360 495.600 343.760 ;
-        RECT 17.545 341.040 499.955 342.360 ;
-        RECT 17.545 339.640 495.600 341.040 ;
-        RECT 17.545 338.320 499.955 339.640 ;
-        RECT 17.545 336.920 495.600 338.320 ;
-        RECT 17.545 335.600 499.955 336.920 ;
-        RECT 17.545 334.200 495.600 335.600 ;
-        RECT 17.545 332.200 499.955 334.200 ;
-        RECT 17.545 330.800 495.600 332.200 ;
-        RECT 17.545 329.480 499.955 330.800 ;
-        RECT 17.545 328.080 495.600 329.480 ;
-        RECT 17.545 326.760 499.955 328.080 ;
-        RECT 17.545 325.360 495.600 326.760 ;
-        RECT 17.545 323.360 499.955 325.360 ;
-        RECT 17.545 321.960 495.600 323.360 ;
-        RECT 17.545 320.640 499.955 321.960 ;
-        RECT 17.545 319.240 495.600 320.640 ;
-        RECT 17.545 317.920 499.955 319.240 ;
-        RECT 17.545 316.520 495.600 317.920 ;
-        RECT 17.545 314.520 499.955 316.520 ;
-        RECT 17.545 313.120 495.600 314.520 ;
-        RECT 17.545 311.800 499.955 313.120 ;
-        RECT 17.545 310.400 495.600 311.800 ;
-        RECT 17.545 309.080 499.955 310.400 ;
-        RECT 17.545 307.680 495.600 309.080 ;
-        RECT 17.545 306.360 499.955 307.680 ;
-        RECT 17.545 304.960 495.600 306.360 ;
-        RECT 17.545 302.960 499.955 304.960 ;
-        RECT 17.545 301.560 495.600 302.960 ;
-        RECT 17.545 300.240 499.955 301.560 ;
-        RECT 17.545 298.840 495.600 300.240 ;
-        RECT 17.545 297.520 499.955 298.840 ;
-        RECT 17.545 296.120 495.600 297.520 ;
-        RECT 17.545 294.120 499.955 296.120 ;
-        RECT 17.545 292.720 495.600 294.120 ;
-        RECT 17.545 291.400 499.955 292.720 ;
-        RECT 17.545 290.000 495.600 291.400 ;
-        RECT 17.545 288.680 499.955 290.000 ;
-        RECT 17.545 287.280 495.600 288.680 ;
-        RECT 17.545 285.280 499.955 287.280 ;
-        RECT 17.545 283.880 495.600 285.280 ;
-        RECT 17.545 282.560 499.955 283.880 ;
-        RECT 17.545 281.160 495.600 282.560 ;
-        RECT 17.545 279.840 499.955 281.160 ;
-        RECT 17.545 278.440 495.600 279.840 ;
-        RECT 17.545 277.120 499.955 278.440 ;
-        RECT 17.545 275.720 495.600 277.120 ;
-        RECT 17.545 273.720 499.955 275.720 ;
-        RECT 17.545 272.320 495.600 273.720 ;
-        RECT 17.545 271.000 499.955 272.320 ;
-        RECT 17.545 269.600 495.600 271.000 ;
-        RECT 17.545 268.280 499.955 269.600 ;
-        RECT 17.545 266.880 495.600 268.280 ;
-        RECT 17.545 264.880 499.955 266.880 ;
-        RECT 17.545 263.480 495.600 264.880 ;
-        RECT 17.545 262.160 499.955 263.480 ;
-        RECT 17.545 260.760 495.600 262.160 ;
-        RECT 17.545 259.440 499.955 260.760 ;
-        RECT 17.545 258.040 495.600 259.440 ;
-        RECT 17.545 256.040 499.955 258.040 ;
-        RECT 17.545 254.640 495.600 256.040 ;
-        RECT 17.545 253.320 499.955 254.640 ;
-        RECT 17.545 251.920 495.600 253.320 ;
-        RECT 17.545 250.600 499.955 251.920 ;
-        RECT 17.545 249.200 495.600 250.600 ;
-        RECT 17.545 247.880 499.955 249.200 ;
-        RECT 17.545 246.480 495.600 247.880 ;
-        RECT 17.545 244.480 499.955 246.480 ;
-        RECT 17.545 243.080 495.600 244.480 ;
-        RECT 17.545 241.760 499.955 243.080 ;
-        RECT 17.545 240.360 495.600 241.760 ;
-        RECT 17.545 239.040 499.955 240.360 ;
-        RECT 17.545 237.640 495.600 239.040 ;
-        RECT 17.545 235.640 499.955 237.640 ;
-        RECT 17.545 234.240 495.600 235.640 ;
-        RECT 17.545 232.920 499.955 234.240 ;
-        RECT 17.545 231.520 495.600 232.920 ;
-        RECT 17.545 230.200 499.955 231.520 ;
-        RECT 17.545 228.800 495.600 230.200 ;
-        RECT 17.545 226.800 499.955 228.800 ;
-        RECT 17.545 225.400 495.600 226.800 ;
-        RECT 17.545 224.080 499.955 225.400 ;
-        RECT 17.545 222.680 495.600 224.080 ;
-        RECT 17.545 221.360 499.955 222.680 ;
-        RECT 17.545 219.960 495.600 221.360 ;
-        RECT 17.545 218.640 499.955 219.960 ;
-        RECT 17.545 217.240 495.600 218.640 ;
-        RECT 17.545 215.240 499.955 217.240 ;
-        RECT 17.545 213.840 495.600 215.240 ;
-        RECT 17.545 212.520 499.955 213.840 ;
-        RECT 17.545 211.120 495.600 212.520 ;
-        RECT 17.545 209.800 499.955 211.120 ;
-        RECT 17.545 208.400 495.600 209.800 ;
-        RECT 17.545 206.400 499.955 208.400 ;
-        RECT 17.545 205.000 495.600 206.400 ;
-        RECT 17.545 203.680 499.955 205.000 ;
-        RECT 17.545 202.280 495.600 203.680 ;
-        RECT 17.545 200.960 499.955 202.280 ;
-        RECT 17.545 199.560 495.600 200.960 ;
-        RECT 17.545 197.560 499.955 199.560 ;
-        RECT 17.545 196.160 495.600 197.560 ;
-        RECT 17.545 194.840 499.955 196.160 ;
-        RECT 17.545 193.440 495.600 194.840 ;
-        RECT 17.545 192.120 499.955 193.440 ;
-        RECT 17.545 190.720 495.600 192.120 ;
-        RECT 17.545 189.400 499.955 190.720 ;
-        RECT 17.545 188.000 495.600 189.400 ;
-        RECT 17.545 186.000 499.955 188.000 ;
-        RECT 17.545 184.600 495.600 186.000 ;
-        RECT 17.545 183.280 499.955 184.600 ;
-        RECT 17.545 181.880 495.600 183.280 ;
-        RECT 17.545 180.560 499.955 181.880 ;
-        RECT 17.545 179.160 495.600 180.560 ;
-        RECT 17.545 177.160 499.955 179.160 ;
-        RECT 17.545 175.760 495.600 177.160 ;
-        RECT 17.545 174.440 499.955 175.760 ;
-        RECT 17.545 173.040 495.600 174.440 ;
-        RECT 17.545 171.720 499.955 173.040 ;
-        RECT 17.545 170.320 495.600 171.720 ;
-        RECT 17.545 169.000 499.955 170.320 ;
-        RECT 17.545 167.600 495.600 169.000 ;
-        RECT 17.545 165.600 499.955 167.600 ;
-        RECT 17.545 164.200 495.600 165.600 ;
-        RECT 17.545 162.880 499.955 164.200 ;
-        RECT 17.545 161.480 495.600 162.880 ;
-        RECT 17.545 160.160 499.955 161.480 ;
-        RECT 17.545 158.760 495.600 160.160 ;
-        RECT 17.545 156.760 499.955 158.760 ;
-        RECT 17.545 155.360 495.600 156.760 ;
-        RECT 17.545 154.040 499.955 155.360 ;
-        RECT 17.545 152.640 495.600 154.040 ;
-        RECT 17.545 151.320 499.955 152.640 ;
-        RECT 17.545 149.920 495.600 151.320 ;
-        RECT 17.545 147.920 499.955 149.920 ;
-        RECT 17.545 146.520 495.600 147.920 ;
-        RECT 17.545 145.200 499.955 146.520 ;
-        RECT 17.545 143.800 495.600 145.200 ;
-        RECT 17.545 142.480 499.955 143.800 ;
-        RECT 17.545 141.080 495.600 142.480 ;
-        RECT 17.545 139.760 499.955 141.080 ;
-        RECT 17.545 138.360 495.600 139.760 ;
-        RECT 17.545 136.360 499.955 138.360 ;
-        RECT 17.545 134.960 495.600 136.360 ;
-        RECT 17.545 133.640 499.955 134.960 ;
-        RECT 17.545 132.240 495.600 133.640 ;
-        RECT 17.545 130.920 499.955 132.240 ;
-        RECT 17.545 129.520 495.600 130.920 ;
-        RECT 17.545 127.520 499.955 129.520 ;
-        RECT 17.545 126.120 495.600 127.520 ;
-        RECT 17.545 124.800 499.955 126.120 ;
-        RECT 17.545 123.400 495.600 124.800 ;
-        RECT 17.545 122.080 499.955 123.400 ;
-        RECT 17.545 120.680 495.600 122.080 ;
-        RECT 17.545 118.680 499.955 120.680 ;
-        RECT 17.545 117.280 495.600 118.680 ;
-        RECT 17.545 115.960 499.955 117.280 ;
-        RECT 17.545 114.560 495.600 115.960 ;
-        RECT 17.545 113.240 499.955 114.560 ;
-        RECT 17.545 111.840 495.600 113.240 ;
-        RECT 17.545 110.520 499.955 111.840 ;
-        RECT 17.545 109.120 495.600 110.520 ;
-        RECT 17.545 107.120 499.955 109.120 ;
-        RECT 17.545 105.720 495.600 107.120 ;
-        RECT 17.545 104.400 499.955 105.720 ;
-        RECT 17.545 103.000 495.600 104.400 ;
-        RECT 17.545 101.680 499.955 103.000 ;
-        RECT 17.545 100.280 495.600 101.680 ;
-        RECT 17.545 98.280 499.955 100.280 ;
-        RECT 17.545 96.880 495.600 98.280 ;
-        RECT 17.545 95.560 499.955 96.880 ;
-        RECT 17.545 94.160 495.600 95.560 ;
-        RECT 17.545 92.840 499.955 94.160 ;
-        RECT 17.545 91.440 495.600 92.840 ;
-        RECT 17.545 89.440 499.955 91.440 ;
-        RECT 17.545 88.040 495.600 89.440 ;
-        RECT 17.545 86.720 499.955 88.040 ;
-        RECT 17.545 85.320 495.600 86.720 ;
-        RECT 17.545 84.000 499.955 85.320 ;
-        RECT 17.545 82.600 495.600 84.000 ;
-        RECT 17.545 81.280 499.955 82.600 ;
-        RECT 17.545 79.880 495.600 81.280 ;
-        RECT 17.545 77.880 499.955 79.880 ;
-        RECT 17.545 76.480 495.600 77.880 ;
-        RECT 17.545 75.160 499.955 76.480 ;
-        RECT 17.545 73.760 495.600 75.160 ;
-        RECT 17.545 72.440 499.955 73.760 ;
-        RECT 17.545 71.040 495.600 72.440 ;
-        RECT 17.545 69.040 499.955 71.040 ;
-        RECT 17.545 67.640 495.600 69.040 ;
-        RECT 17.545 66.320 499.955 67.640 ;
-        RECT 17.545 64.920 495.600 66.320 ;
-        RECT 17.545 63.600 499.955 64.920 ;
-        RECT 17.545 62.200 495.600 63.600 ;
-        RECT 17.545 60.200 499.955 62.200 ;
-        RECT 17.545 58.800 495.600 60.200 ;
-        RECT 17.545 57.480 499.955 58.800 ;
-        RECT 17.545 56.080 495.600 57.480 ;
-        RECT 17.545 54.760 499.955 56.080 ;
-        RECT 17.545 53.360 495.600 54.760 ;
-        RECT 17.545 52.040 499.955 53.360 ;
-        RECT 17.545 50.640 495.600 52.040 ;
-        RECT 17.545 48.640 499.955 50.640 ;
-        RECT 17.545 47.240 495.600 48.640 ;
-        RECT 17.545 45.920 499.955 47.240 ;
-        RECT 17.545 44.520 495.600 45.920 ;
-        RECT 17.545 43.200 499.955 44.520 ;
-        RECT 17.545 41.800 495.600 43.200 ;
-        RECT 17.545 39.800 499.955 41.800 ;
-        RECT 17.545 38.400 495.600 39.800 ;
-        RECT 17.545 37.080 499.955 38.400 ;
-        RECT 17.545 35.680 495.600 37.080 ;
-        RECT 17.545 34.360 499.955 35.680 ;
-        RECT 17.545 32.960 495.600 34.360 ;
-        RECT 17.545 30.960 499.955 32.960 ;
-        RECT 17.545 29.560 495.600 30.960 ;
-        RECT 17.545 28.240 499.955 29.560 ;
-        RECT 17.545 26.840 495.600 28.240 ;
-        RECT 17.545 25.520 499.955 26.840 ;
-        RECT 17.545 24.120 495.600 25.520 ;
-        RECT 17.545 22.800 499.955 24.120 ;
-        RECT 17.545 21.400 495.600 22.800 ;
-        RECT 17.545 19.400 499.955 21.400 ;
-        RECT 17.545 18.000 495.600 19.400 ;
-        RECT 17.545 16.680 499.955 18.000 ;
-        RECT 17.545 15.280 495.600 16.680 ;
-        RECT 17.545 13.960 499.955 15.280 ;
-        RECT 17.545 12.560 495.600 13.960 ;
-        RECT 17.545 10.560 499.955 12.560 ;
-        RECT 17.545 9.160 495.600 10.560 ;
-        RECT 17.545 7.840 499.955 9.160 ;
-        RECT 17.545 6.440 495.600 7.840 ;
-        RECT 17.545 5.120 499.955 6.440 ;
-        RECT 17.545 3.720 495.600 5.120 ;
-        RECT 17.545 2.400 499.955 3.720 ;
-        RECT 17.545 1.535 495.600 2.400 ;
+        RECT 4.000 497.400 495.600 498.265 ;
+        RECT 4.000 496.080 499.495 497.400 ;
+        RECT 4.000 494.680 495.600 496.080 ;
+        RECT 4.000 493.360 499.495 494.680 ;
+        RECT 4.000 491.960 495.600 493.360 ;
+        RECT 4.000 489.960 499.495 491.960 ;
+        RECT 4.000 488.560 495.600 489.960 ;
+        RECT 4.000 487.240 499.495 488.560 ;
+        RECT 4.000 485.840 495.600 487.240 ;
+        RECT 4.000 484.520 499.495 485.840 ;
+        RECT 4.000 483.120 495.600 484.520 ;
+        RECT 4.000 481.800 499.495 483.120 ;
+        RECT 4.000 480.400 495.600 481.800 ;
+        RECT 4.000 478.400 499.495 480.400 ;
+        RECT 4.000 477.000 495.600 478.400 ;
+        RECT 4.000 475.680 499.495 477.000 ;
+        RECT 4.000 474.280 495.600 475.680 ;
+        RECT 4.000 472.960 499.495 474.280 ;
+        RECT 4.000 471.560 495.600 472.960 ;
+        RECT 4.000 469.560 499.495 471.560 ;
+        RECT 4.000 468.160 495.600 469.560 ;
+        RECT 4.000 466.840 499.495 468.160 ;
+        RECT 4.000 465.440 495.600 466.840 ;
+        RECT 4.000 464.120 499.495 465.440 ;
+        RECT 4.000 462.720 495.600 464.120 ;
+        RECT 4.000 461.400 499.495 462.720 ;
+        RECT 4.000 460.000 495.600 461.400 ;
+        RECT 4.000 458.000 499.495 460.000 ;
+        RECT 4.000 456.600 495.600 458.000 ;
+        RECT 4.000 455.280 499.495 456.600 ;
+        RECT 4.000 453.880 495.600 455.280 ;
+        RECT 4.000 452.560 499.495 453.880 ;
+        RECT 4.000 451.160 495.600 452.560 ;
+        RECT 4.000 449.840 499.495 451.160 ;
+        RECT 4.000 448.440 495.600 449.840 ;
+        RECT 4.000 446.440 499.495 448.440 ;
+        RECT 4.000 445.040 495.600 446.440 ;
+        RECT 4.000 443.720 499.495 445.040 ;
+        RECT 4.000 442.320 495.600 443.720 ;
+        RECT 4.000 441.000 499.495 442.320 ;
+        RECT 4.000 439.600 495.600 441.000 ;
+        RECT 4.000 437.600 499.495 439.600 ;
+        RECT 4.000 436.200 495.600 437.600 ;
+        RECT 4.000 434.880 499.495 436.200 ;
+        RECT 4.000 433.480 495.600 434.880 ;
+        RECT 4.000 432.160 499.495 433.480 ;
+        RECT 4.000 430.760 495.600 432.160 ;
+        RECT 4.000 429.440 499.495 430.760 ;
+        RECT 4.000 428.040 495.600 429.440 ;
+        RECT 4.000 426.040 499.495 428.040 ;
+        RECT 4.000 424.640 495.600 426.040 ;
+        RECT 4.000 423.320 499.495 424.640 ;
+        RECT 4.000 421.920 495.600 423.320 ;
+        RECT 4.000 420.600 499.495 421.920 ;
+        RECT 4.000 419.200 495.600 420.600 ;
+        RECT 4.000 417.880 499.495 419.200 ;
+        RECT 4.000 416.480 495.600 417.880 ;
+        RECT 4.000 414.480 499.495 416.480 ;
+        RECT 4.000 413.080 495.600 414.480 ;
+        RECT 4.000 411.760 499.495 413.080 ;
+        RECT 4.000 410.360 495.600 411.760 ;
+        RECT 4.000 409.040 499.495 410.360 ;
+        RECT 4.000 407.640 495.600 409.040 ;
+        RECT 4.000 405.640 499.495 407.640 ;
+        RECT 4.000 404.240 495.600 405.640 ;
+        RECT 4.000 402.920 499.495 404.240 ;
+        RECT 4.000 401.520 495.600 402.920 ;
+        RECT 4.000 400.200 499.495 401.520 ;
+        RECT 4.000 398.800 495.600 400.200 ;
+        RECT 4.000 397.480 499.495 398.800 ;
+        RECT 4.000 396.080 495.600 397.480 ;
+        RECT 4.000 394.080 499.495 396.080 ;
+        RECT 4.000 392.680 495.600 394.080 ;
+        RECT 4.000 391.360 499.495 392.680 ;
+        RECT 4.000 389.960 495.600 391.360 ;
+        RECT 4.000 388.640 499.495 389.960 ;
+        RECT 4.000 387.240 495.600 388.640 ;
+        RECT 4.000 385.920 499.495 387.240 ;
+        RECT 4.000 384.520 495.600 385.920 ;
+        RECT 4.000 382.520 499.495 384.520 ;
+        RECT 4.000 381.120 495.600 382.520 ;
+        RECT 4.000 379.800 499.495 381.120 ;
+        RECT 4.000 378.400 495.600 379.800 ;
+        RECT 4.000 377.080 499.495 378.400 ;
+        RECT 4.000 375.680 495.600 377.080 ;
+        RECT 4.000 373.680 499.495 375.680 ;
+        RECT 4.000 372.280 495.600 373.680 ;
+        RECT 4.000 370.960 499.495 372.280 ;
+        RECT 4.000 369.560 495.600 370.960 ;
+        RECT 4.000 368.240 499.495 369.560 ;
+        RECT 4.000 366.840 495.600 368.240 ;
+        RECT 4.000 365.520 499.495 366.840 ;
+        RECT 4.000 364.120 495.600 365.520 ;
+        RECT 4.000 362.120 499.495 364.120 ;
+        RECT 4.000 360.720 495.600 362.120 ;
+        RECT 4.000 359.400 499.495 360.720 ;
+        RECT 4.000 358.000 495.600 359.400 ;
+        RECT 4.000 356.680 499.495 358.000 ;
+        RECT 4.000 355.280 495.600 356.680 ;
+        RECT 4.000 353.960 499.495 355.280 ;
+        RECT 4.000 352.560 495.600 353.960 ;
+        RECT 4.000 350.560 499.495 352.560 ;
+        RECT 4.000 349.160 495.600 350.560 ;
+        RECT 4.000 347.840 499.495 349.160 ;
+        RECT 4.000 346.440 495.600 347.840 ;
+        RECT 4.000 345.120 499.495 346.440 ;
+        RECT 4.000 343.720 495.600 345.120 ;
+        RECT 4.000 341.720 499.495 343.720 ;
+        RECT 4.000 340.320 495.600 341.720 ;
+        RECT 4.000 339.000 499.495 340.320 ;
+        RECT 4.000 337.600 495.600 339.000 ;
+        RECT 4.000 336.280 499.495 337.600 ;
+        RECT 4.000 334.880 495.600 336.280 ;
+        RECT 4.000 333.560 499.495 334.880 ;
+        RECT 4.000 332.160 495.600 333.560 ;
+        RECT 4.000 330.160 499.495 332.160 ;
+        RECT 4.000 328.760 495.600 330.160 ;
+        RECT 4.000 327.440 499.495 328.760 ;
+        RECT 4.000 326.040 495.600 327.440 ;
+        RECT 4.000 324.720 499.495 326.040 ;
+        RECT 4.000 323.320 495.600 324.720 ;
+        RECT 4.000 322.000 499.495 323.320 ;
+        RECT 4.000 320.600 495.600 322.000 ;
+        RECT 4.000 318.600 499.495 320.600 ;
+        RECT 4.000 317.200 495.600 318.600 ;
+        RECT 4.000 315.880 499.495 317.200 ;
+        RECT 4.000 314.480 495.600 315.880 ;
+        RECT 4.000 313.160 499.495 314.480 ;
+        RECT 4.000 311.760 495.600 313.160 ;
+        RECT 4.000 309.760 499.495 311.760 ;
+        RECT 4.000 308.360 495.600 309.760 ;
+        RECT 4.000 307.040 499.495 308.360 ;
+        RECT 4.000 305.640 495.600 307.040 ;
+        RECT 4.000 304.320 499.495 305.640 ;
+        RECT 4.000 302.920 495.600 304.320 ;
+        RECT 4.000 301.600 499.495 302.920 ;
+        RECT 4.000 300.200 495.600 301.600 ;
+        RECT 4.000 298.200 499.495 300.200 ;
+        RECT 4.000 296.800 495.600 298.200 ;
+        RECT 4.000 295.480 499.495 296.800 ;
+        RECT 4.000 294.080 495.600 295.480 ;
+        RECT 4.000 292.760 499.495 294.080 ;
+        RECT 4.000 291.360 495.600 292.760 ;
+        RECT 4.000 290.040 499.495 291.360 ;
+        RECT 4.000 288.640 495.600 290.040 ;
+        RECT 4.000 286.640 499.495 288.640 ;
+        RECT 4.000 285.240 495.600 286.640 ;
+        RECT 4.000 283.920 499.495 285.240 ;
+        RECT 4.000 282.520 495.600 283.920 ;
+        RECT 4.000 281.200 499.495 282.520 ;
+        RECT 4.000 279.800 495.600 281.200 ;
+        RECT 4.000 277.800 499.495 279.800 ;
+        RECT 4.000 276.400 495.600 277.800 ;
+        RECT 4.000 275.080 499.495 276.400 ;
+        RECT 4.000 273.680 495.600 275.080 ;
+        RECT 4.000 272.360 499.495 273.680 ;
+        RECT 4.000 270.960 495.600 272.360 ;
+        RECT 4.000 269.640 499.495 270.960 ;
+        RECT 4.000 268.240 495.600 269.640 ;
+        RECT 4.000 266.240 499.495 268.240 ;
+        RECT 4.000 264.840 495.600 266.240 ;
+        RECT 4.000 263.520 499.495 264.840 ;
+        RECT 4.000 262.120 495.600 263.520 ;
+        RECT 4.000 260.800 499.495 262.120 ;
+        RECT 4.000 259.400 495.600 260.800 ;
+        RECT 4.000 258.080 499.495 259.400 ;
+        RECT 4.000 256.680 495.600 258.080 ;
+        RECT 4.000 254.680 499.495 256.680 ;
+        RECT 4.000 253.280 495.600 254.680 ;
+        RECT 4.000 251.960 499.495 253.280 ;
+        RECT 4.000 250.600 495.600 251.960 ;
+        RECT 4.400 250.560 495.600 250.600 ;
+        RECT 4.400 249.240 499.495 250.560 ;
+        RECT 4.400 249.200 495.600 249.240 ;
+        RECT 4.000 247.840 495.600 249.200 ;
+        RECT 4.000 245.840 499.495 247.840 ;
+        RECT 4.000 244.440 495.600 245.840 ;
+        RECT 4.000 243.120 499.495 244.440 ;
+        RECT 4.000 241.720 495.600 243.120 ;
+        RECT 4.000 240.400 499.495 241.720 ;
+        RECT 4.000 239.000 495.600 240.400 ;
+        RECT 4.000 237.680 499.495 239.000 ;
+        RECT 4.000 236.280 495.600 237.680 ;
+        RECT 4.000 234.280 499.495 236.280 ;
+        RECT 4.000 232.880 495.600 234.280 ;
+        RECT 4.000 231.560 499.495 232.880 ;
+        RECT 4.000 230.160 495.600 231.560 ;
+        RECT 4.000 228.840 499.495 230.160 ;
+        RECT 4.000 227.440 495.600 228.840 ;
+        RECT 4.000 226.120 499.495 227.440 ;
+        RECT 4.000 224.720 495.600 226.120 ;
+        RECT 4.000 222.720 499.495 224.720 ;
+        RECT 4.000 221.320 495.600 222.720 ;
+        RECT 4.000 220.000 499.495 221.320 ;
+        RECT 4.000 218.600 495.600 220.000 ;
+        RECT 4.000 217.280 499.495 218.600 ;
+        RECT 4.000 215.880 495.600 217.280 ;
+        RECT 4.000 213.880 499.495 215.880 ;
+        RECT 4.000 212.480 495.600 213.880 ;
+        RECT 4.000 211.160 499.495 212.480 ;
+        RECT 4.000 209.760 495.600 211.160 ;
+        RECT 4.000 208.440 499.495 209.760 ;
+        RECT 4.000 207.040 495.600 208.440 ;
+        RECT 4.000 205.720 499.495 207.040 ;
+        RECT 4.000 204.320 495.600 205.720 ;
+        RECT 4.000 202.320 499.495 204.320 ;
+        RECT 4.000 200.920 495.600 202.320 ;
+        RECT 4.000 199.600 499.495 200.920 ;
+        RECT 4.000 198.200 495.600 199.600 ;
+        RECT 4.000 196.880 499.495 198.200 ;
+        RECT 4.000 195.480 495.600 196.880 ;
+        RECT 4.000 194.160 499.495 195.480 ;
+        RECT 4.000 192.760 495.600 194.160 ;
+        RECT 4.000 190.760 499.495 192.760 ;
+        RECT 4.000 189.360 495.600 190.760 ;
+        RECT 4.000 188.040 499.495 189.360 ;
+        RECT 4.000 186.640 495.600 188.040 ;
+        RECT 4.000 185.320 499.495 186.640 ;
+        RECT 4.000 183.920 495.600 185.320 ;
+        RECT 4.000 181.920 499.495 183.920 ;
+        RECT 4.000 180.520 495.600 181.920 ;
+        RECT 4.000 179.200 499.495 180.520 ;
+        RECT 4.000 177.800 495.600 179.200 ;
+        RECT 4.000 176.480 499.495 177.800 ;
+        RECT 4.000 175.080 495.600 176.480 ;
+        RECT 4.000 173.760 499.495 175.080 ;
+        RECT 4.000 172.360 495.600 173.760 ;
+        RECT 4.000 170.360 499.495 172.360 ;
+        RECT 4.000 168.960 495.600 170.360 ;
+        RECT 4.000 167.640 499.495 168.960 ;
+        RECT 4.000 166.240 495.600 167.640 ;
+        RECT 4.000 164.920 499.495 166.240 ;
+        RECT 4.000 163.520 495.600 164.920 ;
+        RECT 4.000 162.200 499.495 163.520 ;
+        RECT 4.000 160.800 495.600 162.200 ;
+        RECT 4.000 158.800 499.495 160.800 ;
+        RECT 4.000 157.400 495.600 158.800 ;
+        RECT 4.000 156.080 499.495 157.400 ;
+        RECT 4.000 154.680 495.600 156.080 ;
+        RECT 4.000 153.360 499.495 154.680 ;
+        RECT 4.000 151.960 495.600 153.360 ;
+        RECT 4.000 149.960 499.495 151.960 ;
+        RECT 4.000 148.560 495.600 149.960 ;
+        RECT 4.000 147.240 499.495 148.560 ;
+        RECT 4.000 145.840 495.600 147.240 ;
+        RECT 4.000 144.520 499.495 145.840 ;
+        RECT 4.000 143.120 495.600 144.520 ;
+        RECT 4.000 141.800 499.495 143.120 ;
+        RECT 4.000 140.400 495.600 141.800 ;
+        RECT 4.000 138.400 499.495 140.400 ;
+        RECT 4.000 137.000 495.600 138.400 ;
+        RECT 4.000 135.680 499.495 137.000 ;
+        RECT 4.000 134.280 495.600 135.680 ;
+        RECT 4.000 132.960 499.495 134.280 ;
+        RECT 4.000 131.560 495.600 132.960 ;
+        RECT 4.000 130.240 499.495 131.560 ;
+        RECT 4.000 128.840 495.600 130.240 ;
+        RECT 4.000 126.840 499.495 128.840 ;
+        RECT 4.000 125.440 495.600 126.840 ;
+        RECT 4.000 124.120 499.495 125.440 ;
+        RECT 4.000 122.720 495.600 124.120 ;
+        RECT 4.000 121.400 499.495 122.720 ;
+        RECT 4.000 120.000 495.600 121.400 ;
+        RECT 4.000 118.000 499.495 120.000 ;
+        RECT 4.000 116.600 495.600 118.000 ;
+        RECT 4.000 115.280 499.495 116.600 ;
+        RECT 4.000 113.880 495.600 115.280 ;
+        RECT 4.000 112.560 499.495 113.880 ;
+        RECT 4.000 111.160 495.600 112.560 ;
+        RECT 4.000 109.840 499.495 111.160 ;
+        RECT 4.000 108.440 495.600 109.840 ;
+        RECT 4.000 106.440 499.495 108.440 ;
+        RECT 4.000 105.040 495.600 106.440 ;
+        RECT 4.000 103.720 499.495 105.040 ;
+        RECT 4.000 102.320 495.600 103.720 ;
+        RECT 4.000 101.000 499.495 102.320 ;
+        RECT 4.000 99.600 495.600 101.000 ;
+        RECT 4.000 98.280 499.495 99.600 ;
+        RECT 4.000 96.880 495.600 98.280 ;
+        RECT 4.000 94.880 499.495 96.880 ;
+        RECT 4.000 93.480 495.600 94.880 ;
+        RECT 4.000 92.160 499.495 93.480 ;
+        RECT 4.000 90.760 495.600 92.160 ;
+        RECT 4.000 89.440 499.495 90.760 ;
+        RECT 4.000 88.040 495.600 89.440 ;
+        RECT 4.000 86.040 499.495 88.040 ;
+        RECT 4.000 84.640 495.600 86.040 ;
+        RECT 4.000 83.320 499.495 84.640 ;
+        RECT 4.000 81.920 495.600 83.320 ;
+        RECT 4.000 80.600 499.495 81.920 ;
+        RECT 4.000 79.200 495.600 80.600 ;
+        RECT 4.000 77.880 499.495 79.200 ;
+        RECT 4.000 76.480 495.600 77.880 ;
+        RECT 4.000 74.480 499.495 76.480 ;
+        RECT 4.000 73.080 495.600 74.480 ;
+        RECT 4.000 71.760 499.495 73.080 ;
+        RECT 4.000 70.360 495.600 71.760 ;
+        RECT 4.000 69.040 499.495 70.360 ;
+        RECT 4.000 67.640 495.600 69.040 ;
+        RECT 4.000 66.320 499.495 67.640 ;
+        RECT 4.000 64.920 495.600 66.320 ;
+        RECT 4.000 62.920 499.495 64.920 ;
+        RECT 4.000 61.520 495.600 62.920 ;
+        RECT 4.000 60.200 499.495 61.520 ;
+        RECT 4.000 58.800 495.600 60.200 ;
+        RECT 4.000 57.480 499.495 58.800 ;
+        RECT 4.000 56.080 495.600 57.480 ;
+        RECT 4.000 54.080 499.495 56.080 ;
+        RECT 4.000 52.680 495.600 54.080 ;
+        RECT 4.000 51.360 499.495 52.680 ;
+        RECT 4.000 49.960 495.600 51.360 ;
+        RECT 4.000 48.640 499.495 49.960 ;
+        RECT 4.000 47.240 495.600 48.640 ;
+        RECT 4.000 45.920 499.495 47.240 ;
+        RECT 4.000 44.520 495.600 45.920 ;
+        RECT 4.000 42.520 499.495 44.520 ;
+        RECT 4.000 41.120 495.600 42.520 ;
+        RECT 4.000 39.800 499.495 41.120 ;
+        RECT 4.000 38.400 495.600 39.800 ;
+        RECT 4.000 37.080 499.495 38.400 ;
+        RECT 4.000 35.680 495.600 37.080 ;
+        RECT 4.000 34.360 499.495 35.680 ;
+        RECT 4.000 32.960 495.600 34.360 ;
+        RECT 4.000 30.960 499.495 32.960 ;
+        RECT 4.000 29.560 495.600 30.960 ;
+        RECT 4.000 28.240 499.495 29.560 ;
+        RECT 4.000 26.840 495.600 28.240 ;
+        RECT 4.000 25.520 499.495 26.840 ;
+        RECT 4.000 24.120 495.600 25.520 ;
+        RECT 4.000 22.120 499.495 24.120 ;
+        RECT 4.000 20.720 495.600 22.120 ;
+        RECT 4.000 19.400 499.495 20.720 ;
+        RECT 4.000 18.000 495.600 19.400 ;
+        RECT 4.000 16.680 499.495 18.000 ;
+        RECT 4.000 15.280 495.600 16.680 ;
+        RECT 4.000 13.960 499.495 15.280 ;
+        RECT 4.000 12.560 495.600 13.960 ;
+        RECT 4.000 10.560 499.495 12.560 ;
+        RECT 4.000 9.160 495.600 10.560 ;
+        RECT 4.000 7.840 499.495 9.160 ;
+        RECT 4.000 6.440 495.600 7.840 ;
+        RECT 4.000 5.120 499.495 6.440 ;
+        RECT 4.000 3.720 495.600 5.120 ;
+        RECT 4.000 2.400 499.495 3.720 ;
+        RECT 4.000 1.535 495.600 2.400 ;
       LAYER met4 ;
-        RECT 29.735 11.735 97.440 486.025 ;
-        RECT 99.840 11.735 174.240 486.025 ;
-        RECT 176.640 11.735 251.040 486.025 ;
-        RECT 253.440 11.735 327.840 486.025 ;
-        RECT 330.240 11.735 404.640 486.025 ;
-        RECT 407.040 11.735 481.440 486.025 ;
-        RECT 483.840 11.735 491.905 486.025 ;
+        RECT 17.775 11.735 20.640 483.305 ;
+        RECT 23.040 11.735 97.440 483.305 ;
+        RECT 99.840 11.735 174.240 483.305 ;
+        RECT 176.640 11.735 251.040 483.305 ;
+        RECT 253.440 11.735 327.840 483.305 ;
+        RECT 330.240 11.735 404.640 483.305 ;
+        RECT 407.040 11.735 481.440 483.305 ;
+        RECT 483.840 11.735 490.985 483.305 ;
   END
 END Core
 END LIBRARY

@@ -1,6 +1,6 @@
 ###############################################################################
 # Created by write_sdc
-# Mon Mar 21 23:23:39 2022
+# Tue Apr  5 07:04:19 2022
 ###############################################################################
 current_design Core
 ###############################################################################
@@ -76,7 +76,9 @@ set_input_delay 4.0000 -clock [get_clocks {clock}] -add_delay [get_ports {io_ibu
 set_input_delay 4.0000 -clock [get_clocks {clock}] -add_delay [get_ports {io_ibus_inst[8]}]
 set_input_delay 4.0000 -clock [get_clocks {clock}] -add_delay [get_ports {io_ibus_inst[9]}]
 set_input_delay 4.0000 -clock [get_clocks {clock}] -add_delay [get_ports {io_ibus_valid}]
-set_input_delay 4.0000 -clock [get_clocks {clock}] -add_delay [get_ports {io_irq_motor_irq}]
+set_input_delay 4.0000 -clock [get_clocks {clock}] -add_delay [get_ports {io_irq_m1_irq}]
+set_input_delay 4.0000 -clock [get_clocks {clock}] -add_delay [get_ports {io_irq_m2_irq}]
+set_input_delay 4.0000 -clock [get_clocks {clock}] -add_delay [get_ports {io_irq_m3_irq}]
 set_input_delay 4.0000 -clock [get_clocks {clock}] -add_delay [get_ports {io_irq_spi_irq}]
 set_input_delay 4.0000 -clock [get_clocks {clock}] -add_delay [get_ports {io_irq_uart_irq}]
 set_input_delay 4.0000 -clock [get_clocks {clock}] -add_delay [get_ports {reset}]
@@ -292,7 +294,9 @@ set_load -pin_load 0.0334 [get_ports {io_ibus_addr[0]}]
 set_driving_cell -lib_cell sky130_fd_sc_hd__inv_2 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {clock}]
 set_driving_cell -lib_cell sky130_fd_sc_hd__inv_2 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {io_dbus_valid}]
 set_driving_cell -lib_cell sky130_fd_sc_hd__inv_2 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {io_ibus_valid}]
-set_driving_cell -lib_cell sky130_fd_sc_hd__inv_2 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {io_irq_motor_irq}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_2 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {io_irq_m1_irq}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_2 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {io_irq_m2_irq}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_2 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {io_irq_m3_irq}]
 set_driving_cell -lib_cell sky130_fd_sc_hd__inv_2 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {io_irq_spi_irq}]
 set_driving_cell -lib_cell sky130_fd_sc_hd__inv_2 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {io_irq_uart_irq}]
 set_driving_cell -lib_cell sky130_fd_sc_hd__inv_2 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {reset}]
